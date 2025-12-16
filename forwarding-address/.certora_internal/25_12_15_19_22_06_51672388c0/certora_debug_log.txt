@@ -1,0 +1,188 @@
+Failed to build src/ForwardingAddress.sol! Error:
+Error: Source "@openzeppelin/contracts/token/ERC20/IERC20.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:4:1:
+  |
+4 | import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:5:1:
+  |
+5 | import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:6:1:
+  |
+6 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/Initializable.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:7:1:
+  |
+7 | import {Initializable} from "solady/utils/Initializable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build src/ForwardingAddressFactory.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddressFactory.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibClone.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddressFactory.sol:5:1:
+  |
+5 | import {LibClone} from "solady/utils/LibClone.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC20/IERC20.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:4:1:
+  |
+4 | import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:5:1:
+  |
+5 | import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:6:1:
+  |
+6 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/Initializable.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:7:1:
+  |
+7 | import {Initializable} from "solady/utils/Initializable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build script/DeployForwardingAddressFactory.s.sol! Error:
+Error: Source "forge-std/Script.sol" not found: File not found. Searched the following locations: "".
+ --> script/DeployForwardingAddressFactory.s.sol:4:1:
+  |
+4 | import {Script, console} from "forge-std/Script.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddressFactory.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibClone.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddressFactory.sol:5:1:
+  |
+5 | import {LibClone} from "solady/utils/LibClone.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC20/IERC20.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:4:1:
+  |
+4 | import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:5:1:
+  |
+5 | import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:6:1:
+  |
+6 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/Initializable.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:7:1:
+  |
+7 | import {Initializable} from "solady/utils/Initializable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build test/ForwardingAddressFactory.t.sol! Error:
+Error: Source "@openzeppelin/contracts/mocks/token/ERC20Mock.sol" not found: File not found. Searched the following locations: "".
+ --> test/ForwardingAddressFactory.t.sol:4:1:
+  |
+4 | import {ERC20Mock} from "@openzeppelin/contracts/mocks/token/ERC20Mock.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/mocks/token/ERC20NoReturnMock.sol" not found: File not found. Searched the following locations: "".
+ --> test/ForwardingAddressFactory.t.sol:5:1:
+  |
+5 | import {ERC20NoReturnMock} from "@openzeppelin/contracts/mocks/token/ERC20NoReturnMock.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/mocks/token/ERC20ReturnFalseMock.sol" not found: File not found. Searched the following locations: "".
+ --> test/ForwardingAddressFactory.t.sol:6:1:
+  |
+6 | import {ERC20ReturnFalseMock} from "@openzeppelin/contracts/mocks/token/ERC20ReturnFalseMock.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC20/ERC20.sol" not found: File not found. Searched the following locations: "".
+ --> test/ForwardingAddressFactory.t.sol:7:1:
+  |
+7 | import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC20/IERC20.sol" not found: File not found. Searched the following locations: "".
+ --> test/ForwardingAddressFactory.t.sol:8:1:
+  |
+8 | import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol" not found: File not found. Searched the following locations: "".
+ --> test/ForwardingAddressFactory.t.sol:9:1:
+  |
+9 | import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "forge-std/Test.sol" not found: File not found. Searched the following locations: "".
+  --> test/ForwardingAddressFactory.t.sol:10:1:
+   |
+10 | import {Test} from "forge-std/Test.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC20/IERC20.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:4:1:
+  |
+4 | import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:5:1:
+  |
+5 | import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:6:1:
+  |
+6 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/Initializable.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddress.sol:7:1:
+  |
+7 | import {Initializable} from "solady/utils/Initializable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddressFactory.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibClone.sol" not found: File not found. Searched the following locations: "".
+ --> src/ForwardingAddressFactory.sol:5:1:
+  |
+5 | import {LibClone} from "solady/utils/LibClone.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+

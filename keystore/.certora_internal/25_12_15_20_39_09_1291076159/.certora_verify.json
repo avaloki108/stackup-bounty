@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "UserOpECDSAVerifier",
+    "specfile": "cvl/ecdsa_verifier.cvl",
+    "specfileOrigRelpath": "cvl/ecdsa_verifier.cvl",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}

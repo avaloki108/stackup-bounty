@@ -1,0 +1,9 @@
+// 20_proxy_init.cvl
+rule proxyInitializedOnce() {
+    env e;
+    require !initialized();
+    initialize(e);
+    assert initialized(), "Proxy not marked initialized";
+    initialize(e);  // Second call
+    assert lastReverted, "Double initialization allowed";
+}

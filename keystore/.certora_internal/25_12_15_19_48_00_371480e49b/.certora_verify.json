@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "Keystore",
+    "specfile": "/home/dok/web3/stackup/keystore/cvl/keystore.cvl",
+    "specfileOrigRelpath": "cvl/keystore.cvl",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}

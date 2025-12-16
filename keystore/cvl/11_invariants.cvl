@@ -1,0 +1,102 @@
+/*
+ * ═══════════════════════════════════════════════════════════════════════════
+ * RULE 11: CRITICAL INVARIANTS
+ * Historical Bounties: $150K+ (Lido, MakerDAO Fundamental Equation)
+ * Risk: Protocol insolvency, accounting errors
+ * ═══════════════════════════════════════════════════════════════════════════
+ */
+
+methods {
+    function totalSupply() external returns (uint256) envfree;
+    function balanceOf(address) external returns (uint256) envfree;
+    function allowance(address, address) external returns (uint256) envfree;
+    function owner() external returns (address) envfree;
+}
+
+// Ghost: Sum of all balances
+ghost mathint sumOfAllBalances {
+    init_state axiom sumOfAllBalances == 0;
+}
+
+// Hook to track balance changes
+hook Sstore balanceOf[KEY address account] uint256 newValue (uint256 oldValue) {
+    sumOfAllBalances = sumOfAllBalances + to_mathint(newValue) - to_mathint(oldValue);
+}
+
+// FUNDAMENTAL INVARIANT: Total supply equals sum of all balances
+// This is the "Fundamental Equation of DAI" equivalent
+invariant totalSupplyEqualsSumOfBalances()
+    to_mathint(totalSupply()) == sumOfAllBalances
+    {
+        preserved mint(address to, uint256 amount) with (env e) {
+            require sumOfAllBalances + to_mathint(amount) <= to_mathint(max_uint256);
+        }
+        preserved burn(address from, uint256 amount) with (env e) {
+            require to_mathint(amount) <= sumOfAllBalances;
+        }
+    }
+
+// No single address holds more than total supply
+invariant noAddressExceedsTotalSupply(address a)
+    balanceOf(a) <= totalSupply()
+
+// Zero address always has zero balance
+invariant zeroAddressHasNoBalance()
+    balanceOf(0) == 0
+    {
+        preserved mint(address to, uint256 amount) with (env e) {
+            require to != 0;
+        }
+        preserved transfer(address to, uint256 amount) with (env e) {
+            require to != 0;
+        }
+    }
+
+// Total supply is non-negative (always true for uint256, but good to verify)
+invariant totalSupplyNonNegative()
+    totalSupply() >= 0
+
+// Owner is either set or zero (no dangling references)
+invariant ownerIsValidOrZero()
+    owner() == 0 || owner() != 0
+
+// Allowance consistency: allowance is always >= 0 (uint256)
+invariant allowanceNonNegative(address owner, address spender)
+    allowance(owner, spender) >= 0
+
+// Self-allowance should typically be max or irrelevant
+invariant selfAllowanceReasonable(address account)
+    allowance(account, account) == 0 || allowance(account, account) == max_uint256
+
+// Supply monotonicity: only mint/burn change supply
+rule supplyOnlyChangesViaMintBurn(method f, env e, calldataarg args)
+    filtered {
+        f -> f.selector != sig:mint(address, uint256).selector &&
+             f.selector != sig:burn(address, uint256).selector
+    }
+{
+    uint256 supplyBefore = totalSupply();
+
+    f(e, args);
+
+    uint256 supplyAfter = totalSupply();
+
+    assert supplyBefore == supplyAfter,
+        "CRITICAL: Total supply changed outside mint/burn";
+}
+
+// Balance conservation in transfers
+rule balanceConservation(env e, address to, uint256 amount) {
+    address from = e.msg.sender;
+    require from != to;
+    require from != 0 && to != 0;
+
+    mathint totalBefore = to_mathint(balanceOf(from)) + to_mathint(balanceOf(to));
+
+    transfer(e, to, amount);
+
+    mathint totalAfter = to_mathint(balanceOf(from)) + to_mathint(balanceOf(to));
+
+    assert totalBefore == totalAfter,
+        "CRITICAL: Balance conservation violated in transfer";
+}

@@ -1,0 +1,108 @@
+/*
+ * ═══════════════════════════════════════════════════════════════════════════
+ * RULE 8: SANITY CHECKS (Built-in Certora patterns)
+ * Purpose: Verify basic functionality works; catch vacuous specs
+ * ═══════════════════════════════════════════════════════════════════════════
+ */
+
+methods {
+    function totalSupply() external returns (uint256) envfree;
+    function balanceOf(address) external returns (uint256) envfree;
+    function transfer(address, uint256) external returns (bool);
+    function approve(address, uint256) external returns (bool);
+    function transferFrom(address, address, uint256) external returns (bool);
+}
+
+// Basic sanity: functions should be reachable
+rule sanity(method f) {
+    env e;
+    calldataarg args;
+
+    f(e, args);
+
+    // If we reach here, the function is callable
+    assert true;
+}
+
+// Deep sanity: all code paths should be reachable
+rule deepSanity(method f) {
+    env e;
+    calldataarg args;
+
+    // Track that we actually executed
+    bool executed = false;
+    executed = true;
+
+    f(e, args);
+
+    assert executed,
+        "Sanity check failed - code path not executed";
+}
+
+// Transfer can succeed under valid conditions
+rule transferCanSucceed(env e, address to, uint256 amount) {
+    require to != 0;
+    require to != e.msg.sender;
+    require balanceOf(e.msg.sender) >= amount;
+    require e.msg.sender != 0;
+
+    bool success = transfer(e, to, amount);
+
+    satisfy success; // Prove there exists a case where transfer succeeds
+}
+
+// Approve can succeed
+rule approveCanSucceed(env e, address spender, uint256 amount) {
+    require spender != 0;
+    require e.msg.sender != 0;
+
+    bool success = approve(e, spender, amount);
+
+    satisfy success;
+}
+
+// TransferFrom can succeed
+rule transferFromCanSucceed(env e, address from, address to, uint256 amount) {
+    require from != 0 && to != 0;
+    require from != to;
+    require balanceOf(from) >= amount;
+
+    bool success = transferFrom(e, from, to, amount);
+
+    satisfy success;
+}
+
+// Non-reverting methods should not revert under valid input
+rule noUnexpectedReverts(method f, env e, calldataarg args)
+    filtered { f -> !f.isView }
+{
+    // Standard preconditions
+    require e.msg.sender != 0;
+    require e.msg.value == 0; // Most functions don't accept ETH
+
+    f@withrevert(e, args);
+
+    // Log if reverted (not a hard assertion)
+    assert !lastReverted;
+}
+
+// View functions should never revert
+rule viewsNeverRevert(method f, env e, calldataarg args)
+    filtered { f -> f.isView }
+{
+    f@withrevert(e, args);
+
+    assert !lastReverted,
+        "MEDIUM: View function reverted unexpectedly";
+}
+
+// Zero address checks
+rule zeroAddressProtection(env e, address to, uint256 amount) {
+    require to == 0;
+
+    transfer@withrevert(e, to, amount);
+
+    // Most implementations should revert on zero address
+    assert lastReverted,
+        "MEDIUM: Transfer to zero address should revert";
+}

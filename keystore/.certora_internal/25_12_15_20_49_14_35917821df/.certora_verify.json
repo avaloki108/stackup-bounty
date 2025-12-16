@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "KeystoreAccount",
+    "specfile": "cvl/keystore_account.cvl",
+    "specfileOrigRelpath": "cvl/keystore_account.cvl",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}

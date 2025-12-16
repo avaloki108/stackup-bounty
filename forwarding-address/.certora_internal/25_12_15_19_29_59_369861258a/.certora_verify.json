@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "ForwardingAddress",
+    "specfile": "certora/specs/ForwardingAddress.spec",
+    "specfileOrigRelpath": "certora/specs/ForwardingAddress.spec",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}

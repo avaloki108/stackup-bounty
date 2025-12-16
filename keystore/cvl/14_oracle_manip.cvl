@@ -1,0 +1,9 @@
+// 14_oracle_manip.cvl
+rule noStalePriceUsage(method f) {
+    env e;
+    uint256 priceBefore = oracle.getPrice(token);  // Assume oracle interface
+    calldataarg args;
+    f(e, args);
+    uint256 priceAfter = oracle.getPrice(token);
+    assert priceAfter >= priceBefore * (1 - 0.01e18), "Price dropped >1% in one tx → stale/manip";
+}

@@ -1,0 +1,111 @@
+/*
+ * ═══════════════════════════════════════════════════════════════════════════
+ * RULE 6: ERC4626 VAULT INFLATION ATTACK
+ * Historical Bounties: $100K+ (Multiple DeFi vaults)
+ * Risk: First depositor manipulation, share price exploitation
+ * Target: Solmate ERC4626
+ * ═══════════════════════════════════════════════════════════════════════════
+ */
+
+methods {
+    function totalSupply() external returns (uint256) envfree;
+    function totalAssets() external returns (uint256) envfree;
+    function balanceOf(address) external returns (uint256) envfree;
+
+    function deposit(uint256 assets, address receiver) external returns (uint256);
+    function mint(uint256 shares, address receiver) external returns (uint256);
+    function withdraw(uint256 assets, address receiver, address owner) external returns (uint256);
+    function redeem(uint256 shares, address receiver, address owner) external returns (uint256);
+
+    function previewDeposit(uint256 assets) external returns (uint256) envfree;
+    function previewMint(uint256 shares) external returns (uint256) envfree;
+    function previewWithdraw(uint256 assets) external returns (uint256) envfree;
+    function previewRedeem(uint256 shares) external returns (uint256) envfree;
+
+    function convertToShares(uint256 assets) external returns (uint256) envfree;
+    function convertToAssets(uint256 shares) external returns (uint256) envfree;
+}
+
+// First depositor attack: attacker donates to inflate share price
+rule vaultInflationAttackPrevention(env e, uint256 assets, address receiver) {
+    uint256 supplyBefore = totalSupply();
+    uint256 assetsBefore = totalAssets();
+
+    // First deposit scenario (empty or near-empty vault)
+    require supplyBefore == 0 || assetsBefore == 0;
+    require assets > 0;
+    require receiver != 0;
+
+    uint256 shares = deposit(e, assets, receiver);
+
+    // First depositor should NEVER get 0 shares
+    assert shares > 0,
+        "CRITICAL: First depositor received 0 shares - vault inflation attack";
+
+    // Ratio should be reasonable
+    assert shares >= assets / 2,
+        "CRITICAL: Suspicious low share ratio - potential manipulation";
+}
+
+// Share price cannot be manipulated significantly in one tx
+rule sharePriceStability(method f, env e, calldataarg args) {
+    uint256 supplyBefore = totalSupply();
+    uint256 assetsBefore = totalAssets();
+
+    require supplyBefore > 0;
+
+    mathint priceBefore = (to_mathint(assetsBefore) * 1000000) / to_mathint(supplyBefore);
+
+    f(e, args);
+
+    uint256 supplyAfter = totalSupply();
+    uint256 assetsAfter = totalAssets();
+
+    require supplyAfter > 0;
+
+    mathint priceAfter = (to_mathint(assetsAfter) * 1000000) / to_mathint(supplyAfter);
+
+    // Price should not change by more than 5% in single tx
+    assert priceAfter >= (priceBefore * 95) / 100,
+        "CRITICAL: Share price dropped >5% in single tx - potential attack";
+}
+
+// Round trip should not profit user
+rule noRoundTripProfit(env e1, env e2, uint256 assets, address user) {
+    require user != 0;
+    require e1.msg.sender == user;
+    require e2.msg.sender == user;
+    require assets > 0;
+
+    uint256 sharesMinted = deposit(e1, assets, user);
+    require sharesMinted > 0;
+
+    uint256 assetsReturned = redeem(e2, sharesMinted, user, user);
+
+    // User should not profit
+    assert assetsReturned <= assets,
+        "CRITICAL: User profited from deposit-redeem - potential exploit";
+}
+
+// Preview functions should be accurate
+rule previewDepositAccuracy(env e, uint256 assets, address receiver) {
+    require assets > 0;
+
+    uint256 preview = previewDeposit(assets);
+    uint256 actual = deposit(e, assets, receiver);
+
+    // Preview should be <= actual (round down for users)
+    assert preview <= actual,
+        "MEDIUM: previewDeposit overstates returns";
+}
+
+rule previewWithdrawAccuracy(env e, uint256 assets, address receiver, address owner) {
+    require assets > 0;
+
+    uint256 preview = previewWithdraw(assets);
+    uint256 actual = withdraw(e, assets, receiver, owner);
+
+    // Preview should be >= actual (round up for users on costs)
+    assert preview >= actual,
+        "MEDIUM: previewWithdraw understates costs";
+}

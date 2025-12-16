@@ -1,0 +1,86 @@
+/*
+ * ═══════════════════════════════════════════════════════════════════════════
+ * RULE 2: ACCESS CONTROL / OWNERSHIP
+ * Historical Bounties: $50K-$100K (MakerDAO, Compound governance bugs)
+ * Risk: Total protocol takeover, fund drainage
+ * ═══════════════════════════════════════════════════════════════════════════
+ */
+
+methods {
+    function owner() external returns (address) envfree;
+    function transferOwnership(address) external;
+    function renounceOwnership() external;
+    function mint(address, uint256) external;
+    function burn(address, uint256) external;
+    function pause() external;
+    function unpause() external;
+    function withdraw(address, uint256) external;
+
+    // Auth pattern (Solmate)
+    function authority() external returns (address) envfree;
+}
+
+// Only owner can call privileged functions
+rule noUnauthorizedWithdraw(env e, address to, uint256 amount) {
+    require e.msg.sender != owner();
+
+    withdraw@withrevert(e, to, amount);
+
+    assert lastReverted,
+        "CRITICAL: Non-owner executed privileged withdraw";
+}
+
+rule noUnauthorizedMint(env e, address to, uint256 amount) {
+    require e.msg.sender != owner();
+
+    mint@withrevert(e, to, amount);
+
+    assert lastReverted,
+        "CRITICAL: Non-owner minted tokens";
+}
+
+// Ownership cannot be stolen
+rule ownershipCannotBeHijacked(env e, address newOwner) {
+    address currentOwner = owner();
+
+    require e.msg.sender != currentOwner;
+
+    transferOwnership@withrevert(e, newOwner);
+
+    assert lastReverted,
+        "CRITICAL: Non-owner transferred ownership";
+}
+
+// Owner change is intentional
+rule ownershipTransferWorks(env e, address newOwner) {
+    require e.msg.sender == owner();
+    require newOwner != 0;
+
+    transferOwnership(e, newOwner);
+
+    assert owner() == newOwner,
+        "HIGH: Ownership transfer failed";
+}
+
+// Renounce sets to zero
+rule renounceOwnershipSetsZero(env e) {
+    require e.msg.sender == owner();
+    require owner() != 0;
+
+    renounceOwnership(e);
+
+    assert owner() == 0,
+        "HIGH: renounceOwnership did not zero owner";
+}
+
+// Cannot transfer to zero accidentally
+rule noAccidentalOwnershipLoss(env e) {
+    address ownerBefore = owner();
+    require ownerBefore != 0;
+
+    transferOwnership@withrevert(e, 0);
+
+    // Should either revert or we explicitly called renounce
+    assert lastReverted || e.msg.sender != ownerBefore,
+        "MEDIUM: Ownership transferred to zero address";
+}

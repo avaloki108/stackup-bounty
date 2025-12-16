@@ -1,0 +1,8 @@
+// 18_rounding_errors.cvl
+rule noLossyRounding(method f) {
+    env e; uint256 a; uint256 b;
+    require a > 0 && b > 0;
+    uint256 exact = a * b / 1e18;
+    uint256 rounded = mulDiv(a, b, 1e18);  // Protocol func
+    assert rounded >= exact, "Rounding down lost value";
+}

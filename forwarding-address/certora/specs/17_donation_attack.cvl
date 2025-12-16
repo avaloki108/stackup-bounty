@@ -1,0 +1,9 @@
+// 17_donation_attack.cvl
+rule noVaultInflation(method f) {
+    env e;
+    uint256 sharesPerAssetBefore = vault.convertToShares(1e18);
+    calldataarg args;
+    f(e, args);  // e.g., donate assets without minting shares
+    uint256 sharesPerAssetAfter = vault.convertToShares(1e18);
+    assert sharesPerAssetAfter >= sharesPerAssetBefore, "Share price decreased → inflation possible";
+}

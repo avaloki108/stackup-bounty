@@ -1,0 +1,105 @@
+/*
+ * ═══════════════════════════════════════════════════════════════════════════
+ * RULE 7: ERC20 APPROVAL RACE CONDITION
+ * Historical Bounties: $25K-$75K (Classic ERC20 bug)
+ * Risk: Double-spend via front-running
+ * ═══════════════════════════════════════════════════════════════════════════
+ */
+
+methods {
+    function allowance(address, address) external returns (uint256) envfree;
+    function approve(address, uint256) external returns (bool);
+    function transferFrom(address, address, uint256) external returns (bool);
+    function balanceOf(address) external returns (uint256) envfree;
+
+    // Safe approval pattern
+    function increaseAllowance(address, uint256) external returns (bool);
+    function decreaseAllowance(address, uint256) external returns (bool);
+}
+
+// Classic approval race: changing non-zero allowance to non-zero
+rule approvalRaceConditionWarning(env e, address spender, uint256 newAmount) {
+    address owner = e.msg.sender;
+
+    uint256 currentAllowance = allowance(owner, spender);
+
+    // If changing from non-zero to non-zero, this is risky
+    require currentAllowance > 0;
+    require newAmount > 0;
+    require newAmount != currentAllowance;
+
+    // This pattern is vulnerable to front-running
+    // The rule will flag it - use increaseAllowance/decreaseAllowance instead
+    approve(e, spender, newAmount);
+
+    assert currentAllowance == 0 || newAmount == 0,
+        "HIGH: Potential approval race - use increase/decrease pattern";
+}
+
+// Approve sets exact amount
+rule approveSetExactAmount(env e, address spender, uint256 amount) {
+    approve(e, spender, amount);
+
+    assert allowance(e.msg.sender, spender) == amount,
+        "HIGH: Approve did not set exact allowance";
+}
+
+// TransferFrom reduces allowance correctly
+rule transferFromReducesAllowance(env e, address from, address to, uint256 amount) {
+    require e.msg.sender != from; // Using allowance
+    require from != to;
+
+    uint256 allowanceBefore = allowance(from, e.msg.sender);
+    require allowanceBefore >= amount;
+
+    bool success = transferFrom(e, from, to, amount);
+
+    uint256 allowanceAfter = allowance(from, e.msg.sender);
+
+    // Allowance should decrease (unless infinite approval)
+    assert success => (
+        allowanceAfter == allowanceBefore - amount ||
+        allowanceBefore == max_uint256 // Infinite approval case
+    ), "HIGH: Allowance not properly reduced";
+}
+
+// Cannot transferFrom more than allowance
+rule cannotExceedAllowance(env e, address from, address to, uint256 amount) {
+    require e.msg.sender != from;
+
+    uint256 allowanceBefore = allowance(from, e.msg.sender);
+    require amount > allowanceBefore;
+
+    transferFrom@withrevert(e, from, to, amount);
+
+    assert lastReverted,
+        "CRITICAL: TransferFrom succeeded without sufficient allowance";
+}
+
+// Increase allowance adds correctly
+rule increaseAllowanceAdds(env e, address spender, uint256 addedValue) {
+    uint256 allowanceBefore = allowance(e.msg.sender, spender);
+
+    require to_mathint(allowanceBefore) + to_mathint(addedValue) <= to_mathint(max_uint256);
+
+    increaseAllowance(e, spender, addedValue);
+
+    uint256 allowanceAfter = allowance(e.msg.sender, spender);
+
+    assert allowanceAfter == allowanceBefore + addedValue,
+        "MEDIUM: increaseAllowance did not add correctly";
+}
+
+// Decrease allowance subtracts correctly
+rule decreaseAllowanceSubtracts(env e, address spender, uint256 subtractedValue) {
+    uint256 allowanceBefore = allowance(e.msg.sender, spender);
+
+    require allowanceBefore >= subtractedValue;
+
+    decreaseAllowance(e, spender, subtractedValue);
+
+    uint256 allowanceAfter = allowance(e.msg.sender, spender);
+
+    assert allowanceAfter == allowanceBefore - subtractedValue,
+        "MEDIUM: decreaseAllowance did not subtract correctly";
+}

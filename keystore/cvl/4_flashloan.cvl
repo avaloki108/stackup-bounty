@@ -1,0 +1,86 @@
+/*
+ * ═══════════════════════════════════════════════════════════════════════════
+ * RULE 4: FLASH LOAN SAFETY
+ * Historical Bounties: $200K+ (Aave, dYdX, Euler)
+ * Risk: Protocol insolvency, price manipulation
+ * ═══════════════════════════════════════════════════════════════════════════
+ */
+
+methods {
+    function totalSupply() external returns (uint256) envfree;
+    function balanceOf(address) external returns (uint256) envfree;
+    function totalAssets() external returns (uint256) envfree;
+
+    // Flash loan functions
+    function flashLoan(address, uint256, bytes) external;
+    function borrow(uint256) external;
+    function repay(uint256) external;
+}
+
+// Ghost to track sum of all balances
+ghost mathint sumOfBalances {
+    init_state axiom sumOfBalances == 0;
+}
+
+hook Sstore balanceOf[KEY address account] uint256 newValue (uint256 oldValue) {
+    sumOfBalances = sumOfBalances + to_mathint(newValue) - to_mathint(oldValue);
+}
+
+// Flash loan must be fully repaid within transaction
+rule flashLoanBalanced(env e, address receiver, uint256 amount, bytes data) {
+    uint256 supplyBefore = totalSupply();
+    mathint balancesBefore = sumOfBalances;
+
+    flashLoan(e, receiver, amount, data);
+
+    uint256 supplyAfter = totalSupply();
+    mathint balancesAfter = sumOfBalances;
+
+    // Supply unchanged after flash loan
+    assert supplyAfter == supplyBefore,
+        "CRITICAL: Flash loan changed total supply";
+
+    // Sum of balances unchanged
+    assert balancesAfter == balancesBefore,
+        "CRITICAL: Flash loan created/destroyed tokens";
+}
+
+// Borrow/repay symmetry
+rule borrowRepaySymmetry(env e1, env e2, uint256 amount) {
+    uint256 supplyBefore = totalSupply();
+
+    borrow(e1, amount);
+    repay(e2, amount);
+
+    uint256 supplyAfter = totalSupply();
+
+    assert supplyAfter == supplyBefore,
+        "HIGH: Borrow/repay not symmetric - potential exploit";
+}
+
+// Total supply always equals sum of balances (fundamental invariant)
+invariant totalSupplyIsSumOfBalances()
+    to_mathint(totalSupply()) == sumOfBalances
+    {
+        preserved mint(address a, uint256 amount) with (env e) {
+            require sumOfBalances + to_mathint(amount) <= to_mathint(max_uint256);
+        }
+        preserved burn(address a, uint256 amount) with (env e) {
+            require sumOfBalances >= to_mathint(amount);
+        }
+    }
+
+// No free tokens from protocol interactions
+rule noFreeTokens(method f, env e, calldataarg args) {
+    mathint balancesBefore = sumOfBalances;
+    uint256 supplyBefore = totalSupply();
+
+    f(e, args);
+
+    mathint balancesAfter = sumOfBalances;
+    uint256 supplyAfter = totalSupply();
+
+    // Change in balances must equal change in supply
+    assert balancesAfter - balancesBefore == to_mathint(supplyAfter) - to_mathint(supplyBefore),
+        "CRITICAL: Token conservation violated - potential flash loan exploit";
+}

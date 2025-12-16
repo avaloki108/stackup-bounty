@@ -1,0 +1,162 @@
+[
+  {
+    "description": "IfStatementMutation",
+    "diff": "--- original\n+++ mutant\n@@ -44,7 +44,8 @@\n                 _fetchOrValidateNode(action.refHash, action.account, action.proof, action.node);\n             bytes32 message = _getUpdateActionHash(action, nodeHash);\n \n-            if (_isSigValidationFailed(message, node, action.data)) {\n+            /// IfStatementMutation(`_isSigValidationFailed(message, node, action.data)` |==> `false`) of: `if (_isSigValidationFailed(message, node, action.data)) {`\n+            if (false) {\n                 emit RootHashUpdated(action.refHash, action.account, action.nextHash, action.nonce, false);\n             } else if (\n                 _requiresNextNodeVerifierCall(action.nextHash, nodeHash, action.nextProof, action.nextNode)\n",
+    "id": "1",
+    "name": "mutants/1/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "DeleteExpressionMutation",
+    "diff": "--- original\n+++ mutant\n@@ -52,7 +52,8 @@\n             ) {\n                 emit RootHashUpdated(action.refHash, action.account, action.nextHash, action.nonce, false);\n             } else {\n-                _rootHash[action.refHash][action.account] = action.nextHash;\n+                /// DeleteExpressionMutation(`_rootHash[action.refHash][action.account] = action.nextHash` |==> `assert(true)`) of: `_rootHash[action.refHash][action.account] = action.nextHash;`\n+                assert(true);\n                 _incrementNonce(action.refHash, action.account, nonceKey, currSeq);\n                 emit RootHashUpdated(action.refHash, action.account, action.nextHash, action.nonce, true);\n             }\n",
+    "id": "2",
+    "name": "mutants/2/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "DeleteExpressionMutation",
+    "diff": "--- original\n+++ mutant\n@@ -67,7 +67,8 @@\n     }\n \n     function registerNode(bytes32 refHash, bytes32[] calldata proof, bytes calldata node) external {\n-        require(node.length >= NODE_VERIFIER_LENGTH, InvalidNode());\n+        /// DeleteExpressionMutation(`require(node.length >= NODE_VERIFIER_LENGTH, InvalidNode())` |==> `assert(true)`) of: `require(node.length >= NODE_VERIFIER_LENGTH, InvalidNode());`\n+        assert(true);\n         require(address(bytes20(node[0:NODE_VERIFIER_LENGTH])) != address(0), InvalidVerifier());\n \n         bytes32 rootHash = _getCurrentRootHash(refHash, msg.sender);\n",
+    "id": "3",
+    "name": "mutants/3/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "BinaryOpMutation",
+    "diff": "--- original\n+++ mutant\n@@ -90,7 +90,8 @@\n     }\n \n     function getNonce(bytes32 refHash, address account, uint192 key) external view returns (uint256 nonce) {\n-        return _nonceSequence[refHash][key][account] | (uint256(key) << 64);\n+        /// BinaryOpMutation(`|` |==> `-`) of: `return _nonceSequence[refHash][key][account] | (uint256(key) << 64);`\n+        return _nonceSequence[refHash][key][account]-(uint256(key) << 64);\n     }\n \n     // ================================================================\n",
+    "id": "4",
+    "name": "mutants/4/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "BinaryOpMutation",
+    "diff": "--- original\n+++ mutant\n@@ -90,7 +90,8 @@\n     }\n \n     function getNonce(bytes32 refHash, address account, uint192 key) external view returns (uint256 nonce) {\n-        return _nonceSequence[refHash][key][account] | (uint256(key) << 64);\n+        /// BinaryOpMutation(`|` |==> `**`) of: `return _nonceSequence[refHash][key][account] | (uint256(key) << 64);`\n+        return _nonceSequence[refHash][key][account]**(uint256(key) << 64);\n     }\n \n     // ================================================================\n",
+    "id": "5",
+    "name": "mutants/5/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "BinaryOpMutation",
+    "diff": "--- original\n+++ mutant\n@@ -98,7 +98,8 @@\n     // ================================================================\n \n     function _unpackNonceKey(uint256 nonce) internal pure returns (uint192 nonceKey, uint64 nonceSeq) {\n-        nonceKey = uint192(nonce >> 64);\n+        /// BinaryOpMutation(`>>` |==> `-`) of: `nonceKey = uint192(nonce >> 64);`\n+        nonceKey = uint192(nonce-64);\n         nonceSeq = uint64(nonce);\n     }\n \n",
+    "id": "6",
+    "name": "mutants/6/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "BinaryOpMutation",
+    "diff": "--- original\n+++ mutant\n@@ -98,7 +98,8 @@\n     // ================================================================\n \n     function _unpackNonceKey(uint256 nonce) internal pure returns (uint192 nonceKey, uint64 nonceSeq) {\n-        nonceKey = uint192(nonce >> 64);\n+        /// BinaryOpMutation(`>>` |==> `/`) of: `nonceKey = uint192(nonce >> 64);`\n+        nonceKey = uint192(nonce/64);\n         nonceSeq = uint64(nonce);\n     }\n \n",
+    "id": "7",
+    "name": "mutants/7/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "BinaryOpMutation",
+    "diff": "--- original\n+++ mutant\n@@ -98,7 +98,8 @@\n     // ================================================================\n \n     function _unpackNonceKey(uint256 nonce) internal pure returns (uint192 nonceKey, uint64 nonceSeq) {\n-        nonceKey = uint192(nonce >> 64);\n+        /// BinaryOpMutation(`>>` |==> `**`) of: `nonceKey = uint192(nonce >> 64);`\n+        nonceKey = uint192(nonce**64);\n         nonceSeq = uint64(nonce);\n     }\n \n",
+    "id": "8",
+    "name": "mutants/8/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "DeleteExpressionMutation",
+    "diff": "--- original\n+++ mutant\n@@ -107,7 +107,8 @@\n         view\n         returns (uint64 currSeq)\n     {\n-        currSeq = _nonceSequence[refHash][key][account];\n+        /// DeleteExpressionMutation(`currSeq = _nonceSequence[refHash][key][account]` |==> `assert(true)`) of: `currSeq = _nonceSequence[refHash][key][account];`\n+        assert(true);\n         require(currSeq == seq, InvalidNonce());\n     }\n \n",
+    "id": "9",
+    "name": "mutants/9/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "AssignmentMutation",
+    "diff": "--- original\n+++ mutant\n@@ -107,7 +107,8 @@\n         view\n         returns (uint64 currSeq)\n     {\n-        currSeq = _nonceSequence[refHash][key][account];\n+        /// AssignmentMutation(`_nonceSequence[refHash][key][account]` |==> `0`) of: `currSeq = _nonceSequence[refHash][key][account];`\n+        currSeq = 0;\n         require(currSeq == seq, InvalidNonce());\n     }\n \n",
+    "id": "10",
+    "name": "mutants/10/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "AssignmentMutation",
+    "diff": "--- original\n+++ mutant\n@@ -107,7 +107,8 @@\n         view\n         returns (uint64 currSeq)\n     {\n-        currSeq = _nonceSequence[refHash][key][account];\n+        /// AssignmentMutation(`_nonceSequence[refHash][key][account]` |==> `1`) of: `currSeq = _nonceSequence[refHash][key][account];`\n+        currSeq = 1;\n         require(currSeq == seq, InvalidNonce());\n     }\n \n",
+    "id": "11",
+    "name": "mutants/11/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "AssignmentMutation",
+    "diff": "--- original\n+++ mutant\n@@ -112,7 +112,8 @@\n     }\n \n     function _incrementNonce(bytes32 refHash, address account, uint192 key, uint64 currSeq) internal {\n-        _nonceSequence[refHash][key][account] = currSeq + 1;\n+        /// AssignmentMutation(`currSeq + 1` |==> `0`) of: `_nonceSequence[refHash][key][account] = currSeq + 1;`\n+        _nonceSequence[refHash][key][account] = 0;\n     }\n \n     function _getCurrentRootHash(bytes32 refHash, address account) internal view returns (bytes32) {\n",
+    "id": "12",
+    "name": "mutants/12/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "BinaryOpMutation",
+    "diff": "--- original\n+++ mutant\n@@ -112,7 +112,8 @@\n     }\n \n     function _incrementNonce(bytes32 refHash, address account, uint192 key, uint64 currSeq) internal {\n-        _nonceSequence[refHash][key][account] = currSeq + 1;\n+        /// BinaryOpMutation(`+` |==> `*`) of: `_nonceSequence[refHash][key][account] = currSeq + 1;`\n+        _nonceSequence[refHash][key][account] = currSeq*1;\n     }\n \n     function _getCurrentRootHash(bytes32 refHash, address account) internal view returns (bytes32) {\n",
+    "id": "13",
+    "name": "mutants/13/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "BinaryOpMutation",
+    "diff": "--- original\n+++ mutant\n@@ -112,7 +112,8 @@\n     }\n \n     function _incrementNonce(bytes32 refHash, address account, uint192 key, uint64 currSeq) internal {\n-        _nonceSequence[refHash][key][account] = currSeq + 1;\n+        /// BinaryOpMutation(`+` |==> `/`) of: `_nonceSequence[refHash][key][account] = currSeq + 1;`\n+        _nonceSequence[refHash][key][account] = currSeq/1;\n     }\n \n     function _getCurrentRootHash(bytes32 refHash, address account) internal view returns (bytes32) {\n",
+    "id": "14",
+    "name": "mutants/14/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "IfStatementMutation",
+    "diff": "--- original\n+++ mutant\n@@ -121,7 +121,8 @@\n     }\n \n     function _unpackNode(bytes memory node) internal pure returns (address verifier, bytes memory config) {\n-        if (node.length < NODE_VERIFIER_LENGTH) revert InvalidNode();\n+        /// IfStatementMutation(`node.length < NODE_VERIFIER_LENGTH` |==> `true`) of: `if (node.length < NODE_VERIFIER_LENGTH) revert InvalidNode();`\n+        if (true) revert InvalidNode();\n \n         verifier = address(bytes20(LibBytes.slice(node, 0, NODE_VERIFIER_LENGTH)));\n         config = LibBytes.slice(node, NODE_VERIFIER_LENGTH, node.length);\n",
+    "id": "15",
+    "name": "mutants/15/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "IfStatementMutation",
+    "diff": "--- original\n+++ mutant\n@@ -125,7 +125,8 @@\n \n         verifier = address(bytes20(LibBytes.slice(node, 0, NODE_VERIFIER_LENGTH)));\n         config = LibBytes.slice(node, NODE_VERIFIER_LENGTH, node.length);\n-        if (verifier == address(0)) {\n+        /// IfStatementMutation(`verifier == address(0)` |==> `false`) of: `if (verifier == address(0)) {`\n+        if (false) {\n             revert InvalidVerifier();\n         }\n     }\n",
+    "id": "16",
+    "name": "mutants/16/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "DeleteExpressionMutation",
+    "diff": "--- original\n+++ mutant\n@@ -141,7 +141,8 @@\n             require(node.length >= NODE_VERIFIER_LENGTH, UnregisteredProof());\n         } else {\n             nodeHash = keccak256(aNode);\n-            node = aNode;\n+            /// DeleteExpressionMutation(`node = aNode` |==> `assert(true)`) of: `node = aNode;`\n+            assert(true);\n             (bytes32[] memory proof) = abi.decode(aProof, (bytes32[]));\n             require(MerkleProofLib.verify(proof, _getCurrentRootHash(refHash, account), nodeHash), InvalidProof());\n         }\n",
+    "id": "17",
+    "name": "mutants/17/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "SwapArgumentsOperatorMutation",
+    "diff": "--- original\n+++ mutant\n@@ -138,7 +138,8 @@\n         if (aProof.length == 0) {\n             nodeHash = bytes32(aNode); // convert from bytes to bytes32\n             node = _nodeCache[_getCurrentRootHash(refHash, account)][nodeHash][account];\n-            require(node.length >= NODE_VERIFIER_LENGTH, UnregisteredProof());\n+            /// SwapArgumentsOperatorMutation(`node.length >= NODE_VERIFIER_LENGTH` |==> `NODE_VERIFIER_LENGTH >= node.length`) of: `require(node.length >= NODE_VERIFIER_LENGTH, UnregisteredProof());`\n+            require(NODE_VERIFIER_LENGTH >= node.length, UnregisteredProof());\n         } else {\n             nodeHash = keccak256(aNode);\n             node = aNode;\n",
+    "id": "18",
+    "name": "mutants/18/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "IfStatementMutation",
+    "diff": "--- original\n+++ mutant\n@@ -187,7 +187,8 @@\n         bytes calldata nextNode\n     ) internal pure returns (bool) {\n         (bytes32[] memory proof) = abi.decode(nextProof, (bytes32[]));\n-        if (nextNode.length == 0) {\n+        /// IfStatementMutation(`nextNode.length == 0` |==> `true`) of: `if (nextNode.length == 0) {`\n+        if (true) {\n             require(MerkleProofLib.verify(proof, nextHash, nodeHash), InvalidNextProof());\n             return false;\n         } else {\n",
+    "id": "19",
+    "name": "mutants/19/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  },
+  {
+    "description": "RequireMutation",
+    "diff": "--- original\n+++ mutant\n@@ -191,7 +191,8 @@\n             require(MerkleProofLib.verify(proof, nextHash, nodeHash), InvalidNextProof());\n             return false;\n         } else {\n-            require(MerkleProofLib.verify(proof, nextHash, keccak256(nextNode)), InvalidNextProof());\n+            /// RequireMutation(`MerkleProofLib.verify(proof, nextHash, keccak256(nextNode))` |==> `false`) of: `require(MerkleProofLib.verify(proof, nextHash, keccak256(nextNode)), InvalidNextProof());`\n+            require(false, InvalidNextProof());\n             return true;\n         }\n     }\n",
+    "id": "20",
+    "name": "mutants/20/src/core/Keystore.sol",
+    "original": "src/core/Keystore.sol",
+    "sourceroot": "/home/dok/web3/stackup/keystore"
+  }
+]

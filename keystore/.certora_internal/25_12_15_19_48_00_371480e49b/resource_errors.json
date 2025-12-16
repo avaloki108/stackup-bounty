@@ -1,0 +1,21 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (keystore.cvl:11:28): Syntax error: unexpected token near `(`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (keystore.cvl:12:23): Syntax error: unexpected token near `(`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (keystore.cvl:66:53): Syntax error: unexpected token near `(`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}

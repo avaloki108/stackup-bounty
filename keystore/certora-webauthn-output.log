@@ -1,0 +1,9 @@
+Compiling src/verifier/UserOpWebAuthnVerifier.sol...
+Compiling src/verifier/UserOpWebAuthnVerifier.sol to expose internal function information and local variables...
+
+Connecting to server...
+
+[32mJob submitted to server[0m
+
+Manage your jobs at https://prover.certora.com
+Follow your job and see verification results at https://prover.certora.com/output/10398964/42a6e5780b234f11a78cc07e4f31bb7a

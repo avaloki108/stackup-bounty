@@ -1,0 +1,81 @@
+/*
+ * ═══════════════════════════════════════════════════════════════════════════
+ * RULE 5: FEE-ON-TRANSFER TOKEN SAFETY
+ * Historical Bounties: $30K+ (Uniswap V2, SushiSwap)
+ * Risk: Accounting errors, stuck funds
+ * ═══════════════════════════════════════════════════════════════════════════
+ */
+
+methods {
+    function totalSupply() external returns (uint256) envfree;
+    function balanceOf(address) external returns (uint256) envfree;
+    function transfer(address, uint256) external returns (bool);
+    function transferFrom(address, address, uint256) external returns (bool);
+}
+
+// Transfer should not lose tokens unexpectedly
+rule feeOnTransferSafe(env e, address to, uint256 amount) {
+    address from = e.msg.sender;
+    require from != to;
+    require from != 0 && to != 0;
+
+    uint256 fromBalBefore = balanceOf(from);
+    uint256 toBalBefore = balanceOf(to);
+    uint256 totalBefore = fromBalBefore + toBalBefore;
+
+    require fromBalBefore >= amount;
+
+    bool success = transfer(e, to, amount);
+
+    uint256 fromBalAfter = balanceOf(from);
+    uint256 toBalAfter = balanceOf(to);
+    uint256 totalAfter = fromBalAfter + toBalAfter;
+
+    // For standard ERC20: total should be unchanged
+    // For fee-on-transfer: total may decrease (but never increase)
+    assert success => totalAfter <= totalBefore,
+        "CRITICAL: Transfer created tokens - potential exploit";
+
+    // Receiver should get at least something if transfer succeeded
+    assert success => toBalAfter >= toBalBefore,
+        "HIGH: Transfer succeeded but receiver balance decreased";
+}
+
+// TransferFrom respects the amount parameter
+rule transferFromAmountRespected(env e, address from, address to, uint256 amount) {
+    require from != to;
+    require from != 0 && to != 0;
+
+    uint256 fromBalBefore = balanceOf(from);
+    uint256 toBalBefore = balanceOf(to);
+
+    require fromBalBefore >= amount;
+
+    bool success = transferFrom(e, from, to, amount);
+
+    uint256 fromBalAfter = balanceOf(from);
+    uint256 toBalAfter = balanceOf(to);
+
+    // Sender loses exactly amount (or more with fees)
+    assert success => fromBalBefore - fromBalAfter >= amount,
+        "HIGH: Sender lost less than transfer amount";
+
+    // What sender loses, receiver gains (minus any fees)
+    mathint senderLoss = to_mathint(fromBalBefore) - to_mathint(fromBalAfter);
+    mathint receiverGain = to_mathint(toBalAfter) - to_mathint(toBalBefore);
+
+    assert success => receiverGain <= senderLoss,
+        "CRITICAL: Receiver gained more than sender lost";
+}
+
+// No token creation during transfer
+rule transferNoCreation(env e, address to, uint256 amount) {
+    uint256 supplyBefore = totalSupply();
+
+    transfer(e, to, amount);
+
+    uint256 supplyAfter = totalSupply();
+
+    assert supplyAfter <= supplyBefore,
+        "CRITICAL: Transfer increased total supply";
+}

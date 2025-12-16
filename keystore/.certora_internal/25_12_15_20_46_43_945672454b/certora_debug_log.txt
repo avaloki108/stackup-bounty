@@ -1,0 +1,123 @@
+Saving last configuration file to .certora_internal/25_12_15_20_46_43_945672454b/run.conf
+There is no TAC file. Going to script CertoraProver/certoraBuild.py to main_with_args()
+main build cache key computed based on {'files': ['src/verifier/UserOpWebAuthnVerifier.sol'], 'package_version_for_build_cache': 'certora-cli 8.6.1', 'packages': ['@openzeppelin/contracts=lib/openzeppelin-contracts/contracts', 'account-abstraction=lib/account-abstraction/contracts', 'forge-std=lib/forge-std/src', 'solady=lib/solady/src'], 'packages_path': 'node_modules', 'solc': 'solc', 'solc_allow_path': '.', 'test_condition': 'True'}
+Creating dir /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_config
+In /home/dok/web3/stackup/keystore/cvl/webauthn_verifier.cvl, found the imports: []
+copying spec file /home/dok/web3/stackup/keystore/cvl/webauthn_verifier.cvl to /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/.0_webauthn_verifier.cvl.spec
+writing /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_verify.json
+
+building file src/verifier/UserOpWebAuthnVerifier.sol
+Running cmd solc --version
+stdout, stderr = .certora_internal/25_12_15_20_46_43_945672454b/.certora_config/version_check_solc.stdout, .certora_internal/25_12_15_20_46_43_945672454b/.certora_config/version_check_solc.stderr
+Exitcode 0
+Solc run solc --version time: 0.0016
+Running cmd solc -o ".certora_internal/25_12_15_20_46_43_945672454b/.certora_config/UserOpWebAuthnVerifier.sol_0/" --overwrite --allow-paths ".",.,"lib/openzeppelin-contracts/contracts","lib/account-abstraction/contracts","lib/forge-std/src","lib/solady/src" --standard-json
+stdout, stderr = .certora_internal/25_12_15_20_46_43_945672454b/.certora_config/UserOpWebAuthnVerifier.sol_0.standard.stdout.json, .certora_internal/25_12_15_20_46_43_945672454b/.certora_config/UserOpWebAuthnVerifier.sol_0.standard.stderr.json
+Exitcode 0
+Solc run solc -o ".certora_internal/25_12_15_20_46_43_945672454b/.certora_config/UserOpWebAuthnVerifier.sol_0/" --overwrite --allow-paths ".",.,"lib/openzeppelin-contracts/contracts","lib/account-abstraction/contracts","lib/forge-std/src","lib/solady/src" --standard-json time: 0.032
+reading standard json data from .certora_internal/25_12_15_20_46_43_945672454b/.certora_config/UserOpWebAuthnVerifier.sol_0.standard.stdout.json
+collecting worklist for /home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol
+Processing dependencies from file /home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol
+available keys: dict_keys(['/home/dok/web3/stackup/keystore/src/interface/IVerifier.sol', '/home/dok/web3/stackup/keystore/src/lib/OnlyKeystore.sol', '/home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol', 'lib/solady/src/utils/Base64.sol', 'lib/solady/src/utils/P256.sol', 'lib/solady/src/utils/WebAuthn.sol'])
+Adding a base contract link ref /home/dok/web3/stackup/keystore/src/interface/IVerifier.sol to worklist
+Adding a base contract link ref /home/dok/web3/stackup/keystore/src/lib/OnlyKeystore.sol to worklist
+Adding internal link ref /home/dok/web3/stackup/keystore/lib/solady/src/utils/WebAuthn.sol to worklist
+Processing dependencies from file /home/dok/web3/stackup/keystore/lib/solady/src/utils/WebAuthn.sol
+available keys: dict_keys(['/home/dok/web3/stackup/keystore/src/interface/IVerifier.sol', '/home/dok/web3/stackup/keystore/src/lib/OnlyKeystore.sol', '/home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol', 'lib/solady/src/utils/Base64.sol', 'lib/solady/src/utils/P256.sol', 'lib/solady/src/utils/WebAuthn.sol'])
+Adding internal link ref /home/dok/web3/stackup/keystore/lib/solady/src/utils/Base64.sol to worklist
+Adding internal link ref /home/dok/web3/stackup/keystore/lib/solady/src/utils/P256.sol to worklist
+Processing dependencies from file /home/dok/web3/stackup/keystore/lib/solady/src/utils/P256.sol
+available keys: dict_keys(['/home/dok/web3/stackup/keystore/src/interface/IVerifier.sol', '/home/dok/web3/stackup/keystore/src/lib/OnlyKeystore.sol', '/home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol', 'lib/solady/src/utils/Base64.sol', 'lib/solady/src/utils/P256.sol', 'lib/solady/src/utils/WebAuthn.sol'])
+Processing dependencies from file /home/dok/web3/stackup/keystore/lib/solady/src/utils/Base64.sol
+available keys: dict_keys(['/home/dok/web3/stackup/keystore/src/interface/IVerifier.sol', '/home/dok/web3/stackup/keystore/src/lib/OnlyKeystore.sol', '/home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol', 'lib/solady/src/utils/Base64.sol', 'lib/solady/src/utils/P256.sol', 'lib/solady/src/utils/WebAuthn.sol'])
+Processing dependencies from file /home/dok/web3/stackup/keystore/src/lib/OnlyKeystore.sol
+available keys: dict_keys(['/home/dok/web3/stackup/keystore/src/interface/IVerifier.sol', '/home/dok/web3/stackup/keystore/src/lib/OnlyKeystore.sol', '/home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol', 'lib/solady/src/utils/Base64.sol', 'lib/solady/src/utils/P256.sol', 'lib/solady/src/utils/WebAuthn.sol'])
+Processing dependencies from file /home/dok/web3/stackup/keystore/src/interface/IVerifier.sol
+available keys: dict_keys(['/home/dok/web3/stackup/keystore/src/interface/IVerifier.sol', '/home/dok/web3/stackup/keystore/src/lib/OnlyKeystore.sol', '/home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol', 'lib/solady/src/utils/Base64.sol', 'lib/solady/src/utils/P256.sol', 'lib/solady/src/utils/WebAuthn.sol'])
+Contracts in UserOpWebAuthnVerifier.sol_0 (file src/verifier/UserOpWebAuthnVerifier.sol): ['UserOpWebAuthnVerifier']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587200, '/home/dok/web3/stackup/keystore/src/interface/IVerifier.sol:IVerifier'), (274184521717934524641157099916833587201, '/home/dok/web3/stackup/keystore/src/lib/OnlyKeystore.sol:OnlyKeystore'), (274184521717934524641157099916833587202, '/home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol:UserOpWebAuthnVerifier'), (274184521717934524641157099916833587203, 'lib/solady/src/utils/Base64.sol:Base64'), (274184521717934524641157099916833587204, 'lib/solady/src/utils/P256.sol:P256'), (274184521717934524641157099916833587205, 'lib/solady/src/utils/WebAuthn.sol:WebAuthn')]
+Report source list={0: '/home/dok/web3/stackup/keystore/src/interface/IVerifier.sol', 1: '/home/dok/web3/stackup/keystore/src/lib/OnlyKeystore.sol', 2: '/home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol', 3: 'lib/account-abstraction/contracts/core/Helpers.sol', 4: 'lib/account-abstraction/contracts/interfaces/PackedUserOperation.sol', 5: 'lib/solady/src/utils/Base64.sol', 6: 'lib/solady/src/utils/P256.sol', 7: 'lib/solady/src/utils/WebAuthn.sol'}
+Finding report source file, abs path /home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol relative to /home/dok/web3/stackup/keystore
+Working on contract IVerifier
+Working on contract IVerifier
+Working on contract OnlyKeystore
+Working on contract OnlyKeystore
+Working on contract UserOpWebAuthnVerifier
+Working on contract UserOpWebAuthnVerifier
+Working on contract Base64
+Working on contract Base64
+Working on contract P256
+Working on contract P256
+Working on contract WebAuthn
+Working on contract WebAuthn
+For contracts of primary UserOpWebAuthnVerifier
+finding primary contract address of /home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol:UserOpWebAuthnVerifier in [(274184521717934524641157099916833587200, '/home/dok/web3/stackup/keystore/src/interface/IVerifier.sol:IVerifier'), (274184521717934524641157099916833587201, '/home/dok/web3/stackup/keystore/src/lib/OnlyKeystore.sol:OnlyKeystore'), (274184521717934524641157099916833587202, '/home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol:UserOpWebAuthnVerifier'), (274184521717934524641157099916833587203, 'lib/solady/src/utils/Base64.sol:Base64'), (274184521717934524641157099916833587204, 'lib/solady/src/utils/P256.sol:P256'), (274184521717934524641157099916833587205, 'lib/solady/src/utils/WebAuthn.sol:WebAuthn')]
+Contracts in SDC UserOpWebAuthnVerifier.sol_0: ['IVerifier', 'OnlyKeystore', 'UserOpWebAuthnVerifier', 'Base64', 'P256', 'WebAuthn']
+Building source tree
+Copying /home/dok/web3/stackup/keystore/package.json to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/package.json
+Copying /home/dok/web3/stackup/keystore/lib/account-abstraction/contracts/core/Helpers.sol to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/lib/account-abstraction/contracts/core/Helpers.sol
+Copying /home/dok/web3/stackup/keystore/lib/solady/src/utils/WebAuthn.sol to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/lib/solady/src/utils/WebAuthn.sol
+Copying /home/dok/web3/stackup/keystore/foundry.toml to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/foundry.toml
+Copying /home/dok/web3/stackup/keystore/src/lib/OnlyKeystore.sol to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/lib/OnlyKeystore.sol
+Copying /home/dok/web3/stackup/keystore/src/verifier/UserOpWebAuthnVerifier.sol to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol
+Copying /home/dok/web3/stackup/keystore/lib/solady/src/utils/Base64.sol to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/lib/solady/src/utils/Base64.sol
+Copying /home/dok/web3/stackup/keystore/certora-webauthn.conf to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/certora-webauthn.conf
+Copying /home/dok/web3/stackup/keystore/src/interface/IVerifier.sol to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/interface/IVerifier.sol
+Copying /home/dok/web3/stackup/keystore/cvl/webauthn_verifier.cvl to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/cvl/webauthn_verifier.cvl
+Copying /home/dok/web3/stackup/keystore/remappings.txt to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/remappings.txt
+Copying /home/dok/web3/stackup/keystore/lib/account-abstraction/contracts/interfaces/PackedUserOperation.sol to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/lib/account-abstraction/contracts/interfaces/PackedUserOperation.sol
+Copying /home/dok/web3/stackup/keystore/lib/solady/src/utils/P256.sol to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/lib/solady/src/utils/P256.sol
+Report source list={0: 'src/interface/IVerifier.sol', 1: 'src/lib/OnlyKeystore.sol', 2: 'src/verifier/UserOpWebAuthnVerifier.sol', 3: 'lib/account-abstraction/contracts/core/Helpers.sol', 4: 'lib/account-abstraction/contracts/interfaces/PackedUserOperation.sol', 5: 'lib/solady/src/utils/Base64.sol', 6: 'lib/solady/src/utils/P256.sol', 7: 'lib/solady/src/utils/WebAuthn.sol'}
+Backing up current .certora_sources to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/.pre_autofinders.0
+Running cmd solc -o ".certora_internal/25_12_15_20_46_43_945672454b/.certora_config/UserOpWebAuthnVerifier.sol_0/" --overwrite --allow-paths "/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources",.,"lib/openzeppelin-contracts/contracts","lib/account-abstraction/contracts","lib/forge-std/src","lib/solady/src" --standard-json
+stdout, stderr = .certora_internal/25_12_15_20_46_43_945672454b/.certora_config/UserOpWebAuthnVerifier.sol_0.standard.stdout.json, .certora_internal/25_12_15_20_46_43_945672454b/.certora_config/UserOpWebAuthnVerifier.sol_0.standard.stderr.json
+Exitcode 0
+Solc run solc -o ".certora_internal/25_12_15_20_46_43_945672454b/.certora_config/UserOpWebAuthnVerifier.sol_0/" --overwrite --allow-paths "/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources",.,"lib/openzeppelin-contracts/contracts","lib/account-abstraction/contracts","lib/forge-std/src","lib/solady/src" --standard-json time: 0.0333
+reading standard json data from .certora_internal/25_12_15_20_46_43_945672454b/.certora_config/UserOpWebAuthnVerifier.sol_0.standard.stdout.json
+collecting worklist for /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol
+Processing dependencies from file /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol
+available keys: dict_keys(['/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/interface/IVerifier.sol', '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/lib/OnlyKeystore.sol', '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol', 'lib/solady/src/utils/Base64.sol', 'lib/solady/src/utils/P256.sol', 'lib/solady/src/utils/WebAuthn.sol'])
+Adding a base contract link ref /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/interface/IVerifier.sol to worklist
+Adding a base contract link ref /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/lib/OnlyKeystore.sol to worklist
+Adding internal link ref /home/dok/web3/stackup/keystore/lib/solady/src/utils/WebAuthn.sol to worklist
+Processing dependencies from file /home/dok/web3/stackup/keystore/lib/solady/src/utils/WebAuthn.sol
+available keys: dict_keys(['/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/interface/IVerifier.sol', '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/lib/OnlyKeystore.sol', '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol', 'lib/solady/src/utils/Base64.sol', 'lib/solady/src/utils/P256.sol', 'lib/solady/src/utils/WebAuthn.sol'])
+Adding internal link ref /home/dok/web3/stackup/keystore/lib/solady/src/utils/Base64.sol to worklist
+Adding internal link ref /home/dok/web3/stackup/keystore/lib/solady/src/utils/P256.sol to worklist
+Processing dependencies from file /home/dok/web3/stackup/keystore/lib/solady/src/utils/P256.sol
+available keys: dict_keys(['/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/interface/IVerifier.sol', '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/lib/OnlyKeystore.sol', '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol', 'lib/solady/src/utils/Base64.sol', 'lib/solady/src/utils/P256.sol', 'lib/solady/src/utils/WebAuthn.sol'])
+Processing dependencies from file /home/dok/web3/stackup/keystore/lib/solady/src/utils/Base64.sol
+available keys: dict_keys(['/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/interface/IVerifier.sol', '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/lib/OnlyKeystore.sol', '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol', 'lib/solady/src/utils/Base64.sol', 'lib/solady/src/utils/P256.sol', 'lib/solady/src/utils/WebAuthn.sol'])
+Processing dependencies from file /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/lib/OnlyKeystore.sol
+available keys: dict_keys(['/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/interface/IVerifier.sol', '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/lib/OnlyKeystore.sol', '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol', 'lib/solady/src/utils/Base64.sol', 'lib/solady/src/utils/P256.sol', 'lib/solady/src/utils/WebAuthn.sol'])
+Processing dependencies from file /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/interface/IVerifier.sol
+available keys: dict_keys(['/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/interface/IVerifier.sol', '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/lib/OnlyKeystore.sol', '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol', 'lib/solady/src/utils/Base64.sol', 'lib/solady/src/utils/P256.sol', 'lib/solady/src/utils/WebAuthn.sol'])
+Contracts in UserOpWebAuthnVerifier.sol_0 (file .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol): ['UserOpWebAuthnVerifier']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587206, '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/interface/IVerifier.sol:IVerifier'), (274184521717934524641157099916833587207, '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/lib/OnlyKeystore.sol:OnlyKeystore'), (274184521717934524641157099916833587208, '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol:UserOpWebAuthnVerifier'), (274184521717934524641157099916833587209, 'lib/solady/src/utils/Base64.sol:Base64'), (274184521717934524641157099916833587210, 'lib/solady/src/utils/P256.sol:P256'), (274184521717934524641157099916833587211, 'lib/solady/src/utils/WebAuthn.sol:WebAuthn')]
+Report source list={0: 'src/interface/IVerifier.sol', 1: 'src/lib/OnlyKeystore.sol', 2: 'src/verifier/UserOpWebAuthnVerifier.sol', 3: 'lib/account-abstraction/contracts/core/Helpers.sol', 4: 'lib/account-abstraction/contracts/interfaces/PackedUserOperation.sol', 5: 'lib/solady/src/utils/Base64.sol', 6: 'lib/solady/src/utils/P256.sol', 7: 'lib/solady/src/utils/WebAuthn.sol'}
+Finding report source file, abs path /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol relative to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources
+Working on contract IVerifier
+Working on contract IVerifier
+Working on contract OnlyKeystore
+Working on contract OnlyKeystore
+Working on contract UserOpWebAuthnVerifier
+Working on contract UserOpWebAuthnVerifier
+Working on contract Base64
+Working on contract Base64
+Working on contract P256
+Working on contract P256
+Working on contract WebAuthn
+Working on contract WebAuthn
+For contracts of primary UserOpWebAuthnVerifier
+finding primary contract address of /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol:UserOpWebAuthnVerifier in [(274184521717934524641157099916833587206, '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/interface/IVerifier.sol:IVerifier'), (274184521717934524641157099916833587207, '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/lib/OnlyKeystore.sol:OnlyKeystore'), (274184521717934524641157099916833587208, '/home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/src/verifier/UserOpWebAuthnVerifier.sol:UserOpWebAuthnVerifier'), (274184521717934524641157099916833587209, 'lib/solady/src/utils/Base64.sol:Base64'), (274184521717934524641157099916833587210, 'lib/solady/src/utils/P256.sol:P256'), (274184521717934524641157099916833587211, 'lib/solady/src/utils/WebAuthn.sol:WebAuthn')]
+Contracts in SDC UserOpWebAuthnVerifier.sol_0: ['IVerifier', 'OnlyKeystore', 'UserOpWebAuthnVerifier', 'Base64', 'P256', 'WebAuthn']
+Backing up instrumented .certora_sources to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/.post_autofinders.0
+Rolling back .certora_sources to .certora_internal/25_12_15_20_46_43_945672454b/.certora_sources/.pre_autofinders.0 version
+Libraries to add = []
+writing file /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_build.json
+writing file /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_build_output_props.json
+writing /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_20_46_43_945672454b/.certora_verify.json
+Failed to run Certora Prover typechecker locally.
+Please check the errors below for problems in the specifications (.spec files) or the prover_args defined in the .conf file.
+[main] ERROR ALWAYS - Found errors in cvl/webauthn_verifier.cvl:
+[main] ERROR ALWAYS - Error in spec file (webauthn_verifier.cvl:20:5): Cannot use summary NONDET for wildcard entry `tryDecodeAuth(bytes)`; it will match the internal function(s) `tryDecodeAuth(bytes encodedAuth) returns (WebAuthn.WebAuthnAuth)` which return reference typed values, and using a NONDET summary for these values can lead to unsoundness. Consider using an exact method signature to match specific instances of `tryDecodeAuth` that do not return reference typed values.

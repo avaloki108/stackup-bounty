@@ -1,0 +1,2574 @@
+{
+    "UserOpWebAuthnVerifier_00000000ce4604a0000000000000000000000008": {
+        "contracts": [
+            {
+                "address": "00000000ce4604a0000000000000000000000008",
+                "allMethods": [
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "memory",
+                                "typeDesc": {
+                                    "astId": 172,
+                                    "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                                    "containingContract": null,
+                                    "structMembers": [
+                                        {
+                                            "name": "aggregator",
+                                            "type": {
+                                                "primitiveName": "address",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validAfter",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validUntil",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        }
+                                    ],
+                                    "structName": "ValidationData",
+                                    "type": "UserDefinedStruct"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "_packValidationData",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "data"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint48",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint48",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "_packValidationData",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "sigFailed",
+                            "validUntil",
+                            "validAfter"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "_parseValidationData",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "validationData"
+                        ],
+                        "returns": [
+                            {
+                                "location": "memory",
+                                "typeDesc": {
+                                    "astId": 172,
+                                    "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                                    "containingContract": null,
+                                    "structMembers": [
+                                        {
+                                            "name": "aggregator",
+                                            "type": {
+                                                "primitiveName": "address",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validAfter",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validUntil",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        }
+                                    ],
+                                    "structName": "ValidationData",
+                                    "type": "UserDefinedStruct"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "calldata",
+                                "typeDesc": {
+                                    "type": "PackedBytes"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "calldataKeccak",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "data"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "constructor",
+                        "notpayable": true,
+                        "originalFile": "src/verifier/UserOpWebAuthnVerifier.sol",
+                        "paramNames": [
+                            "aKeystore"
+                        ],
+                        "returns": [],
+                        "sighash": "0",
+                        "sourceBytes": {
+                            "begin": 794,
+                            "size": 57
+                        },
+                        "stateMutability": "nonpayable",
+                        "visibility": "public",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "finalizeAllocation",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "memPointer",
+                            "allocationSize"
+                        ],
+                        "returns": [],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [],
+                        "isLibrary": false,
+                        "name": "keystore",
+                        "notpayable": true,
+                        "originalFile": "src/lib/OnlyKeystore.sol",
+                        "paramNames": [],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "772a0001",
+                        "sourceBytes": {
+                            "begin": 125,
+                            "size": 33
+                        },
+                        "stateMutability": "view",
+                        "visibility": "external",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "min",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "a",
+                            "b"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "calldata",
+                                "typeDesc": {
+                                    "type": "PackedBytes"
+                                }
+                            },
+                            {
+                                "location": "calldata",
+                                "typeDesc": {
+                                    "type": "PackedBytes"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "validateData",
+                        "notpayable": true,
+                        "originalFile": "src/verifier/UserOpWebAuthnVerifier.sol",
+                        "paramNames": [
+                            "message",
+                            "data",
+                            "config"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "04b073c5",
+                        "sourceBytes": {
+                            "begin": 1704,
+                            "size": 685
+                        },
+                        "stateMutability": "view",
+                        "visibility": "external",
+                        "vyper_metadata": null
+                    }
+                ],
+                "bytecode": "608060405234801561000f575f5ffd5b5060043610610034575f3560e01c806304b073c514610038578063772a000114610068575b5f5ffd5b610052600480360381019061004d9190610957565b610086565b60405161005f9190610a00565b60405180910390f35b61007061022e565b60405161007d9190610a58565b60405180910390f35b5f7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461010c576040517f4333e8ee00000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b5f61015986868080601f0160208091040260200160405190810160405280939291908181526020018383808284375f81840152601f19601f82011690508083019250505050505050610252565b90505f7fffffff6e4604afefe123321beef1b02fffffffffffffffffffffffff00010001525f816020015151036101ae575f868681019061019a9190610d52565b90506101aa816101000151610252565b9150505b5f5f85858101906101bf9190610d99565b915091505f7fffffff6e4604afefe123321beef1b02fffffffffffffffffffffffff0001000252610213896040516020016101fa9190610de6565b60405160208183030381529060405260018585856103a1565b61021e576001610220565b5f5b935050505095945050505050565b7f000000000000000000000000000000000000000000000000000000000000000081565b61025a610880565b64f196e500157fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff001500005260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff001500015260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0015000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0015600052815160c0811061039b5760208301818101818251018281108260c083011117156103195750505061039b565b80815101816020830151018281108482111783831085841117171561034257505050505061039b565b838151602083010111848351602085010111171561036457505050505061039b565b81875280602088015260408301516040880152606083015160608801526080830151608088015260a083015160a088015250505050505b50919050565b5f64f196e500117fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff001100005260057fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00110001526112497fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0011000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00116004525f807fffffff6e4604afefe123321beef1b02fffffffffffffffffffffffff00000006525f610467886001806105b4565b90505f7fffffff6e4604afefe123321beef1b02fffffffffffffffffffffffff00010007526020860151805160208201604089015160608a01518551600d81017f226368616c6c656e6765223a220000000000000000000000000000000000000060981c8852858482011060228286880101515f1a14168160138a01208286880120141686846014011085851760801c107f2274797065223a22776562617574686e2e67657422000000000000000000000060581c8588015160581c1416169950818852505050508851518a151560021b600117808160218d510151161460208311891616975087156105865760208b510182810180516020600160208701856020868c8c60025afa60011b5afa5199508082523d61058257fe5b5050505b505050505082156105a9576105a68287608001518860a001518888610751565b92505b505095945050505050565b606064f196e500067fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000600005260037fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000600015260497fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0006000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000660025283518015610749576003600282010460021b60405192507f4142434445464748494a4b4c4d4e4f505152535455565758595a616263646566601f526106708515027f6768696a6b6c6d6e6f707172737475767778797a303132333435363738392d5f18603f526020830181810183886020010180515f82525b6001156107165760038a0199508951603f8160121c16515f53603f81600c1c1651600153603f8160061c1651600253603f8116516003535f5185526004850194508385106107105750610716565b506106c2565b8082526020830160405260038606600204613d3d60f01b81860352808915150290505f8186035280860388525050505050505b509392505050565b5f64f196e5000b7fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000b00005260057fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000b0001526112497fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000b000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000b6004526040518681528560208201528460408201528360608201528260808201525f5f5260205f60a0836101005afa503d61084b576d1ab2e8006fd8b71907bf06a5bdee3b61084a5760205f60a0836dd01ea45f9efd5c54f037fa57ea1a5afa61084957fe5b5b5b5f516001147f7fffffff800000007fffffffffffffffde737d56d38bcf4279dce5617e3192a886111091505095945050505050565b6040518060c0016040528060608152602001606081526020015f81526020015f81526020015f81526020015f81525090565b5f604051905090565b5f5ffd5b5f5ffd5b5f819050919050565b6108d5816108c3565b81146108df575f5ffd5b50565b5f813590506108f0816108cc565b92915050565b5f5ffd5b5f5ffd5b5f5ffd5b5f5f83601f840112610917576109166108f6565b5b8235905067ffffffffffffffff811115610934576109336108fa565b5b6020830191508360018202830111156109505761094f6108fe565b5b9250929050565b5f5f5f5f5f606086880312156109705761096f6108bb565b5b5f61097d888289016108e2565b955050602086013567ffffffffffffffff81111561099e5761099d6108bf565b5b6109aa88828901610902565b9450945050604086013567ffffffffffffffff8111156109cd576109cc6108bf565b5b6109d988828901610902565b92509250509295509295909350565b5f819050919050565b6109fa816109e8565b82525050565b5f602082019050610a135f8301846109f1565b92915050565b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f610a4282610a19565b9050919050565b610a5281610a38565b82525050565b5f602082019050610a6b5f830184610a49565b92915050565b5f5ffd5b5f601f19601f8301169050919050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52604160045260245ffd5b610abb82610a75565b810181811067ffffffffffffffff82111715610ada57610ad9610a85565b5b80604052505050565b5f610aec6108b2565b9050610af88282610ab2565b919050565b5f5ffd5b610b0a81610a38565b8114610b14575f5ffd5b50565b5f81359050610b2581610b01565b92915050565b610b34816109e8565b8114610b3e575f5ffd5b50565b5f81359050610b4f81610b2b565b92915050565b5f5ffd5b5f67ffffffffffffffff821115610b7357610b72610a85565b5b610b7c82610a75565b9050602081019050919050565b828183375f83830152505050565b5f610ba9610ba484610b59565b610ae3565b905082815260208101848484011115610bc557610bc4610b55565b5b610bd0848285610b89565b509392505050565b5f82601f830112610bec57610beb6108f6565b5b8135610bfc848260208601610b97565b91505092915050565b5f6101208284031215610c1b57610c1a610a71565b5b610c26610120610ae3565b90505f610c3584828501610b17565b5f830152506020610c4884828501610b41565b602083015250604082013567ffffffffffffffff811115610c6c57610c6b610afd565b5b610c7884828501610bd8565b604083015250606082013567ffffffffffffffff811115610c9c57610c9b610afd565b5b610ca884828501610bd8565b6060830152506080610cbc848285016108e2565b60808301525060a0610cd084828501610b41565b60a08301525060c0610ce4848285016108e2565b60c08301525060e082013567ffffffffffffffff811115610d0857610d07610afd565b5b610d1484828501610bd8565b60e08301525061010082013567ffffffffffffffff811115610d3957610d38610afd565b5b610d4584828501610bd8565b6101008301525092915050565b5f60208284031215610d6757610d666108bb565b5b5f82013567ffffffffffffffff811115610d8457610d836108bf565b5b610d9084828501610c05565b91505092915050565b5f5f60408385031215610daf57610dae6108bb565b5b5f610dbc858286016108e2565b9250506020610dcd858286016108e2565b9150509250929050565b610de0816108c3565b82525050565b5f602082019050610df95f830184610dd7565b9291505056fea26469706673582212203a87916316b51189877276ca5fb9e962c395efba7b6a0c098d26bf84f7f2ca6064736f6c634300081f0033",
+                "compilerName": "solc",
+                "compilerParameters": {
+                    "optimizerOn": false,
+                    "optimizerRuns": null,
+                    "type": "SolcParameters",
+                    "viaIR": false
+                },
+                "compilerVersion": "0.8.31",
+                "constructorBytecode": "60a060405234801561000f575f5ffd5b50604051610f49380380610f49833981810160405281019061003191906100cb565b808073ffffffffffffffffffffffffffffffffffffffff1660808173ffffffffffffffffffffffffffffffffffffffff168152505050506100f6565b5f5ffd5b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f61009a82610071565b9050919050565b6100aa81610090565b81146100b4575f5ffd5b50565b5f815190506100c5816100a1565b92915050565b5f602082840312156100e0576100df61006d565b5b5f6100ed848285016100b7565b91505092915050565b608051610e356101145f395f8181608901526102300152610e355ff3fe608060405234801561000f575f5ffd5b5060043610610034575f3560e01c806304b073c514610038578063772a000114610068575b5f5ffd5b610052600480360381019061004d9190610957565b610086565b60405161005f9190610a00565b60405180910390f35b61007061022e565b60405161007d9190610a58565b60405180910390f35b5f7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461010c576040517f4333e8ee00000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b5f61015986868080601f0160208091040260200160405190810160405280939291908181526020018383808284375f81840152601f19601f82011690508083019250505050505050610252565b90505f7fffffff6e4604afefe123321beef1b02fffffffffffffffffffffffff00010001525f816020015151036101ae575f868681019061019a9190610d52565b90506101aa816101000151610252565b9150505b5f5f85858101906101bf9190610d99565b915091505f7fffffff6e4604afefe123321beef1b02fffffffffffffffffffffffff0001000252610213896040516020016101fa9190610de6565b60405160208183030381529060405260018585856103a1565b61021e576001610220565b5f5b935050505095945050505050565b7f000000000000000000000000000000000000000000000000000000000000000081565b61025a610880565b64f196e500157fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff001500005260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff001500015260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0015000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0015600052815160c0811061039b5760208301818101818251018281108260c083011117156103195750505061039b565b80815101816020830151018281108482111783831085841117171561034257505050505061039b565b838151602083010111848351602085010111171561036457505050505061039b565b81875280602088015260408301516040880152606083015160608801526080830151608088015260a083015160a088015250505050505b50919050565b5f64f196e500117fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff001100005260057fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00110001526112497fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0011000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00116004525f807fffffff6e4604afefe123321beef1b02fffffffffffffffffffffffff00000006525f610467886001806105b4565b90505f7fffffff6e4604afefe123321beef1b02fffffffffffffffffffffffff00010007526020860151805160208201604089015160608a01518551600d81017f226368616c6c656e6765223a220000000000000000000000000000000000000060981c8852858482011060228286880101515f1a14168160138a01208286880120141686846014011085851760801c107f2274797065223a22776562617574686e2e67657422000000000000000000000060581c8588015160581c1416169950818852505050508851518a151560021b600117808160218d510151161460208311891616975087156105865760208b510182810180516020600160208701856020868c8c60025afa60011b5afa5199508082523d61058257fe5b5050505b505050505082156105a9576105a68287608001518860a001518888610751565b92505b505095945050505050565b606064f196e500067fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000600005260037fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000600015260497fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0006000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000660025283518015610749576003600282010460021b60405192507f4142434445464748494a4b4c4d4e4f505152535455565758595a616263646566601f526106708515027f6768696a6b6c6d6e6f707172737475767778797a303132333435363738392d5f18603f526020830181810183886020010180515f82525b6001156107165760038a0199508951603f8160121c16515f53603f81600c1c1651600153603f8160061c1651600253603f8116516003535f5185526004850194508385106107105750610716565b506106c2565b8082526020830160405260038606600204613d3d60f01b81860352808915150290505f8186035280860388525050505050505b509392505050565b5f64f196e5000b7fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000b00005260057fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000b0001526112497fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000b000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000b6004526040518681528560208201528460408201528360608201528260808201525f5f5260205f60a0836101005afa503d61084b576d1ab2e8006fd8b71907bf06a5bdee3b61084a5760205f60a0836dd01ea45f9efd5c54f037fa57ea1a5afa61084957fe5b5b5b5f516001147f7fffffff800000007fffffffffffffffde737d56d38bcf4279dce5617e3192a886111091505095945050505050565b6040518060c0016040528060608152602001606081526020015f81526020015f81526020015f81526020015f81525090565b5f604051905090565b5f5ffd5b5f5ffd5b5f819050919050565b6108d5816108c3565b81146108df575f5ffd5b50565b5f813590506108f0816108cc565b92915050565b5f5ffd5b5f5ffd5b5f5ffd5b5f5f83601f840112610917576109166108f6565b5b8235905067ffffffffffffffff811115610934576109336108fa565b5b6020830191508360018202830111156109505761094f6108fe565b5b9250929050565b5f5f5f5f5f606086880312156109705761096f6108bb565b5b5f61097d888289016108e2565b955050602086013567ffffffffffffffff81111561099e5761099d6108bf565b5b6109aa88828901610902565b9450945050604086013567ffffffffffffffff8111156109cd576109cc6108bf565b5b6109d988828901610902565b92509250509295509295909350565b5f819050919050565b6109fa816109e8565b82525050565b5f602082019050610a135f8301846109f1565b92915050565b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f610a4282610a19565b9050919050565b610a5281610a38565b82525050565b5f602082019050610a6b5f830184610a49565b92915050565b5f5ffd5b5f601f19601f8301169050919050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52604160045260245ffd5b610abb82610a75565b810181811067ffffffffffffffff82111715610ada57610ad9610a85565b5b80604052505050565b5f610aec6108b2565b9050610af88282610ab2565b919050565b5f5ffd5b610b0a81610a38565b8114610b14575f5ffd5b50565b5f81359050610b2581610b01565b92915050565b610b34816109e8565b8114610b3e575f5ffd5b50565b5f81359050610b4f81610b2b565b92915050565b5f5ffd5b5f67ffffffffffffffff821115610b7357610b72610a85565b5b610b7c82610a75565b9050602081019050919050565b828183375f83830152505050565b5f610ba9610ba484610b59565b610ae3565b905082815260208101848484011115610bc557610bc4610b55565b5b610bd0848285610b89565b509392505050565b5f82601f830112610bec57610beb6108f6565b5b8135610bfc848260208601610b97565b91505092915050565b5f6101208284031215610c1b57610c1a610a71565b5b610c26610120610ae3565b90505f610c3584828501610b17565b5f830152506020610c4884828501610b41565b602083015250604082013567ffffffffffffffff811115610c6c57610c6b610afd565b5b610c7884828501610bd8565b604083015250606082013567ffffffffffffffff811115610c9c57610c9b610afd565b5b610ca884828501610bd8565b6060830152506080610cbc848285016108e2565b60808301525060a0610cd084828501610b41565b60a08301525060c0610ce4848285016108e2565b60c08301525060e082013567ffffffffffffffff811115610d0857610d07610afd565b5b610d1484828501610bd8565b60e08301525061010082013567ffffffffffffffff811115610d3957610d38610afd565b5b610d4584828501610bd8565b6101008301525092915050565b5f60208284031215610d6757610d666108bb565b5b5f82013567ffffffffffffffff811115610d8457610d836108bf565b5b610d9084828501610c05565b91505092915050565b5f5f60408385031215610daf57610dae6108bb565b5b5f610dbc858286016108e2565b9250506020610dcd858286016108e2565b9150509250929050565b610de0816108c3565b82525050565b5f602082019050610df95f830184610dd7565b9291505056fea26469706673582212203a87916316b51189877276ca5fb9e962c395efba7b6a0c098d26bf84f7f2ca6064736f6c634300081f0033",
+                "constructorSrcmap": "729:1866:2:-:0;;;794:57;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;838:9;217::1;206:20;;;;;;;;;;165:68;794:57:2;729:1866;;88:117:8;197:1;194;187:12;334:126;371:7;411:42;404:5;400:54;389:65;;334:126;;;:::o;466:96::-;503:7;532:24;550:5;532:24;:::i;:::-;521:35;;466:96;;;:::o;568:122::-;641:24;659:5;641:24;:::i;:::-;634:5;631:35;621:63;;680:1;677;670:12;621:63;568:122;:::o;696:143::-;753:5;784:6;778:13;769:22;;800:33;827:5;800:33;:::i;:::-;696:143;;;;:::o;845:351::-;915:6;964:2;952:9;943:7;939:23;935:32;932:119;;;970:79;;:::i;:::-;932:119;1090:1;1115:64;1171:7;1162:6;1151:9;1147:22;1115:64;:::i;:::-;1105:74;;1061:128;845:351;;;;:::o;729:1866:2:-;;;;;;;;;;;;;;;;;;",
+                "extensionContracts": [],
+                "file": "src/verifier/UserOpWebAuthnVerifier.sol",
+                "immutables": [
+                    {
+                        "length": 32,
+                        "offset": 137,
+                        "type": {
+                            "location": "stack",
+                            "typeDesc": {
+                                "primitiveName": "address",
+                                "type": "Primitive"
+                            }
+                        },
+                        "varname": "keystore"
+                    },
+                    {
+                        "length": 32,
+                        "offset": 560,
+                        "type": {
+                            "location": "stack",
+                            "typeDesc": {
+                                "primitiveName": "address",
+                                "type": "Primitive"
+                            }
+                        },
+                        "varname": "keystore"
+                    }
+                ],
+                "internalFuncs": [
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "_parseValidationData",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "validationData"
+                        ],
+                        "returns": [
+                            {
+                                "location": "memory",
+                                "typeDesc": {
+                                    "astId": 172,
+                                    "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                                    "containingContract": null,
+                                    "structMembers": [
+                                        {
+                                            "name": "aggregator",
+                                            "type": {
+                                                "primitiveName": "address",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validAfter",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validUntil",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        }
+                                    ],
+                                    "structName": "ValidationData",
+                                    "type": "UserDefinedStruct"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "memory",
+                                "typeDesc": {
+                                    "astId": 172,
+                                    "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                                    "containingContract": null,
+                                    "structMembers": [
+                                        {
+                                            "name": "aggregator",
+                                            "type": {
+                                                "primitiveName": "address",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validAfter",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validUntil",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        }
+                                    ],
+                                    "structName": "ValidationData",
+                                    "type": "UserDefinedStruct"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "_packValidationData",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "data"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "min",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "a",
+                            "b"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint48",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint48",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "_packValidationData",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "sigFailed",
+                            "validUntil",
+                            "validAfter"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "calldata",
+                                "typeDesc": {
+                                    "type": "PackedBytes"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "calldataKeccak",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "data"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "finalizeAllocation",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "memPointer",
+                            "allocationSize"
+                        ],
+                        "returns": [],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    }
+                ],
+                "internalFunctionHarnesses": {},
+                "internalFunctionStarts": [
+                    2560,
+                    2817,
+                    2306,
+                    3077,
+                    134,
+                    2693,
+                    2953,
+                    2839,
+                    2967,
+                    3481,
+                    2585,
+                    929,
+                    2859,
+                    558,
+                    2226,
+                    2738,
+                    1460,
+                    2616,
+                    2235,
+                    2239,
+                    2881,
+                    2243,
+                    2633,
+                    2252,
+                    1873,
+                    594,
+                    3410,
+                    2901,
+                    3543,
+                    3032,
+                    2391,
+                    2648,
+                    2905,
+                    2274,
+                    2787,
+                    3558,
+                    2536,
+                    2545,
+                    2673,
+                    2677,
+                    2294,
+                    2298,
+                    2813,
+                    2302
+                ],
+                "internalFunctions": {
+                    "0xf196e50000": {
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|IVerifier",
+                        "declaringContract": "IVerifier",
+                        "method": {
+                            "contractName": "IVerifier",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "_parseValidationData",
+                            "notpayable": true,
+                            "originalFile": "lib/account-abstraction/contracts/core/Helpers.sol",
+                            "paramNames": [
+                                "validationData"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "astId": 170,
+                                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                                        "containingContract": null,
+                                        "structMembers": [
+                                            {
+                                                "name": "aggregator",
+                                                "type": {
+                                                    "primitiveName": "address",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "validAfter",
+                                                "type": {
+                                                    "primitiveName": "uint48",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "validUntil",
+                                                "type": {
+                                                    "primitiveName": "uint48",
+                                                    "type": "Primitive"
+                                                }
+                                            }
+                                        ],
+                                        "structName": "ValidationData",
+                                        "type": "UserDefinedStruct"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 1454,
+                                "size": 416
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50001": {
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|IVerifier",
+                        "declaringContract": "IVerifier",
+                        "method": {
+                            "contractName": "IVerifier",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "astId": 170,
+                                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                                        "containingContract": null,
+                                        "structMembers": [
+                                            {
+                                                "name": "aggregator",
+                                                "type": {
+                                                    "primitiveName": "address",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "validAfter",
+                                                "type": {
+                                                    "primitiveName": "uint48",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "validUntil",
+                                                "type": {
+                                                    "primitiveName": "uint48",
+                                                    "type": "Primitive"
+                                                }
+                                            }
+                                        ],
+                                        "structName": "ValidationData",
+                                        "type": "UserDefinedStruct"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "_packValidationData",
+                            "notpayable": true,
+                            "originalFile": "lib/account-abstraction/contracts/core/Helpers.sol",
+                            "paramNames": [
+                                "data"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 2019,
+                                "size": 229
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50002": {
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|IVerifier",
+                        "declaringContract": "IVerifier",
+                        "method": {
+                            "contractName": "IVerifier",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "min",
+                            "notpayable": true,
+                            "originalFile": "lib/account-abstraction/contracts/core/Helpers.sol",
+                            "paramNames": [
+                                "a",
+                                "b"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 3621,
+                                "size": 95
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50003": {
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|IVerifier",
+                        "declaringContract": "IVerifier",
+                        "method": {
+                            "contractName": "IVerifier",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint48",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint48",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "_packValidationData",
+                            "notpayable": true,
+                            "originalFile": "lib/account-abstraction/contracts/core/Helpers.sol",
+                            "paramNames": [
+                                "sigFailed",
+                                "validUntil",
+                                "validAfter"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 2611,
+                                "size": 290
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50004": {
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|IVerifier",
+                        "declaringContract": "IVerifier",
+                        "method": {
+                            "contractName": "IVerifier",
+                            "fullArgs": [
+                                {
+                                    "location": "calldata",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "calldataKeccak",
+                            "notpayable": true,
+                            "originalFile": "lib/account-abstraction/contracts/core/Helpers.sol",
+                            "paramNames": [
+                                "data"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 3205,
+                                "size": 281
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50005": {
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|IVerifier",
+                        "declaringContract": "IVerifier",
+                        "method": {
+                            "contractName": "IVerifier",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "finalizeAllocation",
+                            "notpayable": true,
+                            "originalFile": "lib/account-abstraction/contracts/core/Helpers.sol",
+                            "paramNames": [
+                                "memPointer",
+                                "allocationSize"
+                            ],
+                            "returns": [],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 3932,
+                                "size": 507
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50006": {
+                        "canonicalId": "lib/solady/src/utils/Base64.sol|Base64",
+                        "declaringContract": "Base64",
+                        "method": {
+                            "contractName": "Base64",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "encode",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/Base64.sol",
+                            "paramNames": [
+                                "data",
+                                "fileSafe",
+                                "noPadding"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "StringType"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 722,
+                                "size": 2892
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50007": {
+                        "canonicalId": "lib/solady/src/utils/Base64.sol|Base64",
+                        "declaringContract": "Base64",
+                        "method": {
+                            "contractName": "Base64",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "encode",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/Base64.sol",
+                            "paramNames": [
+                                "data"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "StringType"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 3749,
+                                "size": 132
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50008": {
+                        "canonicalId": "lib/solady/src/utils/Base64.sol|Base64",
+                        "declaringContract": "Base64",
+                        "method": {
+                            "contractName": "Base64",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "encode",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/Base64.sol",
+                            "paramNames": [
+                                "data",
+                                "fileSafe"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "StringType"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 4019,
+                                "size": 178
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50009": {
+                        "canonicalId": "lib/solady/src/utils/Base64.sol|Base64",
+                        "declaringContract": "Base64",
+                        "method": {
+                            "contractName": "Base64",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "StringType"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "decode",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/Base64.sol",
+                            "paramNames": [
+                                "data"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 4705,
+                                "size": 2729
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e5000a": {
+                        "canonicalId": "lib/solady/src/utils/P256.sol|P256",
+                        "declaringContract": "P256",
+                        "method": {
+                            "contractName": "P256",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "verifySignatureAllowMalleability",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/P256.sol",
+                            "paramNames": [
+                                "hash",
+                                "r",
+                                "s",
+                                "x",
+                                "y"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 2775,
+                                "size": 1426
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e5000b": {
+                        "canonicalId": "lib/solady/src/utils/P256.sol|P256",
+                        "declaringContract": "P256",
+                        "method": {
+                            "contractName": "P256",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "verifySignature",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/P256.sol",
+                            "paramNames": [
+                                "hash",
+                                "r",
+                                "s",
+                                "x",
+                                "y"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 4344,
+                                "size": 1503
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e5000c": {
+                        "canonicalId": "lib/solady/src/utils/P256.sol|P256",
+                        "declaringContract": "P256",
+                        "method": {
+                            "contractName": "P256",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "normalized",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/P256.sol",
+                            "paramNames": [
+                                "s"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 7842,
+                                "size": 218
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e5000d": {
+                        "canonicalId": "lib/solady/src/utils/P256.sol|P256",
+                        "declaringContract": "P256",
+                        "method": {
+                            "contractName": "P256",
+                            "fullArgs": [],
+                            "isLibrary": true,
+                            "name": "hasPrecompile",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/P256.sol",
+                            "paramNames": [],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 5909,
+                                "size": 1017
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e5000e": {
+                        "canonicalId": "lib/solady/src/utils/P256.sol|P256",
+                        "declaringContract": "P256",
+                        "method": {
+                            "contractName": "P256",
+                            "fullArgs": [],
+                            "isLibrary": true,
+                            "name": "hasPrecompileOrVerifier",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/P256.sol",
+                            "paramNames": [],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 7229,
+                                "size": 256
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e5000f": {
+                        "canonicalId": "lib/solady/src/utils/P256.sol|P256",
+                        "declaringContract": "P256",
+                        "method": {
+                            "contractName": "P256",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "tryDecodePoint",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/P256.sol",
+                            "paramNames": [
+                                "encoded"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 8230,
+                                "size": 318
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50010": {
+                        "canonicalId": "lib/solady/src/utils/P256.sol|P256",
+                        "declaringContract": "P256",
+                        "method": {
+                            "contractName": "P256",
+                            "fullArgs": [
+                                {
+                                    "location": "calldata",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "tryDecodePointCalldata",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/P256.sol",
+                            "paramNames": [
+                                "encoded"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 8718,
+                                "size": 373
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50011": {
+                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn",
+                        "declaringContract": "WebAuthn",
+                        "method": {
+                            "contractName": "WebAuthn",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "astId": 386,
+                                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn.WebAuthnAuth",
+                                        "containingContract": "WebAuthn",
+                                        "structMembers": [
+                                            {
+                                                "name": "authenticatorData",
+                                                "type": {
+                                                    "type": "PackedBytes"
+                                                }
+                                            },
+                                            {
+                                                "name": "clientDataJSON",
+                                                "type": {
+                                                    "type": "StringType"
+                                                }
+                                            },
+                                            {
+                                                "name": "challengeIndex",
+                                                "type": {
+                                                    "primitiveName": "uint256",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "typeIndex",
+                                                "type": {
+                                                    "primitiveName": "uint256",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "r",
+                                                "type": {
+                                                    "primitiveName": "bytes32",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "s",
+                                                "type": {
+                                                    "primitiveName": "bytes32",
+                                                    "type": "Primitive"
+                                                }
+                                            }
+                                        ],
+                                        "structName": "WebAuthnAuth",
+                                        "type": "UserDefinedStruct"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "verify",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/WebAuthn.sol",
+                            "paramNames": [
+                                "challenge",
+                                "requireUserVerification",
+                                "auth",
+                                "x",
+                                "y"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 5249,
+                                "size": 3416
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50012": {
+                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn",
+                        "declaringContract": "WebAuthn",
+                        "method": {
+                            "contractName": "WebAuthn",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                },
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "StringType"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "verify",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/WebAuthn.sol",
+                            "paramNames": [
+                                "challenge",
+                                "requireUserVerification",
+                                "authenticatorData",
+                                "clientDataJSON",
+                                "challengeIndex",
+                                "typeIndex",
+                                "r",
+                                "s",
+                                "x",
+                                "y"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 8709,
+                                "size": 558
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50013": {
+                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn",
+                        "declaringContract": "WebAuthn",
+                        "method": {
+                            "contractName": "WebAuthn",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "astId": 386,
+                                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn.WebAuthnAuth",
+                                        "containingContract": "WebAuthn",
+                                        "structMembers": [
+                                            {
+                                                "name": "authenticatorData",
+                                                "type": {
+                                                    "type": "PackedBytes"
+                                                }
+                                            },
+                                            {
+                                                "name": "clientDataJSON",
+                                                "type": {
+                                                    "type": "StringType"
+                                                }
+                                            },
+                                            {
+                                                "name": "challengeIndex",
+                                                "type": {
+                                                    "primitiveName": "uint256",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "typeIndex",
+                                                "type": {
+                                                    "primitiveName": "uint256",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "r",
+                                                "type": {
+                                                    "primitiveName": "bytes32",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "s",
+                                                "type": {
+                                                    "primitiveName": "bytes32",
+                                                    "type": "Primitive"
+                                                }
+                                            }
+                                        ],
+                                        "structName": "WebAuthnAuth",
+                                        "type": "UserDefinedStruct"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "tryEncodeAuthCompact",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/WebAuthn.sol",
+                            "paramNames": [
+                                "auth"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 12080,
+                                "size": 1642
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50014": {
+                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn",
+                        "declaringContract": "WebAuthn",
+                        "method": {
+                            "contractName": "WebAuthn",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "astId": 386,
+                                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn.WebAuthnAuth",
+                                        "containingContract": "WebAuthn",
+                                        "structMembers": [
+                                            {
+                                                "name": "authenticatorData",
+                                                "type": {
+                                                    "type": "PackedBytes"
+                                                }
+                                            },
+                                            {
+                                                "name": "clientDataJSON",
+                                                "type": {
+                                                    "type": "StringType"
+                                                }
+                                            },
+                                            {
+                                                "name": "challengeIndex",
+                                                "type": {
+                                                    "primitiveName": "uint256",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "typeIndex",
+                                                "type": {
+                                                    "primitiveName": "uint256",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "r",
+                                                "type": {
+                                                    "primitiveName": "bytes32",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "s",
+                                                "type": {
+                                                    "primitiveName": "bytes32",
+                                                    "type": "Primitive"
+                                                }
+                                            }
+                                        ],
+                                        "structName": "WebAuthnAuth",
+                                        "type": "UserDefinedStruct"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "encodeAuth",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/WebAuthn.sol",
+                            "paramNames": [
+                                "auth"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 9597,
+                                "size": 123
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50015": {
+                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn",
+                        "declaringContract": "WebAuthn",
+                        "method": {
+                            "contractName": "WebAuthn",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "tryDecodeAuth",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/WebAuthn.sol",
+                            "paramNames": [
+                                "encodedAuth"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "astId": 386,
+                                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn.WebAuthnAuth",
+                                        "containingContract": "WebAuthn",
+                                        "structMembers": [
+                                            {
+                                                "name": "authenticatorData",
+                                                "type": {
+                                                    "type": "PackedBytes"
+                                                }
+                                            },
+                                            {
+                                                "name": "clientDataJSON",
+                                                "type": {
+                                                    "type": "StringType"
+                                                }
+                                            },
+                                            {
+                                                "name": "challengeIndex",
+                                                "type": {
+                                                    "primitiveName": "uint256",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "typeIndex",
+                                                "type": {
+                                                    "primitiveName": "uint256",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "r",
+                                                "type": {
+                                                    "primitiveName": "bytes32",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "s",
+                                                "type": {
+                                                    "primitiveName": "bytes32",
+                                                    "type": "Primitive"
+                                                }
+                                            }
+                                        ],
+                                        "structName": "WebAuthnAuth",
+                                        "type": "UserDefinedStruct"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 9978,
+                                "size": 1606
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50016": {
+                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn",
+                        "declaringContract": "WebAuthn",
+                        "method": {
+                            "contractName": "WebAuthn",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "tryDecodeAuthCompact",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/WebAuthn.sol",
+                            "paramNames": [
+                                "encodedAuth"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "astId": 386,
+                                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn.WebAuthnAuth",
+                                        "containingContract": "WebAuthn",
+                                        "structMembers": [
+                                            {
+                                                "name": "authenticatorData",
+                                                "type": {
+                                                    "type": "PackedBytes"
+                                                }
+                                            },
+                                            {
+                                                "name": "clientDataJSON",
+                                                "type": {
+                                                    "type": "StringType"
+                                                }
+                                            },
+                                            {
+                                                "name": "challengeIndex",
+                                                "type": {
+                                                    "primitiveName": "uint256",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "typeIndex",
+                                                "type": {
+                                                    "primitiveName": "uint256",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "r",
+                                                "type": {
+                                                    "primitiveName": "bytes32",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "s",
+                                                "type": {
+                                                    "primitiveName": "bytes32",
+                                                    "type": "Primitive"
+                                                }
+                                            }
+                                        ],
+                                        "structName": "WebAuthnAuth",
+                                        "type": "UserDefinedStruct"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 13987,
+                                "size": 1889
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50017": {
+                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn",
+                        "declaringContract": "WebAuthn",
+                        "method": {
+                            "contractName": "WebAuthn",
+                            "fullArgs": [
+                                {
+                                    "location": "calldata",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "tryDecodeAuthCompactCalldata",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/WebAuthn.sol",
+                            "paramNames": [
+                                "encodedAuth"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "astId": 386,
+                                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn.WebAuthnAuth",
+                                        "containingContract": "WebAuthn",
+                                        "structMembers": [
+                                            {
+                                                "name": "authenticatorData",
+                                                "type": {
+                                                    "type": "PackedBytes"
+                                                }
+                                            },
+                                            {
+                                                "name": "clientDataJSON",
+                                                "type": {
+                                                    "type": "StringType"
+                                                }
+                                            },
+                                            {
+                                                "name": "challengeIndex",
+                                                "type": {
+                                                    "primitiveName": "uint256",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "typeIndex",
+                                                "type": {
+                                                    "primitiveName": "uint256",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "r",
+                                                "type": {
+                                                    "primitiveName": "bytes32",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "s",
+                                                "type": {
+                                                    "primitiveName": "bytes32",
+                                                    "type": "Primitive"
+                                                }
+                                            }
+                                        ],
+                                        "structName": "WebAuthnAuth",
+                                        "type": "UserDefinedStruct"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 15939,
+                                "size": 1718
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    }
+                },
+                "is_static_address": false,
+                "lang": "Solidity",
+                "localAssignments": {
+                    "1": {
+                        "lhs": "auth",
+                        "sourceLoc": {
+                            "begin": "1910",
+                            "len": "64",
+                            "source": "2"
+                        }
+                    },
+                    "2": {
+                        "lhs": "x,y",
+                        "sourceLoc": {
+                            "begin": "2199",
+                            "len": "63",
+                            "source": "2"
+                        }
+                    },
+                    "3": {
+                        "lhs": "result",
+                        "sourceLoc": {
+                            "begin": "3839",
+                            "len": "35",
+                            "source": "5"
+                        }
+                    },
+                    "4": {
+                        "lhs": "result",
+                        "sourceLoc": {
+                            "begin": "4152",
+                            "len": "38",
+                            "source": "5"
+                        }
+                    },
+                    "5": {
+                        "lhs": "result",
+                        "sourceLoc": {
+                            "begin": "7310",
+                            "len": "24",
+                            "source": "6"
+                        }
+                    },
+                    "6": {
+                        "lhs": "messageHash",
+                        "sourceLoc": {
+                            "begin": "5459",
+                            "len": "19",
+                            "source": "7"
+                        }
+                    },
+                    "7": {
+                        "lhs": "encoded",
+                        "sourceLoc": {
+                            "begin": "5488",
+                            "len": "60",
+                            "source": "7"
+                        }
+                    }
+                },
+                "methods": [
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "constructor",
+                        "notpayable": true,
+                        "originalFile": "src/verifier/UserOpWebAuthnVerifier.sol",
+                        "paramNames": [
+                            "aKeystore"
+                        ],
+                        "returns": [],
+                        "sighash": "0",
+                        "sourceBytes": {
+                            "begin": 794,
+                            "size": 57
+                        },
+                        "stateMutability": "nonpayable",
+                        "visibility": "public",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [],
+                        "isLibrary": false,
+                        "name": "keystore",
+                        "notpayable": true,
+                        "originalFile": "src/lib/OnlyKeystore.sol",
+                        "paramNames": [],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "772a0001",
+                        "sourceBytes": {
+                            "begin": 125,
+                            "size": 33
+                        },
+                        "stateMutability": "view",
+                        "visibility": "external",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpWebAuthnVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "calldata",
+                                "typeDesc": {
+                                    "type": "PackedBytes"
+                                }
+                            },
+                            {
+                                "location": "calldata",
+                                "typeDesc": {
+                                    "type": "PackedBytes"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "validateData",
+                        "notpayable": true,
+                        "originalFile": "src/verifier/UserOpWebAuthnVerifier.sol",
+                        "paramNames": [
+                            "message",
+                            "data",
+                            "config"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "04b073c5",
+                        "sourceBytes": {
+                            "begin": 1704,
+                            "size": 685
+                        },
+                        "stateMutability": "view",
+                        "visibility": "external",
+                        "vyper_metadata": null
+                    }
+                ],
+                "name": "UserOpWebAuthnVerifier",
+                "original_file": "src/verifier/UserOpWebAuthnVerifier.sol",
+                "solidityTypes": [
+                    {
+                        "astId": 394,
+                        "canonicalId": "lib/solady/src/utils/WebAuthn.sol|WebAuthn.WebAuthnAuth",
+                        "containingContract": "WebAuthn",
+                        "structMembers": [
+                            {
+                                "name": "authenticatorData",
+                                "type": {
+                                    "type": "PackedBytes"
+                                }
+                            },
+                            {
+                                "name": "clientDataJSON",
+                                "type": {
+                                    "type": "StringType"
+                                }
+                            },
+                            {
+                                "name": "challengeIndex",
+                                "type": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "typeIndex",
+                                "type": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "r",
+                                "type": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "s",
+                                "type": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "structName": "WebAuthnAuth",
+                        "type": "UserDefinedStruct"
+                    },
+                    {
+                        "astId": 373,
+                        "canonicalId": "lib/account-abstraction/contracts/interfaces/PackedUserOperation.sol|PackedUserOperation",
+                        "containingContract": null,
+                        "structMembers": [
+                            {
+                                "name": "sender",
+                                "type": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "nonce",
+                                "type": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "initCode",
+                                "type": {
+                                    "type": "PackedBytes"
+                                }
+                            },
+                            {
+                                "name": "callData",
+                                "type": {
+                                    "type": "PackedBytes"
+                                }
+                            },
+                            {
+                                "name": "accountGasLimits",
+                                "type": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "preVerificationGas",
+                                "type": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "gasFees",
+                                "type": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "paymasterAndData",
+                                "type": {
+                                    "type": "PackedBytes"
+                                }
+                            },
+                            {
+                                "name": "signature",
+                                "type": {
+                                    "type": "PackedBytes"
+                                }
+                            }
+                        ],
+                        "structName": "PackedUserOperation",
+                        "type": "UserDefinedStruct"
+                    },
+                    {
+                        "astId": 172,
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                        "containingContract": null,
+                        "structMembers": [
+                            {
+                                "name": "aggregator",
+                                "type": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "validAfter",
+                                "type": {
+                                    "primitiveName": "uint48",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "validUntil",
+                                "type": {
+                                    "primitiveName": "uint48",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "structName": "ValidationData",
+                        "type": "UserDefinedStruct"
+                    }
+                ],
+                "sourceBytes": {
+                    "begin": 729,
+                    "size": 1662
+                },
+                "srcmap": "729:1866:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1704:889;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;125:33:1;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;1704:889:2;1872:22;295:8:1;281:22;;:10;:22;;;273:50;;;;;;;;;;;;;;;;;1910:33:2::1;1946:28;1969:4;;1946:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:22;:28::i;:::-;1910:64;;2074:1;2007:66;2000:76;2127:1;2096:4;:19;;;2090:33;:38:::0;2086:205:::1;;2144:33;2191:4;;2180:39;;;;;;;:::i;:::-;2144:75;;2240:40;2263:6;:16;;;2240:22;:40::i;:::-;2233:47;;2130:161;2086:205;2302:9;2313;2337:6;;2326:38;;;;;;;:::i;:::-;2301:63;;;;2464:1;2397:66;2390:76;2483:54;2510:7;2499:19;;;;;;;;:::i;:::-;;;;;;;;;;;;;2520:4;2526;2532:1;2535;2483:15;:54::i;:::-;:103;;301:1:3;2483:103:2;;;461:1:3;2483:103:2;2476:110;;;;;1704:889:::0;;;;;;;:::o;125:33:1:-;;;:::o;11263:1968:7:-;11359:27;;:::i;:::-;11495:13;11427:66;11420:89;11585:1;11517:66;11510:77;11663:1;11595:66;11588:77;11741:11;11673:66;11666:87;11851:11;11845:18;11879:4;11876:1;11873:11;11830:1385;;11933:4;11920:11;11916:22;12006:1;12003;11999:9;12083:1;12079;12073:8;12069:16;12162:1;12159;12156:8;12152:1;12145:4;12142:1;12138:12;12135:19;12132:33;12129:46;;;12168:5;;;;;12129:46;12231:1;12227;12221:8;12217:16;12297:1;12289:4;12286:1;12282:12;12276:19;12272:27;12464:1;12448:14;12445:21;12441:1;12425:14;12422:21;12419:48;12394:1;12375:17;12372:24;12368:1;12349:17;12346:24;12343:54;12319:166;12316:179;;;12488:5;;;;;;;12316:179;12685:1;12667:14;12661:21;12654:4;12638:14;12634:25;12630:53;12627:60;12603:1;12582:17;12576:24;12569:4;12550:17;12546:28;12542:59;12539:66;12515:190;12512:203;;;12708:5;;;;;;;12512:203;12748:17;12739:7;12732:34;12834:14;12827:4;12818:7;12814:18;12807:42;12927:4;12924:1;12920:12;12914:19;12907:4;12898:7;12894:18;12887:47;13012:4;13009:1;13005:12;12999:19;12992:4;12983:7;12979:18;12972:47;13092:4;13089:1;13085:12;13079:19;13072:4;13063:7;13059:18;13052:47;13164:4;13161:1;13157:12;13151:19;13144:4;13135:7;13131:18;13124:47;13196:5;;;;;11830:1385;11834:31;11263:1968;;;:::o;5249:3985::-;5436:11;5552:13;5484:66;5477:89;5642:1;5574:66;5567:77;5720:4;5652:66;5645:80;5801:1;5733:66;5726:77;5814:19;5933:11;5866:66;5859:86;5955:21;5979:36;5993:9;6004:4;6010;5979:13;:36::i;:::-;5955:60;;6115:1;6048:66;6041:76;6231:4;6225;6221:15;6215:22;6265:14;6259:21;6352:4;6336:14;6332:25;6447:4;6441;6437:15;6431:22;6535:4;6529;6525:15;6519:22;6608:7;6602:14;6678:4;6675:1;6671:12;6779:15;6774:3;6770:25;6761:7;6754:42;7505:1;7501;7498;7494:9;7491:16;7486:2;7480:1;7476;7473;7469:9;7465:17;7459:24;7456:1;7451:33;7448:41;7444:64;7411:1;7404:4;7395:7;7391:18;7381:32;7377:1;7373;7370;7366:9;7356:23;7353:61;7320:214;7171:1;7167;7161:4;7157:12;7154:19;7149:1;7146;7143:8;7138:3;7134:18;7131:43;7076:23;7072:2;7068:32;7062:1;7059;7055:9;7049:16;7045:2;7041:25;7038:63;7005:195;6880:676;6850:706;;7589:1;7580:7;7573:18;6404:1261;;;;7733:4;7727:11;7721:18;8039:23;8032:31;8025:39;8022:1;8018:47;8015:1;8012:54;8161:1;8157;8149:4;8142;8136:11;8132:22;8126:29;8122:37;8119:44;8111:4;8108:1;8105:11;8097:6;8093:24;8089:75;8079:85;;8180:6;8177:863;;;8231:4;8224;8218:11;8214:22;8310:1;8307;8303:9;8395:1;8389:8;8777:4;8771;8764;8761:1;8757:12;8754:1;8746:4;8743:1;8740;8737;8734;8727:5;8716:35;8713:1;8709:43;8682:5;8671:111;8665:118;8650:133;;8810:1;8807;8800:12;8995:16;8985:41;;9015:9;8985:41;8187:853;;;8177:863;6179:2871;;;;;9155:6;9151:76;;;9172:55;9193:11;9206:4;:6;;;9214:4;:6;;;9222:1;9225;9172:20;:55::i;:::-;9163:64;;9151:76;5449:3785;;5249:3985;;;;;;;:::o;722:3253:5:-;835:20;964:13;896:66;889:89;1054:1;986:66;979:77;1132:2;1064:66;1057:78;1211:9;1143:66;1136:85;1322:4;1316:11;1344:10;1341:2618;;;1544:1;1540;1528:10;1524:18;1520:26;1517:1;1513:34;1655:4;1649:11;1639:21;;2025:34;2019:4;2012:48;2152:6;2141:8;2134:16;2130:29;2094:34;2090:70;2084:4;2077:84;2267:4;2259:6;2255:17;2309:13;2304:3;2300:23;2377:10;2370:4;2364;2360:15;2356:32;2431:7;2425:14;2514:4;2505:7;2498:21;2646:623;2653:1;2646:623;;;2698:1;2692:4;2688:12;2680:20;;2760:4;2754:11;2900:4;2892:5;2888:2;2884:14;2880:25;2874:32;2871:1;2863:44;2965:4;2957:5;2953:2;2949:14;2945:25;2939:32;2936:1;2928:44;3029:4;3021:5;3018:1;3014:13;3010:24;3004:31;3001:1;2993:43;3085:4;3078:5;3074:16;3068:23;3065:1;3057:35;3131:4;3125:11;3120:3;3113:24;3175:1;3170:3;3166:11;3159:18;;3236:3;3231;3228:12;3218:33;;3244:5;;;3218:33;2658:611;2646:623;;;3302:12;3293:7;3286:29;3396:4;3391:3;3387:14;3381:4;3374:28;3541:1;3529:10;3525:18;3522:1;3518:26;3674:6;3669:3;3665:16;3661:1;3656:3;3652:11;3645:37;3791:1;3778:9;3771:17;3764:25;3760:33;3755:38;;3830:1;3826;3821:3;3817:11;3810:22;3921:1;3906:13;3902:21;3894:6;3887:37;1355:2604;;;;;;1341:2618;1284:2685;722:3253;;;;;:::o;4699:1858:6:-;4829:12;4950:13;4882:66;4875:89;5040:1;4972:66;4965:77;5118:4;5050:66;5043:80;5199:1;5131:66;5124:77;5293:4;5287:11;5321:4;5318:1;5311:15;5360:1;5353:4;5350:1;5346:12;5339:23;5396:1;5389:4;5386:1;5382:12;5375:23;5432:1;5425:4;5422:1;5418:12;5411:23;5468:1;5461:4;5458:1;5454:12;5447:23;5496:1;5490:4;5483:15;5615:4;5609;5603;5600:1;5584:14;5577:5;5566:54;5562:59;5784:16;5774:613;;5842:6;5830:19;5820:318;;6100:4;6094;6088;6085:1;6075:8;6068:5;6057:48;6047:73;;6109:9;6047:73;5820:318;5774:613;6534:4;6528:11;6525:1;6522:18;6512:7;6509:1;6506:14;6503:38;6492:49;;5264:1287;4699:1858;;;;;;;:::o;-1:-1:-1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;7:75:8:-;40:6;73:2;67:9;57:19;;7:75;:::o;88:117::-;197:1;194;187:12;211:117;320:1;317;310:12;334:77;371:7;400:5;389:16;;334:77;;;:::o;417:122::-;490:24;508:5;490:24;:::i;:::-;483:5;480:35;470:63;;529:1;526;519:12;470:63;417:122;:::o;545:139::-;591:5;629:6;616:20;607:29;;645:33;672:5;645:33;:::i;:::-;545:139;;;;:::o;690:117::-;799:1;796;789:12;813:117;922:1;919;912:12;936:117;1045:1;1042;1035:12;1072:552;1129:8;1139:6;1189:3;1182:4;1174:6;1170:17;1166:27;1156:122;;1197:79;;:::i;:::-;1156:122;1310:6;1297:20;1287:30;;1340:18;1332:6;1329:30;1326:117;;;1362:79;;:::i;:::-;1326:117;1476:4;1468:6;1464:17;1452:29;;1530:3;1522:4;1514:6;1510:17;1500:8;1496:32;1493:41;1490:128;;;1537:79;;:::i;:::-;1490:128;1072:552;;;;;:::o;1630:1015::-;1729:6;1737;1745;1753;1761;1810:2;1798:9;1789:7;1785:23;1781:32;1778:119;;;1816:79;;:::i;:::-;1778:119;1936:1;1961:53;2006:7;1997:6;1986:9;1982:22;1961:53;:::i;:::-;1951:63;;1907:117;2091:2;2080:9;2076:18;2063:32;2122:18;2114:6;2111:30;2108:117;;;2144:79;;:::i;:::-;2108:117;2257:64;2313:7;2304:6;2293:9;2289:22;2257:64;:::i;:::-;2239:82;;;;2034:297;2398:2;2387:9;2383:18;2370:32;2429:18;2421:6;2418:30;2415:117;;;2451:79;;:::i;:::-;2415:117;2564:64;2620:7;2611:6;2600:9;2596:22;2564:64;:::i;:::-;2546:82;;;;2341:297;1630:1015;;;;;;;;:::o;2651:77::-;2688:7;2717:5;2706:16;;2651:77;;;:::o;2734:118::-;2821:24;2839:5;2821:24;:::i;:::-;2816:3;2809:37;2734:118;;:::o;2858:222::-;2951:4;2989:2;2978:9;2974:18;2966:26;;3002:71;3070:1;3059:9;3055:17;3046:6;3002:71;:::i;:::-;2858:222;;;;:::o;3086:126::-;3123:7;3163:42;3156:5;3152:54;3141:65;;3086:126;;;:::o;3218:96::-;3255:7;3284:24;3302:5;3284:24;:::i;:::-;3273:35;;3218:96;;;:::o;3320:118::-;3407:24;3425:5;3407:24;:::i;:::-;3402:3;3395:37;3320:118;;:::o;3444:222::-;3537:4;3575:2;3564:9;3560:18;3552:26;;3588:71;3656:1;3645:9;3641:17;3632:6;3588:71;:::i;:::-;3444:222;;;;:::o;3672:117::-;3781:1;3778;3771:12;3795:102;3836:6;3887:2;3883:7;3878:2;3871:5;3867:14;3863:28;3853:38;;3795:102;;;:::o;3903:180::-;3951:77;3948:1;3941:88;4048:4;4045:1;4038:15;4072:4;4069:1;4062:15;4089:281;4172:27;4194:4;4172:27;:::i;:::-;4164:6;4160:40;4302:6;4290:10;4287:22;4266:18;4254:10;4251:34;4248:62;4245:88;;;4313:18;;:::i;:::-;4245:88;4353:10;4349:2;4342:22;4132:238;4089:281;;:::o;4376:129::-;4410:6;4437:20;;:::i;:::-;4427:30;;4466:33;4494:4;4486:6;4466:33;:::i;:::-;4376:129;;;:::o;4511:117::-;4620:1;4617;4610:12;4634:122;4707:24;4725:5;4707:24;:::i;:::-;4700:5;4697:35;4687:63;;4746:1;4743;4736:12;4687:63;4634:122;:::o;4762:139::-;4808:5;4846:6;4833:20;4824:29;;4862:33;4889:5;4862:33;:::i;:::-;4762:139;;;;:::o;4907:122::-;4980:24;4998:5;4980:24;:::i;:::-;4973:5;4970:35;4960:63;;5019:1;5016;5009:12;4960:63;4907:122;:::o;5035:139::-;5081:5;5119:6;5106:20;5097:29;;5135:33;5162:5;5135:33;:::i;:::-;5035:139;;;;:::o;5180:117::-;5289:1;5286;5279:12;5303:307;5364:4;5454:18;5446:6;5443:30;5440:56;;;5476:18;;:::i;:::-;5440:56;5514:29;5536:6;5514:29;:::i;:::-;5506:37;;5598:4;5592;5588:15;5580:23;;5303:307;;;:::o;5616:148::-;5714:6;5709:3;5704;5691:30;5755:1;5746:6;5741:3;5737:16;5730:27;5616:148;;;:::o;5770:423::-;5847:5;5872:65;5888:48;5929:6;5888:48;:::i;:::-;5872:65;:::i;:::-;5863:74;;5960:6;5953:5;5946:21;5998:4;5991:5;5987:16;6036:3;6027:6;6022:3;6018:16;6015:25;6012:112;;;6043:79;;:::i;:::-;6012:112;6133:54;6180:6;6175:3;6170;6133:54;:::i;:::-;5853:340;5770:423;;;;;:::o;6212:338::-;6267:5;6316:3;6309:4;6301:6;6297:17;6293:27;6283:122;;6324:79;;:::i;:::-;6283:122;6441:6;6428:20;6466:78;6540:3;6532:6;6525:4;6517:6;6513:17;6466:78;:::i;:::-;6457:87;;6273:277;6212:338;;;;:::o;6590:2456::-;6675:5;6719:6;6707:9;6702:3;6698:19;6694:32;6691:119;;;6729:79;;:::i;:::-;6691:119;6828:23;6844:6;6828:23;:::i;:::-;6819:32;;6912:1;6952:49;6997:3;6988:6;6977:9;6973:22;6952:49;:::i;:::-;6945:4;6938:5;6934:16;6927:75;6861:152;7073:2;7114:49;7159:3;7150:6;7139:9;7135:22;7114:49;:::i;:::-;7107:4;7100:5;7096:16;7089:75;7023:152;7266:2;7255:9;7251:18;7238:32;7297:18;7289:6;7286:30;7283:117;;;7319:79;;:::i;:::-;7283:117;7439:58;7493:3;7484:6;7473:9;7469:22;7439:58;:::i;:::-;7432:4;7425:5;7421:16;7414:84;7185:324;7600:2;7589:9;7585:18;7572:32;7631:18;7623:6;7620:30;7617:117;;;7653:79;;:::i;:::-;7617:117;7773:58;7827:3;7818:6;7807:9;7803:22;7773:58;:::i;:::-;7766:4;7759:5;7755:16;7748:84;7519:324;7914:3;7956:49;8001:3;7992:6;7981:9;7977:22;7956:49;:::i;:::-;7949:4;7942:5;7938:16;7931:75;7853:164;8090:3;8132:49;8177:3;8168:6;8157:9;8153:22;8132:49;:::i;:::-;8125:4;8118:5;8114:16;8107:75;8027:166;8255:3;8297:49;8342:3;8333:6;8322:9;8318:22;8297:49;:::i;:::-;8290:4;8283:5;8279:16;8272:75;8203:155;8457:3;8446:9;8442:19;8429:33;8489:18;8481:6;8478:30;8475:117;;;8511:79;;:::i;:::-;8475:117;8631:58;8685:3;8676:6;8665:9;8661:22;8631:58;:::i;:::-;8624:4;8617:5;8613:16;8606:84;8368:333;8793:3;8782:9;8778:19;8765:33;8825:18;8817:6;8814:30;8811:117;;;8847:79;;:::i;:::-;8811:117;8969:58;9023:3;9014:6;9003:9;8999:22;8969:58;:::i;:::-;8960:6;8953:5;8949:18;8942:86;8711:328;6590:2456;;;;:::o;9052:561::-;9147:6;9196:2;9184:9;9175:7;9171:23;9167:32;9164:119;;;9202:79;;:::i;:::-;9164:119;9350:1;9339:9;9335:17;9322:31;9380:18;9372:6;9369:30;9366:117;;;9402:79;;:::i;:::-;9366:117;9507:89;9588:7;9579:6;9568:9;9564:22;9507:89;:::i;:::-;9497:99;;9293:313;9052:561;;;;:::o;9619:474::-;9687:6;9695;9744:2;9732:9;9723:7;9719:23;9715:32;9712:119;;;9750:79;;:::i;:::-;9712:119;9870:1;9895:53;9940:7;9931:6;9920:9;9916:22;9895:53;:::i;:::-;9885:63;;9841:117;9997:2;10023:53;10068:7;10059:6;10048:9;10044:22;10023:53;:::i;:::-;10013:63;;9968:118;9619:474;;;;;:::o;10099:118::-;10186:24;10204:5;10186:24;:::i;:::-;10181:3;10174:37;10099:118;;:::o;10223:222::-;10316:4;10354:2;10343:9;10339:18;10331:26;;10367:71;10435:1;10424:9;10420:17;10411:6;10367:71;:::i;:::-;10223:222;;;;:::o",
+                "storageLayout": {
+                    "storage": [],
+                    "types": null
+                },
+                "transientStorageLayout": {
+                    "storage": [],
+                    "types": null
+                },
+                "varmap": ""
+            }
+        ],
+        "legacyStructLinking": {},
+        "library_addresses": [],
+        "origSourceDir": ".pre_autofinders.0",
+        "primary_contract": "UserOpWebAuthnVerifier",
+        "primary_contract_address": "00000000ce4604a0000000000000000000000008",
+        "prototypeFor": [],
+        "sdc_name": "UserOpWebAuthnVerifier.sol_0",
+        "sourceDir": ".post_autofinders.0",
+        "srclist": {
+            "0": "src/interface/IVerifier.sol",
+            "1": "src/lib/OnlyKeystore.sol",
+            "2": "src/verifier/UserOpWebAuthnVerifier.sol",
+            "3": "lib/account-abstraction/contracts/core/Helpers.sol",
+            "4": "lib/account-abstraction/contracts/interfaces/PackedUserOperation.sol",
+            "5": "lib/solady/src/utils/Base64.sol",
+            "6": "lib/solady/src/utils/P256.sol",
+            "7": "lib/solady/src/utils/WebAuthn.sol"
+        },
+        "state": {},
+        "structLinkingInfo": {}
+    }
+}

@@ -1,0 +1,571 @@
+Compiling src/verifier/UserOpMultiSigVerifier.sol...
+Compiling src/verifier/UserOpMultiSigVerifier.sol to expose internal function information and local variables...
+
+Connecting to server...
+
+[32mJob submitted to server[0m
+
+Manage your jobs at https://prover.certora.com
+Follow your job and see verification results at https://prover.certora.com/output/10398964/9e944bfdd1d14afc9f3d5ccb403e6c69
+Output:
+processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -[INFO]: Download - 8.6.1/emv-8.6.1.jar
+[INFO]: Download finished
+[INFO]: Download - 8.6.1/tac_optimizer-8.6.1
+[INFO]: Download finished
+[INFO]: Download - Gimli-DWARF-JSONDump
+[INFO]: Download finished
+[INFO]: Download - uploadFiles/10398964/9e944bfdd1d14afc9f3d5ccb403e6c69.zip
+[INFO]: Download finished
+[INFO]: Primary contract name: UserOpMultiSigVerifier
+[INFO]: cache folder is empty
+[INFO]: found 0 cache files
+[INFO]: Command: java -Xmx31500m -XX:MaxHeapFreeRatio=10 -XX:MinHeapFreeRatio=5 -XX:G1PeriodicGCInterval=15 -XX:NewRatio=5 -XX:+CrashOnOutOfMemoryError -XX:ErrorFile=/home/appuser/code/java_error%p.log -DoutputUrl=outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/ -DjobId=9e944bfdd1d14afc9f3d5ccb403e6c69 -DuserId=10398964 -jar /home/appuser/prover/emv.jar -cache 51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1 -hashingLengthBound 2048 -b 5 -optimisticUnboundedHashing true -assumeUnwindCond -ruleSanityChecks basic -maxConcurrentRules 3 -globalTimeout 7200 -globalTimeout 7200
+[INFO]: Overcommit Memory Value: 1 
+Start Tue Dec 16 03:39:19 GMT 2025
+Start Tue Dec 16 03:39:19 GMT 2025
+Warning: Syntax warning in spec file multisig_verifier.cvl:13:5: Method declaration for UserOpMultiSigVerifier.validateData(bytes32, bytes, bytes) returns (uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+Warning: Syntax warning in spec file multisig_verifier.cvl:77:5: validateData is called with `@withrevert`, it's return values [result] are undefined if this call reverts. Make sure to check that `!lastReverted` before using them
+Warning: Syntax warning in spec file multisig_verifier.cvl:97:5: validateData is called with `@withrevert`, it's return values [result1] are undefined if this call reverts. Make sure to check that `!lastReverted` before using them
+Warning: Syntax warning in spec file multisig_verifier.cvl:100:5: validateData is called with `@withrevert`, it's return values [result2] are undefined if this call reverts. Make sure to check that `!lastReverted` before using them
+The scene contains 20 contracts:
+UserOpMultiSigVerifier : 0xce4604a0000000000000000000000006,
+ecrecover : 0x1,
+sha256 : 0x2,
+ripemd160 : 0x3,
+identity : 0x4,
+bigmod : 0x5,
+bn256Add : 0x6,
+bn256ScalarMul : 0x7,
+bn256Pairing : 0x8,
+Precompiled244 : 0xf4,
+Precompiled245 : 0xf5,
+Precompiled246 : 0xf6,
+Precompiled247 : 0xf7,
+Precompiled248 : 0xf8,
+Precompiled249 : 0xf9,
+Precompiled250 : 0xfa,
+Precompiled251 : 0xfb,
+Precompiled252 : 0xfc,
+Precompiled253 : 0xfd,
+Precompiled254 : 0xfe
+Running initial transformations
+Has CVL checks.
+Checking CVL cvl/multisig_verifier.cvl for contract UserOpMultiSigVerifier
+Unrolling loops 5 times, unwinding condition is assumed
+Checking rule zeroThresholdReverts (2 out of 9)...
+Checking rule envfreeFuncsStaticCheck (9 out of 9)...
+Checking rule validReturnValues (3 out of 9)...
+Checking rule keystoreNonZero (8 out of 9)...
+Checking rule onlyKeystoreCanValidate (1 out of 9)...
+Checking rule validateIsView (5 out of 9)...
+Checking rule deterministicValidation (4 out of 9)...
+Checking rule signaturesTagIsCorrect (6 out of 9)...
+Checking rule sanityValidateDataReachable (7 out of 9)...
+Result for envfreeFuncsStaticCheck: envfreeFuncsStaticCheck: keystore(): SUCCESS
+SIGNATURES_ONLY_TAG(): SUCCESS
+Starting to run on rule signaturesTagIsCorrect
+Starting to run on rule keystoreNonZero-Induction base: After the constructor
+Verified: signaturesTagIsCorrect
+signaturesTagIsCorrect: Properties successfully verified on all inputs
+Starting to run on rule sanityValidateDataReachable-Satisfy_lastReverted_(multisig_verifier_cvl_154_5)
+Starting to run on rule validReturnValues
+Total time for keystoreNonZero-Induction base: After the constructor: 1 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 1 seconds
+Violated: keystoreNonZero-Induction base: After the constructor
+keystoreNonZero-Induction base: After the constructor: A property is violated
+received `signalSkip` for rule keystoreNonZero-Induction base: After the constructor-invariant_not_trivial_postcondition
+received `signalSkip` for rule keystoreNonZero-Induction base: After the constructor-rule_not_vacuous
+Result for keystoreNonZero: keystoreNonZero: Induction base: After the constructor: FAIL: assert weak invariant in post-state
+Induction step: after external (non-view) methods: Using general requirements: Rule-check skipped. Skipping reason: The generic preserved block for the invariant Using general requirements does not apply to any method.
+Starting to run on rule zeroThresholdReverts-Satisfy_true_(multisig_verifier_cvl_63_5)
+Total time for sanityValidateDataReachable-Satisfy_lastReverted_(multisig_verifier_cvl_154_5): 2 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 2 seconds
+Verified: sanityValidateDataReachable-Satisfy_lastReverted_(multisig_verifier_cvl_154_5)
+sanityValidateDataReachable-Satisfy_lastReverted_(multisig_verifier_cvl_154_5): Properties successfully verified on all inputs
+Starting to run on rule validateIsView
+Ping 1m - Processed 4/9 (44%) rules. 10 tasks complete, 6 pending.
+Total time for validateIsView: 1 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 1 seconds
+Verified: validateIsView
+validateIsView: Properties successfully verified on all inputs
+Starting to run on rule onlyKeystoreCanValidate
+Ping 2m - Processed 5/9 (55%) rules. 11 tasks complete, 5 pending.
+Total time for validReturnValues: 1 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 1 seconds
+Verified: validReturnValues
+validReturnValues: Properties successfully verified on all inputs
+Starting to run on rule signaturesTagIsCorrect-rule_not_vacuous
+Total time for signaturesTagIsCorrect-rule_not_vacuous: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Violated: signaturesTagIsCorrect-rule_not_vacuous
+signaturesTagIsCorrect-rule_not_vacuous: A property is violated
+Result for signaturesTagIsCorrect: signaturesTagIsCorrect: SUCCESS
+Total time for zeroThresholdReverts-Satisfy_true_(multisig_verifier_cvl_63_5): 4 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 3 seconds
+Verified: zeroThresholdReverts-Satisfy_true_(multisig_verifier_cvl_63_5)
+zeroThresholdReverts-Satisfy_true_(multisig_verifier_cvl_63_5): Properties successfully verified on all inputs
+Starting to run on rule deterministicValidation
+Starting to run on rule sanityValidateDataReachable-rule_not_vacuous
+Total time for sanityValidateDataReachable-rule_not_vacuous: 2 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 1 seconds
+Violated: sanityValidateDataReachable-rule_not_vacuous
+sanityValidateDataReachable-rule_not_vacuous: A property is violated
+Result for sanityValidateDataReachable: sanityValidateDataReachable: Satisfy_lastReverted_(multisig_verifier_cvl_154_5): FAIL: !(lastReverted)
+Starting to run on rule validateIsView-rule_not_vacuous
+Ping 3m - Processed 7/9 (77%) rules. 16 tasks complete, 3 pending.
+Ping 4m - Processed 7/9 (77%) rules. 16 tasks complete, 3 pending.
+Total time for onlyKeystoreCanValidate: 1 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyKeystoreCanValidate
+onlyKeystoreCanValidate: Properties successfully verified on all inputs
+Starting to run on rule validReturnValues-rule_not_vacuous
+Ping 5m - Processed 8/9 (88%) rules. 17 tasks complete, 3 pending.
+Total time for validateIsView-rule_not_vacuous: 2 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 2 seconds
+Violated: validateIsView-rule_not_vacuous
+validateIsView-rule_not_vacuous: A property is violated
+Result for validateIsView: validateIsView: SUCCESS
+Starting to run on rule zeroThresholdReverts-rule_not_vacuous
+Total time for deterministicValidation: 6 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 5 seconds
+Violated: deterministicValidation
+deterministicValidation: A property is violated
+received `signalSkip` for rule deterministicValidation-rule_not_vacuous
+Result for deterministicValidation: deterministicValidation: FAIL: HIGH: Same inputs produce different reve...
+Starting to run on rule onlyKeystoreCanValidate-rule_not_vacuous
+Ping 6m - Processed 9/9 (100%) rules. 19 tasks complete, 3 pending.
+Total time for validReturnValues-rule_not_vacuous: 2 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 2 seconds
+Violated: validReturnValues-rule_not_vacuous
+validReturnValues-rule_not_vacuous: A property is violated
+Result for validReturnValues: validReturnValues: SUCCESS
+Total time for zeroThresholdReverts-rule_not_vacuous: 1 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 1 seconds
+Violated: zeroThresholdReverts-rule_not_vacuous
+zeroThresholdReverts-rule_not_vacuous: A property is violated
+Result for zeroThresholdReverts: zeroThresholdReverts: Satisfy_true_(multisig_verifier_cvl_63_5): FAIL: true
+Ping 7m - Processed 9/9 (100%) rules. 21 tasks complete, 1 pending.
+Total time for onlyKeystoreCanValidate-rule_not_vacuous: 2 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 2 seconds
+Violated: onlyKeystoreCanValidate-rule_not_vacuous
+onlyKeystoreCanValidate-rule_not_vacuous: A property is violated
+Result for onlyKeystoreCanValidate: onlyKeystoreCanValidate: SUCCESS
+Results for envfreeFuncsStaticCheck:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|keystore()                              |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|SIGNATURES_ONLY_TAG()                   |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Results for Induction step: after external (non-view) methods:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Results for keystoreNonZero:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|Induction base: After the constructor   |Violated     |2         |Assert message: assert weak invariant in post-state         |UserOpMultiSigVerifier=2                          |
+|                                        |(sat)        |          |                                                            |initCalldata=                                     |
+|                                        |             |          |                                                            |initCalldata.length=36                            |
+|                                        |             |          |                                                            |initEnv.block.basefee=8                           |
+|                                        |             |          |                                                            |initEnv.block.blobbasefee=7                       |
+|                                        |             |          |                                                            |initEnv.block.coinbase=0x401                      |
+|                                        |             |          |                                                            |initEnv.block.difficulty=6                        |
+|                                        |             |          |                                                            |initEnv.block.gaslimit=5                          |
+|                                        |             |          |                                                            |initEnv.block.number=4                            |
+|                                        |             |          |                                                            |initEnv.block.timestamp=3                         |
+|                                        |             |          |                                                            |initEnv.msg.sender=0x2711                         |
+|                                        |             |          |                                                            |initEnv.msg.value=0                               |
+|                                        |             |          |                                                            |initEnv.tx.origin=0x402                           |
+|Induction step: after external          |Not violated |0         |                                                            |no local variables                                |
+|(non-view) methods                      |(unsat)      |          |                                                            |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Results for sanityValidateDataReachable:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|Satisfy_lastReverted_(multisig_verifier_|Not violated |4         |Assert message: !(lastReverted)                             |UserOpMultiSigVerifier=10001                      |
+|cvl_154_5)                              |(sat)        |          |                                                            |config=(invalid UTF-8)                            |
+|                                        |             |          |                                                            |config.length=107008                              |
+|                                        |             |          |                                                            |data=...                                          |
+|                                        |             |          |                                                            |data.length=14108                                 |
+|                                        |             |          |                                                            |e.block.basefee=0                                 |
+|                                        |             |          |                                                            |e.block.blobbasefee=0                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x0                              |
+|                                        |             |          |                                                            |e.block.difficulty=0                              |
+|                                        |             |          |                                                            |e.block.gaslimit=0                                |
+|                                        |             |          |                                                            |e.block.number=0                                  |
+|                                        |             |          |                                                            |e.block.timestamp=0                               |
+|                                        |             |          |                                                            |e.msg.sender=0x2712                               |
+|                                        |             |          |                                                            |e.msg.value=0                                     |
+|                                        |             |          |                                                            |e.tx.origin=0x0                                   |
+|                                        |             |          |                                                            |message=0x0                                       |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Results for zeroThresholdReverts:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|Satisfy_true_(multisig_verifier_cvl_63_5|Not violated |127       |Assert message: true                                        |UserOpMultiSigVerifier=9                          |
+|)                                       |(sat)        |          |                                                            |config=                                           |
+|                                        |             |          |                                                            |config.length=4                                   |
+|                                        |             |          |                                                            |data=                                             |
+|                                        |             |          |                                                            |data.length=3                                     |
+|                                        |             |          |                                                            |e.block.basefee=0                                 |
+|                                        |             |          |                                                            |e.block.blobbasefee=0                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x402                            |
+|                                        |             |          |                                                            |e.block.difficulty=0                              |
+|                                        |             |          |                                                            |e.block.gaslimit=15                               |
+|                                        |             |          |                                                            |e.block.number=11                                 |
+|                                        |             |          |                                                            |e.block.timestamp=7                               |
+|                                        |             |          |                                                            |e.msg.sender=0x401                                |
+|                                        |             |          |                                                            |e.msg.value=2                                     |
+|                                        |             |          |                                                            |e.tx.origin=0x38a4                                |
+|                                        |             |          |                                                            |message=0x6                                       |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Results for all:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|envfreeFuncsStaticCheck                 |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|signaturesTagIsCorrect                  |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|Induction base: After the constructor   |Violated     |2         |Assert message: assert weak invariant in post-state         |UserOpMultiSigVerifier=2                          |
+|                                        |(sat)        |          |                                                            |initCalldata=                                     |
+|                                        |             |          |                                                            |initCalldata.length=36                            |
+|                                        |             |          |                                                            |initEnv.block.basefee=8                           |
+|                                        |             |          |                                                            |initEnv.block.blobbasefee=7                       |
+|                                        |             |          |                                                            |initEnv.block.coinbase=0x401                      |
+|                                        |             |          |                                                            |initEnv.block.difficulty=6                        |
+|                                        |             |          |                                                            |initEnv.block.gaslimit=5                          |
+|                                        |             |          |                                                            |initEnv.block.number=4                            |
+|                                        |             |          |                                                            |initEnv.block.timestamp=3                         |
+|                                        |             |          |                                                            |initEnv.msg.sender=0x2711                         |
+|                                        |             |          |                                                            |initEnv.msg.value=0                               |
+|                                        |             |          |                                                            |initEnv.tx.origin=0x402                           |
+|keystoreNonZero                         |Violated     |2         |Assert message: assert weak invariant in post-state         |no local variables                                |
+|                                        |(sat)        |          |                                                            |                                                  |
+|Satisfy_lastReverted_(multisig_verifier_|Not violated |4         |Assert message: !(lastReverted)                             |UserOpMultiSigVerifier=10001                      |
+|cvl_154_5)                              |(sat)        |          |                                                            |config=(invalid UTF-8)                            |
+|                                        |             |          |                                                            |config.length=107008                              |
+|                                        |             |          |                                                            |data=...                                          |
+|                                        |             |          |                                                            |data.length=14108                                 |
+|                                        |             |          |                                                            |e.block.basefee=0                                 |
+|                                        |             |          |                                                            |e.block.blobbasefee=0                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x0                              |
+|                                        |             |          |                                                            |e.block.difficulty=0                              |
+|                                        |             |          |                                                            |e.block.gaslimit=0                                |
+|                                        |             |          |                                                            |e.block.number=0                                  |
+|                                        |             |          |                                                            |e.block.timestamp=0                               |
+|                                        |             |          |                                                            |e.msg.sender=0x2712                               |
+|                                        |             |          |                                                            |e.msg.value=0                                     |
+|                                        |             |          |                                                            |e.tx.origin=0x0                                   |
+|                                        |             |          |                                                            |message=0x0                                       |
+|sanityValidateDataReachable             |Not violated |4         |Assert message: !(lastReverted)                             |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|validateIsView                          |Not violated |75        |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|validReturnValues                       |Not violated |125       |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|rule_not_vacuous                        |Not violated |0         |Assert message: sanity check for rule signaturesTagIsCor... |UserOpMultiSigVerifier=2^159 - 1                  |
+|                                        |(sat)        |          |                                                            |tag=0xff                                          |
+|Satisfy_true_(multisig_verifier_cvl_63_5|Not violated |127       |Assert message: true                                        |UserOpMultiSigVerifier=9                          |
+|)                                       |(sat)        |          |                                                            |config=                                           |
+|                                        |             |          |                                                            |config.length=4                                   |
+|                                        |             |          |                                                            |data=                                             |
+|                                        |             |          |                                                            |data.length=3                                     |
+|                                        |             |          |                                                            |e.block.basefee=0                                 |
+|                                        |             |          |                                                            |e.block.blobbasefee=0                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x402                            |
+|                                        |             |          |                                                            |e.block.difficulty=0                              |
+|                                        |             |          |                                                            |e.block.gaslimit=15                               |
+|                                        |             |          |                                                            |e.block.number=11                                 |
+|                                        |             |          |                                                            |e.block.timestamp=7                               |
+|                                        |             |          |                                                            |e.msg.sender=0x401                                |
+|                                        |             |          |                                                            |e.msg.value=2                                     |
+|                                        |             |          |                                                            |e.tx.origin=0x38a4                                |
+|                                        |             |          |                                                            |message=0x6                                       |
+|zeroThresholdReverts                    |Not violated |127       |Assert message: true                                        |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|rule_not_vacuous                        |Not violated |4         |Assert message: !(lastReverted)                             |UserOpMultiSigVerifier=10001                      |
+|                                        |(sat)        |          |                                                            |config=(invalid UTF-8)                            |
+|                                        |             |          |                                                            |config.length=391265                              |
+|                                        |             |          |                                                            |data=...                                          |
+|                                        |             |          |                                                            |data.length=907680                                |
+|                                        |             |          |                                                            |e.block.basefee=0                                 |
+|                                        |             |          |                                                            |e.block.blobbasefee=0                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x0                              |
+|                                        |             |          |                                                            |e.block.difficulty=0                              |
+|                                        |             |          |                                                            |e.block.gaslimit=0                                |
+|                                        |             |          |                                                            |e.block.number=0                                  |
+|                                        |             |          |                                                            |e.block.timestamp=0                               |
+|                                        |             |          |                                                            |e.msg.sender=0x2712                               |
+|                                        |             |          |                                                            |e.msg.value=0                                     |
+|                                        |             |          |                                                            |e.tx.origin=0x0                                   |
+|                                        |             |          |                                                            |message=0x0                                       |
+|onlyKeystoreCanValidate                 |Not violated |125       |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|rule_not_vacuous                        |Not violated |128       |Assert message: sanity check for rule validateIsView suc... |UserOpMultiSigVerifier=10001                      |
+|                                        |(sat)        |          |                                                            |config=                                           |
+|                                        |             |          |                                                            |config.length=0                                   |
+|                                        |             |          |                                                            |data=                                             |
+|                                        |             |          |                                                            |data.length=0                                     |
+|                                        |             |          |                                                            |e.block.basefee=0                                 |
+|                                        |             |          |                                                            |e.block.blobbasefee=0                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x0                              |
+|                                        |             |          |                                                            |e.block.difficulty=0                              |
+|                                        |             |          |                                                            |e.block.gaslimit=0                                |
+|                                        |             |          |                                                            |e.block.number=0                                  |
+|                                        |             |          |                                                            |e.block.timestamp=0                               |
+|                                        |             |          |                                                            |e.msg.sender=0x2712                               |
+|                                        |             |          |                                                            |e.msg.value=0                                     |
+|                                        |             |          |                                                            |e.tx.origin=0x0                                   |
+|                                        |             |          |                                                            |keystoreAfter=0x2712                              |
+|                                        |             |          |                                                            |keystoreBefore=0x2712                             |
+|                                        |             |          |                                                            |message=0x0                                       |
+|                                        |             |          |                                                            |tagAfter=0xff                                     |
+|                                        |             |          |                                                            |tagBefore=0xff                                    |
+|deterministicValidation                 |Violated     |152       |Assert message: HIGH: Same inputs produce different reve... |UserOpMultiSigVerifier=2                          |
+|                                        |(sat)        |          |                                                            |config=                                           |
+|                                        |             |          |                                                            |                                                  |
+|                                        |             |          |                                                            |`                                                 |
+|                                        |             |          |                                                            |                                                  |
+|                                        |             |          |                                                            |                                                  |
+|                                        |             |          |                                                            |                                                  |
+|                                        |             |          |                                                            |                                                  |
+|                                        |             |          |                                                            |...                                               |
+|                                        |             |          |                                                            |config.length=347712                              |
+|                                        |             |          |                                                            |data=...                                          |
+|                                        |             |          |                                                            |data.length=64                                    |
+|                                        |             |          |                                                            |e1.block.basefee=0                                |
+|                                        |             |          |                                                            |e1.block.blobbasefee=0                            |
+|                                        |             |          |                                                            |e1.block.coinbase=0x0                             |
+|                                        |             |          |                                                            |e1.block.difficulty=0                             |
+|                                        |             |          |                                                            |e1.block.gaslimit=0                               |
+|                                        |             |          |                                                            |e1.block.number=0                                 |
+|                                        |             |          |                                                            |e1.block.timestamp=0                              |
+|                                        |             |          |                                                            |e1.msg.sender=0x2711                              |
+|                                        |             |          |                                                            |e1.msg.value=1                                    |
+|                                        |             |          |                                                            |e1.tx.origin=0x0                                  |
+|                                        |             |          |                                                            |e2.block.basefee=0                                |
+|                                        |             |          |                                                            |e2.block.blobbasefee=0                            |
+|                                        |             |          |                                                            |e2.block.coinbase=0x0                             |
+|                                        |             |          |                                                            |e2.block.difficulty=0                             |
+|                                        |             |          |                                                            |e2.block.gaslimit=0                               |
+|                                        |             |          |                                                            |e2.block.number=0                                 |
+|                                        |             |          |                                                            |e2.block.timestamp=0                              |
+|                                        |             |          |                                                            |e2.msg.sender=0x2711                              |
+|                                        |             |          |                                                            |e2.msg.value=0                                    |
+|                                        |             |          |                                                            |e2.tx.origin=0x0                                  |
+|                                        |             |          |                                                            |message=0x0                                       |
+|                                        |             |          |                                                            |result1=0                                         |
+|                                        |             |          |                                                            |result2=1                                         |
+|                                        |             |          |                                                            |reverted1=true                                    |
+|                                        |             |          |                                                            |reverted2=false                                   |
+|rule_not_vacuous                        |Not violated |126       |Assert message: sanity check for rule validReturnValues ... |UserOpMultiSigVerifier=63                         |
+|                                        |(sat)        |          |                                                            |config=                                           |
+|                                        |             |          |                                                            |config.length=0                                   |
+|                                        |             |          |                                                            |data=                                             |
+|                                        |             |          |                                                            |data.length=0                                     |
+|                                        |             |          |                                                            |e.block.basefee=0                                 |
+|                                        |             |          |                                                            |e.block.blobbasefee=0                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x0                              |
+|                                        |             |          |                                                            |e.block.difficulty=0                              |
+|                                        |             |          |                                                            |e.block.gaslimit=0                                |
+|                                        |             |          |                                                            |e.block.number=0                                  |
+|                                        |             |          |                                                            |e.block.timestamp=0                               |
+|                                        |             |          |                                                            |e.msg.sender=0x2711                               |
+|                                        |             |          |                                                            |e.msg.value=0                                     |
+|                                        |             |          |                                                            |e.tx.origin=0x0                                   |
+|                                        |             |          |                                                            |message=0x0                                       |
+|                                        |             |          |                                                            |result=2                                          |
+|rule_not_vacuous                        |Not violated |75        |Assert message: true                                        |UserOpMultiSigVerifier=2                          |
+|                                        |(sat)        |          |                                                            |config=                                           |
+|                                        |             |          |                                                            |config.length=0                                   |
+|                                        |             |          |                                                            |data=                                             |
+|                                        |             |          |                                                            |data.length=0                                     |
+|                                        |             |          |                                                            |e.block.basefee=0                                 |
+|                                        |             |          |                                                            |e.block.blobbasefee=0                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x0                              |
+|                                        |             |          |                                                            |e.block.difficulty=0                              |
+|                                        |             |          |                                                            |e.block.gaslimit=0                                |
+|                                        |             |          |                                                            |e.block.number=0                                  |
+|                                        |             |          |                                                            |e.block.timestamp=0                               |
+|                                        |             |          |                                                            |e.msg.sender=UserOpMultiSigVerifier               |
+|                                        |             |          |                                                            |e.msg.value=1                                     |
+|                                        |             |          |                                                            |e.tx.origin=0x0                                   |
+|                                        |             |          |                                                            |message=0x0                                       |
+|rule_not_vacuous                        |Not violated |125       |Assert message: sanity check for rule onlyKeystoreCanVal... |UserOpMultiSigVerifier=10001                      |
+|                                        |(sat)        |          |                                                            |config=                                           |
+|                                        |             |          |                                                            |config.length=0                                   |
+|                                        |             |          |                                                            |data=                                             |
+|                                        |             |          |                                                            |data.length=0                                     |
+|                                        |             |          |                                                            |e.block.basefee=0                                 |
+|                                        |             |          |                                                            |e.block.blobbasefee=0                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x0                              |
+|                                        |             |          |                                                            |e.block.difficulty=0                              |
+|                                        |             |          |                                                            |e.block.gaslimit=0                                |
+|                                        |             |          |                                                            |e.block.number=0                                  |
+|                                        |             |          |                                                            |e.block.timestamp=0                               |
+|                                        |             |          |                                                            |e.msg.sender=0x2712                               |
+|                                        |             |          |                                                            |e.msg.value=0                                     |
+|                                        |             |          |                                                            |e.tx.origin=0x0                                   |
+|                                        |             |          |                                                            |keystoreAddr=0x0                                  |
+|                                        |             |          |                                                            |message=0x0                                       |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Failures summary:
+Failed on Induction base: After the constructor:
+Assert message: assert weak invariant in post-state
+Initial state does not instate invariant
+Failed on keystoreNonZero:
+Assert message: assert weak invariant in post-state
+Violated for: 
+Induction base: After the constructor
+Failed on rule_not_vacuous:
+Assert message: sanity check for rule signaturesTagIsCor...
+sanity check (vacuity of rule) for rule signaturesTagIsCorrect
+Failed on rule_not_vacuous:
+Assert message: !(lastReverted)
+sanity check (vacuity of rule) for rule sanityValidateDataReachable
+Failed on rule_not_vacuous:
+Assert message: sanity check for rule validateIsView suc...
+sanity check (vacuity of rule) for rule validateIsView
+Failed on deterministicValidation:
+Assert message: HIGH: Same inputs produce different reve...
+Failed on rule_not_vacuous:
+Assert message: sanity check for rule validReturnValues ...
+sanity check (vacuity of rule) for rule validReturnValues
+Failed on rule_not_vacuous:
+Assert message: true
+sanity check (vacuity of rule) for rule zeroThresholdReverts
+Failed on rule_not_vacuous:
+Assert message: sanity check for rule onlyKeystoreCanVal...
+sanity check (vacuity of rule) for rule onlyKeystoreCanValidate
+Ping 8m - Processed 9/9 (100%) rules. 22 tasks complete, 0 pending.
+Done 8m
+Done 8m
+Event reporter: all events were sent without errors
+[INFO]: Process returned with 100
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Results.txt to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Results.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/alertReport.json to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/alertReport.json
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-validateIsView-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-validateIsView-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-deterministicValidation.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-deterministicValidation.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-signaturesTagIsCorrect.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-signaturesTagIsCorrect.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-onlyKeystoreCanValidate.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-onlyKeystoreCanValidate.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-zeroThresholdReverts-Satisfy_true_LPmultisig_verifier_cvl_63_5RP.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-zeroThresholdReverts-Satisfy_true_LPmultisig_verifier_cvl_63_5RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/ctpp_keystoreNonZero-Induction base: After the constructor.txt to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/ctpp_keystoreNonZero-Induction base: After the constructor.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-keystoreNonZero-Induction base: After the constructor.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-keystoreNonZero-Induction base: After the constructor.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/ctpp_validateIsView-rule_not_vacuous.txt to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/ctpp_validateIsView-rule_not_vacuous.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/cvt_version.json to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/cvt_version.json
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/progress.json to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/progress.json
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/FinalResults.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/FinalResults.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/CacheEvents.txt to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/CacheEvents.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Report-signaturesTagIsCorrect-rule_not_vacuous-example1.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Report-signaturesTagIsCorrect-rule_not_vacuous-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/ctpp_sanityValidateDataReachable-Satisfy_lastReverted_LPmultisig_verifier_cvl_154_5RP.txt to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/ctpp_sanityValidateDataReachable-Satisfy_lastReverted_LPmultisig_verifier_cvl_154_5RP.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Report-keystoreNonZero-Induction base: After the constructor-Induction base: After the constructor-example1.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Report-keystoreNonZero-Induction base: After the constructor-Induction base: After the constructor-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/ctpp_signaturesTagIsCorrect-rule_not_vacuous.txt to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/ctpp_signaturesTagIsCorrect-rule_not_vacuous.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/ctpp_sanityValidateDataReachable-rule_not_vacuous.txt to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/ctpp_sanityValidateDataReachable-rule_not_vacuous.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-signaturesTagIsCorrect-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-signaturesTagIsCorrect-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-validateIsView-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-validateIsView-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Report-sanityValidateDataReachable-Satisfy_lastReverted_LPmultisig_verifier_cvl_154_5RP-example1.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Report-sanityValidateDataReachable-Satisfy_lastReverted_LPmultisig_verifier_cvl_154_5RP-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/ctpp_zeroThresholdReverts-Satisfy_true_LPmultisig_verifier_cvl_63_5RP.txt to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/ctpp_zeroThresholdReverts-Satisfy_true_LPmultisig_verifier_cvl_63_5RP.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/ctpp_deterministicValidation.txt to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/ctpp_deterministicValidation.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Report-sanityValidateDataReachable-rule_not_vacuous-example1.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Report-sanityValidateDataReachable-rule_not_vacuous-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Report-zeroThresholdReverts-Satisfy_true_LPmultisig_verifier_cvl_63_5RP-example1.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Report-zeroThresholdReverts-Satisfy_true_LPmultisig_verifier_cvl_63_5RP-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Report-validateIsView-rule_not_vacuous-example1.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Report-validateIsView-rule_not_vacuous-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-sanityValidateDataReachable-Satisfy_lastReverted_LPmultisig_verifier_cvl_154_5RP.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-sanityValidateDataReachable-Satisfy_lastReverted_LPmultisig_verifier_cvl_154_5RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/ctpp_zeroThresholdReverts-rule_not_vacuous.txt to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/ctpp_zeroThresholdReverts-rule_not_vacuous.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-sanityValidateDataReachable-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-sanityValidateDataReachable-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/ctpp_validReturnValues-rule_not_vacuous.txt to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/ctpp_validReturnValues-rule_not_vacuous.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Report-validReturnValues-rule_not_vacuous-example1.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Report-validReturnValues-rule_not_vacuous-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-validateIsView.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-validateIsView.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-validReturnValues.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-validReturnValues.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-zeroThresholdReverts-Satisfy_true_LPmultisig_verifier_cvl_63_5RP.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-zeroThresholdReverts-Satisfy_true_LPmultisig_verifier_cvl_63_5RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/output.json to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/output.json
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/splitStatsdata.json to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/splitStatsdata.json
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Report-onlyKeystoreCanValidate-rule_not_vacuous-example1.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Report-onlyKeystoreCanValidate-rule_not_vacuous-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/ctpp_onlyKeystoreCanValidate-rule_not_vacuous.txt to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/ctpp_onlyKeystoreCanValidate-rule_not_vacuous.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Report-deterministicValidation-example1.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Report-deterministicValidation-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Report-zeroThresholdReverts-rule_not_vacuous-example1.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Report-zeroThresholdReverts-rule_not_vacuous-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-validReturnValues-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-validReturnValues-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-validReturnValues.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-validReturnValues.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-zeroThresholdReverts-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-zeroThresholdReverts-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-onlyKeystoreCanValidate.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-onlyKeystoreCanValidate.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-validateIsView.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-validateIsView.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-validReturnValues-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-validReturnValues-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/profile.jfr to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/profile.jfr
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-deterministicValidation.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-deterministicValidation.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-onlyKeystoreCanValidate-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-onlyKeystoreCanValidate-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/statsdata.json to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/statsdata.json
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-zeroThresholdReverts-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-zeroThresholdReverts-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/PresolverRule-onlyKeystoreCanValidate-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/PresolverRule-onlyKeystoreCanValidate-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-validReturnValues-rule_not_vacuous.tac to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-validReturnValues-rule_not_vacuous.tac
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-onlyKeystoreCanValidate.tac to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-onlyKeystoreCanValidate.tac
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-validReturnValues.tac to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-validReturnValues.tac
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-zeroThresholdReverts-rule_not_vacuous.tac to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-zeroThresholdReverts-rule_not_vacuous.tac
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-onlyKeystoreCanValidate-rule_not_vacuous.tac to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-onlyKeystoreCanValidate-rule_not_vacuous.tac
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-validateIsView.tac to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-validateIsView.tac
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-validateIsView-rule_not_vacuous.tac to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-validateIsView-rule_not_vacuous.tac
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-deterministicValidation.tac to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-deterministicValidation.tac
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-39/Reports/Error-zeroThresholdReverts-Satisfy_true_LPmultisig_verifier_cvl_63_5RP.tac to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/Error-zeroThresholdReverts-Satisfy_true_LPmultisig_verifier_cvl_63_5RP.tac
+INFO:helper:Uploaded /home/appuser/code/cache/5B4F2601BB750631A6D5547F1282608F1445BCCDCAD645A991A17F3FFAE39D8C to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/5B4F2601BB750631A6D5547F1282608F1445BCCDCAD645A991A17F3FFAE39D8C
+INFO:helper:Uploaded /home/appuser/code/cache/A488B8EE898B8176B6DC4284372657B1F9DD635EF745523E5D4AF7B3A1338406 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/A488B8EE898B8176B6DC4284372657B1F9DD635EF745523E5D4AF7B3A1338406
+INFO:helper:Uploaded /home/appuser/code/cache/8880B6F2FF06C18B50BA007FC08BD5BF7ED515CF262575D01617567E0F820A33 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/8880B6F2FF06C18B50BA007FC08BD5BF7ED515CF262575D01617567E0F820A33
+INFO:helper:Uploaded /home/appuser/code/cache/63FD09DEAF8E12C227F67D52353BFF0566E34064198F2D2A3C0069E7EA98CFC2 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/63FD09DEAF8E12C227F67D52353BFF0566E34064198F2D2A3C0069E7EA98CFC2
+INFO:helper:Uploaded /home/appuser/code/cache/8B35AC0CAD2C6DAE2506B46FF1BAC2E2B2EB06A62F8829C77BF8CC6086719B18 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/8B35AC0CAD2C6DAE2506B46FF1BAC2E2B2EB06A62F8829C77BF8CC6086719B18
+INFO:helper:Uploaded /home/appuser/code/cache/7F7B7A530C344B92779D6641EB6B6148388A56E030432AEF4A55EEEBC5066A73 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/7F7B7A530C344B92779D6641EB6B6148388A56E030432AEF4A55EEEBC5066A73
+INFO:helper:Uploaded /home/appuser/code/cache/24A1C524FB24F843820734E334D80C7F08BB80867FBE62317EBC472C4FC2B0E9 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/24A1C524FB24F843820734E334D80C7F08BB80867FBE62317EBC472C4FC2B0E9
+INFO:helper:Uploaded /home/appuser/code/cache/91A1D50D731FE4C4908D2F04010FE93AEE4174357C80C72240BCD89EC1709D90 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/91A1D50D731FE4C4908D2F04010FE93AEE4174357C80C72240BCD89EC1709D90
+INFO:helper:Uploaded /home/appuser/code/cache/1C99FF10526F57B2140086CC99C78F5990FE6577DFF54D600465CADFA5DA3942 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/1C99FF10526F57B2140086CC99C78F5990FE6577DFF54D600465CADFA5DA3942
+INFO:helper:Uploaded /home/appuser/code/cache/8759B66DD3643F7626AE7D25096E2F73F6F9EDB6A039DD8DC860798B0A6D5A2F to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/8759B66DD3643F7626AE7D25096E2F73F6F9EDB6A039DD8DC860798B0A6D5A2F
+INFO:helper:Uploaded /home/appuser/code/cache/BE780391971AC78DB511579C81E347C511B73A40B599D5C9FCD9DFC80DA08CDD to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/BE780391971AC78DB511579C81E347C511B73A40B599D5C9FCD9DFC80DA08CDD
+INFO:helper:Uploaded /home/appuser/code/cache/14DCC74257850DE8A74FA8F863BB1032C8342238FC2338AEF9B7D9791EEAE54C to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/14DCC74257850DE8A74FA8F863BB1032C8342238FC2338AEF9B7D9791EEAE54C
+INFO:helper:Uploaded /home/appuser/code/cache/A3EDF631992C9DE34C1F8685AED6DF22FC5E0B84488502C98D0D10F53AC077BE to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/A3EDF631992C9DE34C1F8685AED6DF22FC5E0B84488502C98D0D10F53AC077BE
+INFO:helper:Uploaded /home/appuser/code/cache/18F38C8A5A928AAE16217E55AAC84279CA00C5745DD674BF36388E0F2FD732C5 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/18F38C8A5A928AAE16217E55AAC84279CA00C5745DD674BF36388E0F2FD732C5
+INFO:helper:Uploaded /home/appuser/code/cache/72E14D9DE15569183908538D653FD91B109689C17AFD4C529D0FB8FC1BBD0A72 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/72E14D9DE15569183908538D653FD91B109689C17AFD4C529D0FB8FC1BBD0A72
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-nGLbfsZu0UJLT0Ewo47xQA to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-nGLbfsZu0UJLT0Ewo47xQA
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-Ryar33YWF3vK7NNQQNRgpw to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-Ryar33YWF3vK7NNQQNRgpw
+INFO:helper:Uploaded /home/appuser/code/cache/97FE888737289E97FB4640599B7EC88B6DB7FC66336355CE0DD026B5F462AA1E to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/97FE888737289E97FB4640599B7EC88B6DB7FC66336355CE0DD026B5F462AA1E
+INFO:helper:Uploaded /home/appuser/code/cache/16C6BD8D242507E799C3836ED74262241E701DC65B9E1D16D7A7895041BE4920 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/16C6BD8D242507E799C3836ED74262241E701DC65B9E1D16D7A7895041BE4920
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-nGLbfsZu0UJLT0Ewo47xQA to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-nGLbfsZu0UJLT0Ewo47xQA
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-Ryar33YWF3vK7NNQQNRgpw to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-Ryar33YWF3vK7NNQQNRgpw
+INFO:helper:Uploaded /home/appuser/code/cache/FB4327792CB615606921D824AD71C5A33DED28A554AC298BD372EE0107606A52 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/FB4327792CB615606921D824AD71C5A33DED28A554AC298BD372EE0107606A52
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-8lSOkZeJLj55I_NX_7NHaQ to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-8lSOkZeJLj55I_NX_7NHaQ
+INFO:helper:Uploaded /home/appuser/code/cache/F5B5BEC753F31BF91E4DB0DEAB8BA97F5B2FF2E509D453FF5E8B85430305E435 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/F5B5BEC753F31BF91E4DB0DEAB8BA97F5B2FF2E509D453FF5E8B85430305E435
+INFO:helper:Uploaded /home/appuser/code/cache/5AB50094D458F39ABB4845F94388FF1F4FE47DAD49EEE5A74A0BD2BFE10746A0 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/5AB50094D458F39ABB4845F94388FF1F4FE47DAD49EEE5A74A0BD2BFE10746A0
+INFO:helper:Uploaded /home/appuser/code/cache/2CFCC898083638DBEF1B5E2D82ADCA4CE64F9337BBC773FBDED0A8B5BF925A36 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/2CFCC898083638DBEF1B5E2D82ADCA4CE64F9337BBC773FBDED0A8B5BF925A36
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-2wwvKx_OmqF0vzHSDiKlbg to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-2wwvKx_OmqF0vzHSDiKlbg
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-2wwvKx_OmqF0vzHSDiKlbg to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-2wwvKx_OmqF0vzHSDiKlbg
+INFO:helper:Uploaded /home/appuser/code/cache/25E51F8F96AD066BB163DE7F9FB96EF95FE9F5549EA85C3D6D8A78877FEB2B21 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/25E51F8F96AD066BB163DE7F9FB96EF95FE9F5549EA85C3D6D8A78877FEB2B21
+INFO:helper:Uploaded /home/appuser/code/cache/9B69E0AC257BC85E512999AD1C2E27EBA9A667EA6CB624756CB9A6D4B7AD0B22 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/9B69E0AC257BC85E512999AD1C2E27EBA9A667EA6CB624756CB9A6D4B7AD0B22
+INFO:helper:Uploaded /home/appuser/code/cache/D7AA311091AA5379F35F42CB68C906C393AB2173D638E2B530E59CD098CE8F3C to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/D7AA311091AA5379F35F42CB68C906C393AB2173D638E2B530E59CD098CE8F3C
+INFO:helper:Uploaded /home/appuser/code/cache/E5131CD40942855CD0F66703206B27A6D33B8F97104F3108AE7DD5ED303AB1B8 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/E5131CD40942855CD0F66703206B27A6D33B8F97104F3108AE7DD5ED303AB1B8
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-t4pCe8mT39PATieMoSVy0w to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-t4pCe8mT39PATieMoSVy0w
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-j9GwcwQS2sZpLvcel0wzfQ to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-j9GwcwQS2sZpLvcel0wzfQ
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-zlcGgYhpMgBI4Jivvzzbbg to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-zlcGgYhpMgBI4Jivvzzbbg
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-8lSOkZeJLj55I_NX_7NHaQ to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-8lSOkZeJLj55I_NX_7NHaQ
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-nVdcPqgTM71XrU83Wb37XA to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-nVdcPqgTM71XrU83Wb37XA
+INFO:helper:Uploaded /home/appuser/code/cache/B47AAE4C2BB4113897881E5C751611A643C2F869CDA26B084174B1932D787A04 to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/B47AAE4C2BB4113897881E5C751611A643C2F869CDA26B084174B1932D787A04
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-yV-vEvHRzXVq7_CI3dZZ-g to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-yV-vEvHRzXVq7_CI3dZZ-g
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-j9GwcwQS2sZpLvcel0wzfQ to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-j9GwcwQS2sZpLvcel0wzfQ
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-PVqu3ltuMFnMDtq3BlVr7A to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-PVqu3ltuMFnMDtq3BlVr7A
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-O9d3LMp-SSW8T1e33PeEFg to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-O9d3LMp-SSW8T1e33PeEFg
+INFO:helper:Uploaded /home/appuser/code/cache/1BCB06CB48EA08CF4A10582E1C88694B4222C125374B9C6F84C953C700BB7A2A to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/1BCB06CB48EA08CF4A10582E1C88694B4222C125374B9C6F84C953C700BB7A2A
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-nVdcPqgTM71XrU83Wb37XA to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-nVdcPqgTM71XrU83Wb37XA
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-t4pCe8mT39PATieMoSVy0w to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-t4pCe8mT39PATieMoSVy0w
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-yV-vEvHRzXVq7_CI3dZZ-g to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-yV-vEvHRzXVq7_CI3dZZ-g
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-G_EyNm5anI6GaRTusTeLbg to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-G_EyNm5anI6GaRTusTeLbg
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-Hk4nOssfGOIRd34zrUUfoA to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-Hk4nOssfGOIRd34zrUUfoA
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-PVqu3ltuMFnMDtq3BlVr7A to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-PVqu3ltuMFnMDtq3BlVr7A
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-G_EyNm5anI6GaRTusTeLbg to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-G_EyNm5anI6GaRTusTeLbg
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-zlcGgYhpMgBI4Jivvzzbbg to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-zlcGgYhpMgBI4Jivvzzbbg
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-O9d3LMp-SSW8T1e33PeEFg to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-O9d3LMp-SSW8T1e33PeEFg
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-racbzjeX_Z87C855XsVENw to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-racbzjeX_Z87C855XsVENw
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-Hk4nOssfGOIRd34zrUUfoA to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/solver-response-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-Hk4nOssfGOIRd34zrUUfoA
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-racbzjeX_Z87C855XsVENw to s3://certora-prod/outputs/10398964/cache/51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1/optimize-TAC-f_fgshqyIKYEflnxQLAMhht2d2xyvpuXvfKp3ZWC4ck-racbzjeX_Z87C855XsVENw
+[INFO]: updated '51e22305dbc717b3b915edf20fcb57b21ce0dde478e7dc673a35cf1e04f1da0c-optimisticTrue-iter5-None--certora-cli-8.6.1' cache
+INFO:helper:Uploaded 9e944bfdd1d14afc9f3d5ccb403e6c69.tar.gz to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/9e944bfdd1d14afc9f3d5ccb403e6c69.tar.gz
+INFO:helper:Uploaded uploader.log to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/uploader.log
+INFO:helper:Uploaded /home/appuser/timer.log to s3://certora-prod/outputs/10398964/output_9e944bfdd1d14afc9f3d5ccb403e6c69/timer.log
+
+Finished verification request
+ERROR: Prover found violations:
+
+[rule] deterministicValidation: FAIL
+[rule] keystoreNonZero: 
+    [func] Induction base: After the constructor: FAIL
+report url: https://prover.certora.com/output/10398964/9e944bfdd1d14afc9f3d5ccb403e6c69?anonymousKey=b09f32c3b6c719257495981923884837f3755e60
+
+Violations were found
+

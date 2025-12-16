@@ -1,0 +1,8 @@
+// 15_unchecked_calls.cvl
+rule checkedExternalCalls(method f) filtered { f -> !f.isView } {
+    env e; calldataarg args;
+    bool success;
+    calldataarg callData;
+    (success,) = externalContract.call(e, callData);
+    assert success, "Unchecked low-level call return value";
+}

@@ -1,0 +1,9 @@
+// 19_slippage.cvl
+rule slippageProtectedSwap(method f) {
+    env e; uint256 minOut;
+    require minOut > 0;
+    uint256 balanceBefore = token.balanceOf(e.msg.sender);
+    f(e, minOut);  // Swap with minOut
+    uint256 received = token.balanceOf(e.msg.sender) - balanceBefore;
+    assert received >= minOut, "Received less than minOut → no slippage protection";
+}

@@ -1,0 +1,111 @@
+/*
+ * ═══════════════════════════════════════════════════════════════════════════
+ * RULE 10: READ-ONLY REENTRANCY (ROR)
+ * Historical Bounties: $100M+ at risk (Curve, Balancer)
+ * Risk: Price oracle manipulation, dirty state exposure
+ * ═══════════════════════════════════════════════════════════════════════════
+ */
+
+methods {
+    function totalSupply() external returns (uint256) envfree;
+    function balanceOf(address) external returns (uint256) envfree;
+    function getPrice() external returns (uint256) envfree;
+    function getReserves() external returns (uint256, uint256) envfree;
+
+    // State-changing functions
+    function deposit(uint256) external;
+    function withdraw(uint256) external;
+    function swap(uint256, uint256) external;
+}
+
+// Ghost to track if we're in a callback
+ghost bool inCallback {
+    init_state axiom inCallback == false;
+}
+
+// Ghost to track "clean" state
+ghost bool stateIsClean {
+    init_state axiom stateIsClean == true;
+}
+
+// During state-changing operations, view functions should return valid state
+rule readOnlyReentrancyProtection(method stateChanging, method viewFunc)
+    filtered {
+        stateChanging -> !stateChanging.isView,
+        viewFunc -> viewFunc.isView
+    }
+{
+    env e1; env e2;
+    calldataarg args1; calldataarg args2;
+
+    // Get view result in clean state
+    uint256 viewResultBefore;
+    viewFunc(e1, args1);
+
+    // Mark state as dirty during operation
+    stateIsClean = false;
+
+    // Execute state-changing function
+    stateChanging(e2, args2);
+
+    // Mark state as clean again
+    stateIsClean = true;
+
+    // View should return consistent results
+    uint256 viewResultAfter;
+    viewFunc(e1, args1);
+
+    // The view result should be from a valid state
+    // (This is a structural check - actual ROR requires callback analysis)
+    assert stateIsClean,
+        "CRITICAL: View called during dirty state - ROR vulnerability";
+}
+
+// Price should be valid at all times
+rule priceAlwaysValid() {
+    uint256 price = getPrice();
+
+    // Price should never be zero (common ROR exploit)
+    assert price > 0,
+        "CRITICAL: Price is zero - potential ROR/manipulation";
+
+    // Price should be bounded
+    assert price < max_uint256 / 2,
+        "HIGH: Price unreasonably high - potential manipulation";
+}
+
+// Reserves should be consistent with supply
+rule reservesConsistentWithSupply() {
+    uint256 supply = totalSupply();
+    uint256 reserve0;
+    uint256 reserve1;
+    reserve0, reserve1 = getReserves();
+
+    // If supply is 0, reserves should be 0
+    assert supply == 0 => (reserve0 == 0 && reserve1 == 0),
+        "HIGH: Reserves exist without supply - potential ROR";
+
+    // If reserves exist, supply should exist
+    assert (reserve0 > 0 || reserve1 > 0) => supply > 0,
+        "HIGH: Supply is zero with non-zero reserves";
+}
+
+// State invariant: during any view call, state should be valid
+invariant viewReturnsValidState()
+    stateIsClean == true
+
+// No dirty state exposure via callbacks
+rule noCallbackDirtyState(method f, env e, calldataarg args)
+    filtered { f -> !f.isView }
+{
+    bool cleanBefore = stateIsClean;
+    require cleanBefore == true;
+
+    f(e, args);
+
+    bool cleanAfter = stateIsClean;
+
+    // State should be clean before and after, not during
+    assert cleanAfter == true,
+        "CRITICAL: State left dirty after operation";
+}

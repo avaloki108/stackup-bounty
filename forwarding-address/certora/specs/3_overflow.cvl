@@ -1,0 +1,91 @@
+/*
+ * ═══════════════════════════════════════════════════════════════════════════
+ * RULE 3: ARITHMETIC OVERFLOW/UNDERFLOW
+ * Historical Bounties: $80K+ (Beanstalk mulDiv, countless pre-0.8 bugs)
+ * Risk: Token inflation, fund extraction
+ * Target: Solmate's mulDiv, FixedPointMathLib
+ * ═══════════════════════════════════════════════════════════════════════════
+ */
+
+methods {
+    function totalSupply() external returns (uint256) envfree;
+    function balanceOf(address) external returns (uint256) envfree;
+    function mint(address, uint256) external;
+    function burn(address, uint256) external;
+    function transfer(address, uint256) external returns (bool);
+
+    // Fixed point math (Solmate style)
+    function mulDivDown(uint256, uint256, uint256) internal returns (uint256) => NONDET;
+    function mulDivUp(uint256, uint256, uint256) internal returns (uint256) => NONDET;
+}
+
+// No overflow on multiplication
+rule noOverflowMul(env e, uint256 a, uint256 b) {
+    // Multiplication should not overflow
+    require a > 0 && b > 0;
+
+    mathint product = to_mathint(a) * to_mathint(b);
+
+    assert product <= to_mathint(max_uint256),
+        "CRITICAL: Multiplication overflow possible";
+}
+
+// Balance cannot exceed total supply
+rule balanceNeverExceedsSupply(address user) {
+    assert balanceOf(user) <= totalSupply(),
+        "CRITICAL: Balance exceeds total supply - overflow detected";
+}
+
+// Mint cannot overflow supply
+rule mintNoOverflow(env e, address to, uint256 amount) {
+    uint256 supplyBefore = totalSupply();
+    uint256 balanceBefore = balanceOf(to);
+
+    require to_mathint(supplyBefore) + to_mathint(amount) <= to_mathint(max_uint256);
+    require to_mathint(balanceBefore) + to_mathint(amount) <= to_mathint(max_uint256);
+
+    mint(e, to, amount);
+
+    uint256 supplyAfter = totalSupply();
+    uint256 balanceAfter = balanceOf(to);
+
+    assert to_mathint(supplyAfter) == to_mathint(supplyBefore) + to_mathint(amount),
+        "CRITICAL: Supply overflow on mint";
+
+    assert to_mathint(balanceAfter) == to_mathint(balanceBefore) + to_mathint(amount),
+        "CRITICAL: Balance overflow on mint";
+}
+
+// Burn cannot underflow
+rule burnNoUnderflow(env e, address from, uint256 amount) {
+    uint256 supplyBefore = totalSupply();
+    uint256 balanceBefore = balanceOf(from);
+
+    require balanceBefore >= amount;
+    require supplyBefore >= amount;
+
+    burn(e, from, amount);
+
+    uint256 supplyAfter = totalSupply();
+    uint256 balanceAfter = balanceOf(from);
+
+    assert to_mathint(supplyAfter) == to_mathint(supplyBefore) - to_mathint(amount),
+        "CRITICAL: Supply underflow on burn";
+
+    assert to_mathint(balanceAfter) == to_mathint(balanceBefore) - to_mathint(amount),
+        "CRITICAL: Balance underflow on burn";
+}
+
+// Transfer cannot underflow sender
+rule transferNoUnderflow(env e, address to, uint256 amount) {
+    address from = e.msg.sender;
+    require from != to;
+
+    uint256 fromBefore = balanceOf(from);
+    require fromBefore >= amount;
+
+    transfer(e, to, amount);
+
+    assert balanceOf(from) == fromBefore - amount,
+        "HIGH: Sender balance incorrect after transfer";
+}

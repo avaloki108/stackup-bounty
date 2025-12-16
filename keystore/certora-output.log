@@ -1,0 +1,477 @@
+Compiling src/core/Keystore.sol...
+Compiling src/core/Keystore.sol to expose internal function information and local variables...
+
+Connecting to server...
+
+[32mJob submitted to server[0m
+
+Manage your jobs at https://prover.certora.com
+Follow your job and see verification results at https://prover.certora.com/output/10398964/ace2ddcb465948e983803143fccb2946
+Output:
+processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \[INFO]: Download - 8.6.1/emv-8.6.1.jar
+[INFO]: Download finished
+[INFO]: Download - 8.6.1/tac_optimizer-8.6.1
+[INFO]: Download finished
+[INFO]: Download - Gimli-DWARF-JSONDump
+[INFO]: Download finished
+[INFO]: Download - uploadFiles/10398964/ace2ddcb465948e983803143fccb2946.zip
+[INFO]: Download finished
+[INFO]: Primary contract name: Keystore
+[INFO]: found 212 cache files
+[INFO]: Command: java -Xmx31500m -XX:MaxHeapFreeRatio=10 -XX:MinHeapFreeRatio=5 -XX:G1PeriodicGCInterval=15 -XX:NewRatio=5 -XX:+CrashOnOutOfMemoryError -XX:ErrorFile=/home/appuser/code/java_error%p.log -DoutputUrl=outputs/10398964/output_ace2ddcb465948e983803143fccb2946/ -DjobId=ace2ddcb465948e983803143fccb2946 -DuserId=10398964 -jar /home/appuser/prover/emv.jar -cache 79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1 -hashingLengthBound 2048 -b 3 -optimisticUnboundedHashing true -assumeUnwindCond -ruleSanityChecks basic -maxConcurrentRules 3 -globalTimeout 7200 -globalTimeout 7200
+[INFO]: Overcommit Memory Value: 1 
+Start Tue Dec 16 03:21:57 GMT 2025
+Start Tue Dec 16 03:21:57 GMT 2025
+Warning: Syntax warning in spec file keystore.cvl:16:5: Method declaration for Keystore.registerNode(bytes32, bytes32[], bytes) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+Warning: Syntax warning in spec file keystore.cvl:153:5: getRootHash is called with `@withrevert`, it's return values [result] are undefined if this call reverts. Make sure to check that `!lastReverted` before using them
+Warning: Syntax warning in spec file keystore.cvl:160:5: getNonce is called with `@withrevert`, it's return values [result] are undefined if this call reverts. Make sure to check that `!lastReverted` before using them
+Warning: Pointer analysis for optimization failed in internal function LibBytes.slice(bytes subject, uint256 start, uint256 end) returns (bytes) (when called from external function validate(ValidateAction) of contract Keystore). No precise source code information available for the location, range information points to the next method that inlined the call. I.e. inspect the highlighted method and any of it's potentially inlined callees. Error code 2580757490
+Warning: Pointer analysis for optimization failed in internal function LibBytes.slice(bytes subject, uint256 start, uint256 end) returns (bytes) (when called from external function handleUpdates(UpdateAction[]) of contract Keystore). No precise source code information available for the location, range information points to the next method that inlined the call. I.e. inspect the highlighted method and any of it's potentially inlined callees. Error code 2580757490
+The scene contains 20 contracts:
+Keystore : 0xce4604a0000000000000000000000007,
+ecrecover : 0x1,
+sha256 : 0x2,
+ripemd160 : 0x3,
+identity : 0x4,
+bigmod : 0x5,
+bn256Add : 0x6,
+bn256ScalarMul : 0x7,
+bn256Pairing : 0x8,
+Precompiled244 : 0xf4,
+Precompiled245 : 0xf5,
+Precompiled246 : 0xf6,
+Precompiled247 : 0xf7,
+Precompiled248 : 0xf8,
+Precompiled249 : 0xf9,
+Precompiled250 : 0xfa,
+Precompiled251 : 0xfb,
+Precompiled252 : 0xfc,
+Precompiled253 : 0xfd,
+Precompiled254 : 0xfe
+Running initial transformations
+Warning: Pointer analysis for call resolution failed in internal function LibBytes.slice(bytes subject, uint256 start, uint256 end) returns (bytes) (when called from external function validate(ValidateAction) of contract Keystore). No precise source code information available for the location, range information points to the next method that inlined the call. I.e. inspect the highlighted method and any of it's potentially inlined callees. Error code 2580757490
+Warning: Pointer analysis for call resolution failed in internal function LibBytes.slice(bytes subject, uint256 start, uint256 end) returns (bytes) (when called from external function handleUpdates(UpdateAction[]) of contract Keystore). No precise source code information available for the location, range information points to the next method that inlined the call. I.e. inspect the highlighted method and any of it's potentially inlined callees. Error code 2580757490
+Warning: Memory partitioning failed while analyzing contract Keystore, function validate(ValidateAction).  This can lead to longer running times. 
+Warning: Memory partitioning failed while analyzing contract Keystore, function handleUpdates(UpdateAction[]).  This can lead to longer running times. 
+Has CVL checks.
+Checking CVL cvl/keystore.cvl for contract Keystore
+Unrolling loops 3 times, unwinding condition is assumed
+Checking rule boundedCallDepth (13 out of 16)...
+Checking rule rootHashNeverZeroForValidRefHash (6 out of 16)...
+Checking rule viewsAccessible (12 out of 16)...
+Checking rule sanityAllFunctions (11 out of 16)...
+Checking rule nodeLengthMinimum (4 out of 16)...
+Checking rule nonceCannotReset (2 out of 16)...
+Checking rule viewFunctionsReadOnly (5 out of 16)...
+Checking rule rootHashOnlyChangesViaStateChanging (3 out of 16)...
+Checking rule getRootHashNeverReverts (7 out of 16)...
+Checking rule nonceKeysIndependent (15 out of 16)...
+Checking rule registerNodeCannotChangeRootHash (10 out of 16)...
+Checking rule registerNodeCannotChangeNonce (9 out of 16)...
+Checking rule envfreeFuncsStaticCheck (16 out of 16)...
+Checking rule nonceCannotDecrease (1 out of 16)...
+Checking rule getNonceNeverReverts (8 out of 16)...
+Checking rule registerNodePreservesOtherNodes (14 out of 16)...
+Result for envfreeFuncsStaticCheck: envfreeFuncsStaticCheck: getRegisteredNode(bytes32,address,bytes32): SUCCESS
+getRootHash(bytes32,address): SUCCESS
+getNonce(bytes32,address,uint192): SUCCESS
+Starting to run on rule getRootHashNeverReverts
+Starting to run on rule rootHashNeverZeroForValidRefHash
+Starting to run on rule getNonceNeverReverts
+Verified: getNonceNeverReverts
+Verified: getRootHashNeverReverts
+getNonceNeverReverts: Properties successfully verified on all inputs
+getRootHashNeverReverts: Properties successfully verified on all inputs
+Starting to run on rule viewsAccessible
+Starting to run on rule nodeLengthMinimum
+Verified: viewsAccessible
+viewsAccessible: Properties successfully verified on all inputs
+Total time for rootHashNeverZeroForValidRefHash: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: rootHashNeverZeroForValidRefHash
+rootHashNeverZeroForValidRefHash: Properties successfully verified on all inputs
+Starting to run on rule registerNodeCannotChangeRootHash
+Starting to run on rule registerNodeCannotChangeNonce
+Verified: nodeLengthMinimum
+nodeLengthMinimum: Properties successfully verified on all inputs
+Starting to run on rule registerNodePreservesOtherNodes
+Total time for registerNodeCannotChangeRootHash: 1 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 1 seconds
+Verified: registerNodeCannotChangeRootHash
+registerNodeCannotChangeRootHash: Properties successfully verified on all inputs
+Total time for registerNodeCannotChangeNonce: 1 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Starting to run on rule rootHashOnlyChangesViaStateChanging-getRegisteredNode(bytes32,address,bytes32)
+Verified: registerNodeCannotChangeNonce
+registerNodeCannotChangeNonce: Properties successfully verified on all inputs
+Starting to run on rule rootHashOnlyChangesViaStateChanging-validate((bytes32,bytes32,bytes,bytes,bytes))
+Total time for rootHashOnlyChangesViaStateChanging-getRegisteredNode(bytes32,address,bytes32): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: rootHashOnlyChangesViaStateChanging-getRegisteredNode(bytes32,address,bytes32)
+rootHashOnlyChangesViaStateChanging-getRegisteredNode(bytes32,address,bytes32): Properties successfully verified on all inputs
+Starting to run on rule rootHashOnlyChangesViaStateChanging-getNonce(bytes32,address,uint192)
+Total time for rootHashOnlyChangesViaStateChanging-getNonce(bytes32,address,uint192): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: rootHashOnlyChangesViaStateChanging-getNonce(bytes32,address,uint192)
+rootHashOnlyChangesViaStateChanging-getNonce(bytes32,address,uint192): Properties successfully verified on all inputs
+Starting to run on rule rootHashOnlyChangesViaStateChanging-getRootHash(bytes32,address)
+Ping 1m - Processed 8/16 (50%) rules. 13 tasks complete, 10 pending.
+Total time for rootHashOnlyChangesViaStateChanging-getRootHash(bytes32,address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: rootHashOnlyChangesViaStateChanging-getRootHash(bytes32,address)
+rootHashOnlyChangesViaStateChanging-getRootHash(bytes32,address): Properties successfully verified on all inputs
+Starting to run on rule getNonceNeverReverts-rule_not_vacuous
+Total time for getNonceNeverReverts-rule_not_vacuous: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Violated: getNonceNeverReverts-rule_not_vacuous
+getNonceNeverReverts-rule_not_vacuous: A property is violated
+Result for getNonceNeverReverts: getNonceNeverReverts: SUCCESS
+Starting to run on rule getRootHashNeverReverts-rule_not_vacuous
+Total time for getRootHashNeverReverts-rule_not_vacuous: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Violated: getRootHashNeverReverts-rule_not_vacuous
+getRootHashNeverReverts-rule_not_vacuous: A property is violated
+Result for getRootHashNeverReverts: getRootHashNeverReverts: SUCCESS
+Starting to run on rule viewFunctionsReadOnly-validate((bytes32,bytes32,bytes,bytes,bytes))
+Total time for rootHashOnlyChangesViaStateChanging-validate((bytes32,bytes32,bytes,bytes,bytes)): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: rootHashOnlyChangesViaStateChanging-validate((bytes32,bytes32,bytes,bytes,bytes))
+rootHashOnlyChangesViaStateChanging-validate((bytes32,bytes32,bytes,bytes,bytes)): Properties successfully verified on all inputs
+Starting to run on rule viewFunctionsReadOnly-getRegisteredNode(bytes32,address,bytes32)
+Total time for registerNodePreservesOtherNodes: 1 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: registerNodePreservesOtherNodes
+registerNodePreservesOtherNodes: Properties successfully verified on all inputs
+Starting to run on rule viewFunctionsReadOnly-getNonce(bytes32,address,uint192)
+Total time for viewFunctionsReadOnly-getRegisteredNode(bytes32,address,bytes32): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: viewFunctionsReadOnly-getRegisteredNode(bytes32,address,bytes32)
+viewFunctionsReadOnly-getRegisteredNode(bytes32,address,bytes32): Properties successfully verified on all inputs
+Starting to run on rule viewFunctionsReadOnly-getRootHash(bytes32,address)
+Total time for viewFunctionsReadOnly-getNonce(bytes32,address,uint192): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: viewFunctionsReadOnly-getNonce(bytes32,address,uint192)
+viewFunctionsReadOnly-getNonce(bytes32,address,uint192): Properties successfully verified on all inputs
+Starting to run on rule viewsAccessible-rule_not_vacuous
+Total time for viewFunctionsReadOnly-getRootHash(bytes32,address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: viewFunctionsReadOnly-getRootHash(bytes32,address)
+viewFunctionsReadOnly-getRootHash(bytes32,address): Properties successfully verified on all inputs
+Starting to run on rule rootHashNeverZeroForValidRefHash-rule_not_vacuous
+Total time for viewsAccessible-rule_not_vacuous: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Violated: viewsAccessible-rule_not_vacuous
+viewsAccessible-rule_not_vacuous: A property is violated
+Result for viewsAccessible: viewsAccessible: SUCCESS
+Total time for rootHashNeverZeroForValidRefHash-rule_not_vacuous: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Violated: rootHashNeverZeroForValidRefHash-rule_not_vacuous
+rootHashNeverZeroForValidRefHash-rule_not_vacuous: A property is violated
+Starting to run on rule sanityAllFunctions-validate((bytes32,bytes32,bytes,bytes,bytes))-Satisfy_lastReverted_(keystore_cvl_213_5)
+Result for rootHashNeverZeroForValidRefHash: rootHashNeverZeroForValidRefHash: SUCCESS
+Starting to run on rule sanityAllFunctions-registerNode(bytes32,bytes32[],bytes)-Satisfy_lastReverted_(keystore_cvl_213_5)
+Total time for viewFunctionsReadOnly-validate((bytes32,bytes32,bytes,bytes,bytes)): 1 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 1 seconds
+Verified: viewFunctionsReadOnly-validate((bytes32,bytes32,bytes,bytes,bytes))
+viewFunctionsReadOnly-validate((bytes32,bytes32,bytes,bytes,bytes)): Properties successfully verified on all inputs
+Starting to run on rule sanityAllFunctions-getRegisteredNode(bytes32,address,bytes32)-Satisfy_lastReverted_(keystore_cvl_213_5)
+Total time for sanityAllFunctions-getRegisteredNode(bytes32,address,bytes32)-Satisfy_lastReverted_(keystore_cvl_213_5): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: sanityAllFunctions-getRegisteredNode(bytes32,address,bytes32)-Satisfy_lastReverted_(keystore_cvl_213_5)
+sanityAllFunctions-getRegisteredNode(bytes32,address,bytes32)-Satisfy_lastReverted_(keystore_cvl_213_5): Properties successfully verified on all inputs
+Starting to run on rule sanityAllFunctions-getNonce(bytes32,address,uint192)-Satisfy_lastReverted_(keystore_cvl_213_5)
+Total time for sanityAllFunctions-getNonce(bytes32,address,uint192)-Satisfy_lastReverted_(keystore_cvl_213_5): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: sanityAllFunctions-getNonce(bytes32,address,uint192)-Satisfy_lastReverted_(keystore_cvl_213_5)
+sanityAllFunctions-getNonce(bytes32,address,uint192)-Satisfy_lastReverted_(keystore_cvl_213_5): Properties successfully verified on all inputs
+Starting to run on rule sanityAllFunctions-getRootHash(bytes32,address)-Satisfy_lastReverted_(keystore_cvl_213_5)
+Total time for sanityAllFunctions-getRootHash(bytes32,address)-Satisfy_lastReverted_(keystore_cvl_213_5): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: sanityAllFunctions-getRootHash(bytes32,address)-Satisfy_lastReverted_(keystore_cvl_213_5)
+sanityAllFunctions-getRootHash(bytes32,address)-Satisfy_lastReverted_(keystore_cvl_213_5): Properties successfully verified on all inputs
+Starting to run on rule sanityAllFunctions-handleUpdates((bytes32,bytes32,uint256,bool,address,bytes,bytes,bytes,bytes,bytes,bytes)[])-Satisfy_lastReverted_(keystore_cvl_213_5)
+Total time for sanityAllFunctions-registerNode(bytes32,bytes32[],bytes)-Satisfy_lastReverted_(keystore_cvl_213_5): 2 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 1 seconds
+Verified: sanityAllFunctions-registerNode(bytes32,bytes32[],bytes)-Satisfy_lastReverted_(keystore_cvl_213_5)
+sanityAllFunctions-registerNode(bytes32,bytes32[],bytes)-Satisfy_lastReverted_(keystore_cvl_213_5): Properties successfully verified on all inputs
+Starting to run on rule boundedCallDepth-validate((bytes32,bytes32,bytes,bytes,bytes))
+Verified: boundedCallDepth-validate((bytes32,bytes32,bytes,bytes,bytes))
+boundedCallDepth-validate((bytes32,bytes32,bytes,bytes,bytes)): Properties successfully verified on all inputs
+Starting to run on rule boundedCallDepth-getRegisteredNode(bytes32,address,bytes32)
+Total time for sanityAllFunctions-validate((bytes32,bytes32,bytes,bytes,bytes))-Satisfy_lastReverted_(keystore_cvl_213_5): 3 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 2 seconds
+Verified: sanityAllFunctions-validate((bytes32,bytes32,bytes,bytes,bytes))-Satisfy_lastReverted_(keystore_cvl_213_5)
+sanityAllFunctions-validate((bytes32,bytes32,bytes,bytes,bytes))-Satisfy_lastReverted_(keystore_cvl_213_5): Properties successfully verified on all inputs
+Starting to run on rule boundedCallDepth-getNonce(bytes32,address,uint192)
+Verified: boundedCallDepth-getRegisteredNode(bytes32,address,bytes32)
+boundedCallDepth-getRegisteredNode(bytes32,address,bytes32): Properties successfully verified on all inputs
+Starting to run on rule boundedCallDepth-getRootHash(bytes32,address)
+Verified: boundedCallDepth-getNonce(bytes32,address,uint192)
+boundedCallDepth-getNonce(bytes32,address,uint192): Properties successfully verified on all inputs
+Starting to run on rule boundedCallDepth-registerNode(bytes32,bytes32[],bytes)
+Verified: boundedCallDepth-getRootHash(bytes32,address)
+boundedCallDepth-getRootHash(bytes32,address): Properties successfully verified on all inputs
+Verified: boundedCallDepth-registerNode(bytes32,bytes32[],bytes)
+boundedCallDepth-registerNode(bytes32,bytes32[],bytes): Properties successfully verified on all inputs
+Starting to run on rule nonceCannotReset-getRegisteredNode(bytes32,address,bytes32)
+Total time for nonceCannotReset-getRegisteredNode(bytes32,address,bytes32): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: nonceCannotReset-getRegisteredNode(bytes32,address,bytes32)
+nonceCannotReset-getRegisteredNode(bytes32,address,bytes32): Properties successfully verified on all inputs
+Starting to run on rule nonceCannotReset-registerNode(bytes32,bytes32[],bytes)
+Starting to run on rule boundedCallDepth-handleUpdates((bytes32,bytes32,uint256,bool,address,bytes,bytes,bytes,bytes,bytes,bytes)[])
+Total time for nonceCannotReset-registerNode(bytes32,bytes32[],bytes): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: nonceCannotReset-registerNode(bytes32,bytes32[],bytes)
+nonceCannotReset-registerNode(bytes32,bytes32[],bytes): Properties successfully verified on all inputs
+Starting to run on rule nonceCannotReset-validate((bytes32,bytes32,bytes,bytes,bytes))
+Verified: boundedCallDepth-handleUpdates((bytes32,bytes32,uint256,bool,address,bytes,bytes,bytes,bytes,bytes,bytes)[])
+boundedCallDepth-handleUpdates((bytes32,bytes32,uint256,bool,address,bytes,bytes,bytes,bytes,bytes,bytes)[]): Properties successfully verified on all inputs
+Starting to run on rule nonceCannotReset-getNonce(bytes32,address,uint192)
+Total time for nonceCannotReset-getNonce(bytes32,address,uint192): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: nonceCannotReset-getNonce(bytes32,address,uint192)
+nonceCannotReset-getNonce(bytes32,address,uint192): Properties successfully verified on all inputs
+Starting to run on rule nonceCannotReset-getRootHash(bytes32,address)
+Total time for nonceCannotReset-getRootHash(bytes32,address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: nonceCannotReset-getRootHash(bytes32,address)
+nonceCannotReset-getRootHash(bytes32,address): Properties successfully verified on all inputs
+Ping 2m - Processed 9/16 (56%) rules. 44 tasks complete, 11 pending.
+Starting to run on rule nonceCannotReset-handleUpdates((bytes32,bytes32,uint256,bool,address,bytes,bytes,bytes,bytes,bytes,bytes)[])
+Total time for nonceCannotReset-validate((bytes32,bytes32,bytes,bytes,bytes)): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: nonceCannotReset-validate((bytes32,bytes32,bytes,bytes,bytes))
+nonceCannotReset-validate((bytes32,bytes32,bytes,bytes,bytes)): Properties successfully verified on all inputs
+Starting to run on rule nonceCannotDecrease-getRegisteredNode(bytes32,address,bytes32)
+Total time for nonceCannotDecrease-getRegisteredNode(bytes32,address,bytes32): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: nonceCannotDecrease-getRegisteredNode(bytes32,address,bytes32)
+nonceCannotDecrease-getRegisteredNode(bytes32,address,bytes32): Properties successfully verified on all inputs
+Starting to run on rule nonceCannotDecrease-registerNode(bytes32,bytes32[],bytes)
+Total time for nonceCannotDecrease-registerNode(bytes32,bytes32[],bytes): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: nonceCannotDecrease-registerNode(bytes32,bytes32[],bytes)
+nonceCannotDecrease-registerNode(bytes32,bytes32[],bytes): Properties successfully verified on all inputs
+Starting to run on rule nonceCannotDecrease-validate((bytes32,bytes32,bytes,bytes,bytes))
+Total time for nonceCannotDecrease-validate((bytes32,bytes32,bytes,bytes,bytes)): 1 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: nonceCannotDecrease-validate((bytes32,bytes32,bytes,bytes,bytes))
+nonceCannotDecrease-validate((bytes32,bytes32,bytes,bytes,bytes)): Properties successfully verified on all inputs
+Starting to run on rule nonceCannotDecrease-getNonce(bytes32,address,uint192)
+Total time for nonceCannotDecrease-getNonce(bytes32,address,uint192): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: nonceCannotDecrease-getNonce(bytes32,address,uint192)
+nonceCannotDecrease-getNonce(bytes32,address,uint192): Properties successfully verified on all inputs
+Starting to run on rule nonceCannotDecrease-getRootHash(bytes32,address)
+Total time for nonceCannotDecrease-getRootHash(bytes32,address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: nonceCannotDecrease-getRootHash(bytes32,address)
+nonceCannotDecrease-getRootHash(bytes32,address): Properties successfully verified on all inputs
+Starting to run on rule nonceCannotDecrease-handleUpdates((bytes32,bytes32,uint256,bool,address,bytes,bytes,bytes,bytes,bytes,bytes)[])
+Ping 3m - Processed 9/16 (56%) rules. 50 tasks complete, 11 pending.
+Ping 4m - Processed 9/16 (56%) rules. 50 tasks complete, 11 pending.
+Ping 5m - Processed 9/16 (56%) rules. 50 tasks complete, 11 pending.
+Ping 6m - Processed 9/16 (56%) rules. 50 tasks complete, 11 pending.
+Ping 7m - Processed 9/16 (56%) rules. 50 tasks complete, 11 pending.
+Ping 8m - Processed 9/16 (56%) rules. 50 tasks complete, 11 pending.
+Attempted 10 splits, and proved a total weighing 0.390625% for sanityAllFunctions-handleUpdates((bytes32,bytes32,uint256,bool,address,bytes,bytes,bytes,bytes,bytes,bytes)[])-Satisfy_lastReverted_(keystore_cvl_213_5)
+Ping 9m - Processed 9/16 (56%) rules. 50 tasks complete, 11 pending.
+Attempted 10 splits, and proved a total weighing 50.0% for nonceCannotReset-handleUpdates((bytes32,bytes32,uint256,bool,address,bytes,bytes,bytes,bytes,bytes,bytes)[])
+Ping 10m - Processed 9/16 (56%) rules. 50 tasks complete, 11 pending.
+Attempted 10 splits, and proved a total weighing 50.0% for nonceCannotDecrease-handleUpdates((bytes32,bytes32,uint256,bool,address,bytes,bytes,bytes,bytes,bytes,bytes)[])
+Ping 11m - Processed 9/16 (56%) rules. 50 tasks complete, 11 pending.
+Ping 12m - Processed 9/16 (56%) rules. 50 tasks complete, 11 pending.
+Attempted 20 splits, and proved a total weighing 0.78125% for sanityAllFunctions-handleUpdates((bytes32,bytes32,uint256,bool,address,bytes,bytes,bytes,bytes,bytes,bytes)[])-Satisfy_lastReverted_(keystore_cvl_213_5)
+Attempted 20 splits, and proved a total weighing 50.5859375% for nonceCannotReset-handleUpdates((bytes32,bytes32,uint256,bool,address,bytes,bytes,bytes,bytes,bytes,bytes)[])
+Ping 14m - Processed 9/16 (56%) rules. 50 tasks complete, 11 pending.
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (jfrStreamWriterHost.inline.hpp:83), pid=485, tid=562
+#  guarantee(successful_write) failed: Not all the bytes got written, or os::write() failed
+#
+# JRE version: OpenJDK Runtime Environment (21.0.8+9) (build 21.0.8+9-Ubuntu-0ubuntu122.04.1)
+# Java VM: OpenJDK 64-Bit Server VM (21.0.8+9-Ubuntu-0ubuntu122.04.1, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, linux-amd64)
+# Problematic frame:
+# V  [libjvm.so+0x986e03]  void JfrLinkedList<JfrBuffer, JfrCHeapObj>::iterate<CompositeOperation<ConcurrentWriteOp<UnBufferedWriteToChunk<JfrBuffer> >, ScavengingReleaseOp<JfrMemorySpace<JfrStorage, JfrMspaceRemoveRetrieval, JfrConcurrentQueue<JfrBuffer, JfrCHeapObj>, JfrLinkedList<JfrBuffer, JfrCHeapObj>, false>, JfrLinkedList<JfrBuffer, JfrCHeapObj> >, CompositeOperationAnd> >(CompositeOperation<ConcurrentWriteOp<UnBufferedWriteToChunk<JfrBuffer> >, ScavengingReleaseOp<JfrMemorySpace<JfrStorage, JfrMspaceRemoveRetrieval, JfrConcurrentQueue<JfrBuffer, JfrCHeapObj>, JfrLinkedList<JfrBuffer, JfrCHeapObj>, false>, JfrLinkedList<JfrBuffer, JfrCHeapObj> >, CompositeOperationAnd>&)+0x343
+#
+# Core dump will be written. Default location: /home/appuser/code/core.485
+#
+# JFR recording file will be written. Location: /home/appuser/code/hs_err_pid485.jfr
+#
+# An error report file with more information is saved as:
+# /home/appuser/code/java_error485.log
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-21
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+[INFO]: Process returned with -6
+INFO:helper:Uploaded uploader.log to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/uploader.log
+INFO:helper:Uploaded java_error485.log to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/java_error485.log
+INFO:helper:Uploaded /home/appuser/code/java_error485.log to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/java_error485.log
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/Results.txt to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/Results.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-registerNodeCannotChangeRootHash.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-registerNodeCannotChangeRootHash.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-rootHashOnlyChangesViaStateChanging-getNonceLPB32CADRCuint192RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-rootHashOnlyChangesViaStateChanging-getNonceLPB32CADRCuint192RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/Report-rootHashNeverZeroForValidRefHash-rule_not_vacuous-example1.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/Report-rootHashNeverZeroForValidRefHash-rule_not_vacuous-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-getNonceNeverReverts-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-getNonceNeverReverts-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/ctpp_getNonceNeverReverts-rule_not_vacuous.txt to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/ctpp_getNonceNeverReverts-rule_not_vacuous.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/ctpp_sanityAllFunctions-getRegisteredNodeLPB32CADRCB32RP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.txt to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/ctpp_sanityAllFunctions-getRegisteredNodeLPB32CADRCB32RP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-getRootHashNeverReverts-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-getRootHashNeverReverts-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/CacheEvents.txt to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/CacheEvents.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-rootHashOnlyChangesViaStateChanging-validateLPLPB32CB32CbytesCbytesCbytesRPRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-rootHashOnlyChangesViaStateChanging-validateLPLPB32CB32CbytesCbytesCbytesRPRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-sanityAllFunctions-getNonceLPB32CADRCuint192RP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-sanityAllFunctions-getNonceLPB32CADRCuint192RP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/FinalResults.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/FinalResults.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-sanityAllFunctions-getRegisteredNodeLPB32CADRCB32RP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-sanityAllFunctions-getRegisteredNodeLPB32CADRCB32RP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-rootHashNeverZeroForValidRefHash-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-rootHashNeverZeroForValidRefHash-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/Report-getNonceNeverReverts-rule_not_vacuous-example1.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/Report-getNonceNeverReverts-rule_not_vacuous-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-viewsAccessible.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-viewsAccessible.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/ctpp_sanityAllFunctions-getRootHashLPB32CADRRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.txt to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/ctpp_sanityAllFunctions-getRootHashLPB32CADRRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/alertReport.json to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/alertReport.json
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/Report-sanityAllFunctions-getRootHashLPB32CADRRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP-example1.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/Report-sanityAllFunctions-getRootHashLPB32CADRRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-viewFunctionsReadOnly-getRegisteredNodeLPB32CADRCB32RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-viewFunctionsReadOnly-getRegisteredNodeLPB32CADRCB32RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/profile.jfr to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/profile.jfr
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/progress.json to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/progress.json
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-sanityAllFunctions-getRootHashLPB32CADRRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-sanityAllFunctions-getRootHashLPB32CADRRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-nodeLengthMinimum.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-nodeLengthMinimum.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/ctpp_getRootHashNeverReverts-rule_not_vacuous.txt to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/ctpp_getRootHashNeverReverts-rule_not_vacuous.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/ctpp_rootHashNeverZeroForValidRefHash-rule_not_vacuous.txt to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/ctpp_rootHashNeverZeroForValidRefHash-rule_not_vacuous.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/Report-getRootHashNeverReverts-rule_not_vacuous-example1.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/Report-getRootHashNeverReverts-rule_not_vacuous-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-registerNodePreservesOtherNodes.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-registerNodePreservesOtherNodes.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-getNonceNeverReverts.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-getNonceNeverReverts.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/ctpp_sanityAllFunctions-registerNodeLPB32CB32LBRBCbytesRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.txt to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/ctpp_sanityAllFunctions-registerNodeLPB32CB32LBRBCbytesRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-rootHashNeverZeroForValidRefHash.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-rootHashNeverZeroForValidRefHash.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-boundedCallDepth-getRegisteredNodeLPB32CADRCB32RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-boundedCallDepth-getRegisteredNodeLPB32CADRCB32RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/ctpp_sanityAllFunctions-validateLPLPB32CB32CbytesCbytesCbytesRPRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.txt to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/ctpp_sanityAllFunctions-validateLPLPB32CB32CbytesCbytesCbytesRPRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-viewsAccessible-rule_not_vacuous.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-viewsAccessible-rule_not_vacuous.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-boundedCallDepth-validateLPLPB32CB32CbytesCbytesCbytesRPRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-boundedCallDepth-validateLPLPB32CB32CbytesCbytesCbytesRPRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-viewFunctionsReadOnly-getNonceLPB32CADRCuint192RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-viewFunctionsReadOnly-getNonceLPB32CADRCuint192RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-sanityAllFunctions-registerNodeLPB32CB32LBRBCbytesRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-sanityAllFunctions-registerNodeLPB32CB32LBRBCbytesRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/Report-sanityAllFunctions-registerNodeLPB32CB32LBRBCbytesRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP-example1.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/Report-sanityAllFunctions-registerNodeLPB32CB32LBRBCbytesRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/ctpp_viewsAccessible-rule_not_vacuous.txt to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/ctpp_viewsAccessible-rule_not_vacuous.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-boundedCallDepth-getNonceLPB32CADRCuint192RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-boundedCallDepth-getNonceLPB32CADRCuint192RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-viewFunctionsReadOnly-getRootHashLPB32CADRRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-viewFunctionsReadOnly-getRootHashLPB32CADRRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-getRootHashNeverReverts.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-getRootHashNeverReverts.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-rootHashOnlyChangesViaStateChanging-getRegisteredNodeLPB32CADRCB32RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-rootHashOnlyChangesViaStateChanging-getRegisteredNodeLPB32CADRCB32RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-boundedCallDepth-handleUpdatesLPLPB32CB32CU256CboolCADRCbytesCbytesCbytesCbytesCbytesCbytesRPLBRBRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-boundedCallDepth-handleUpdatesLPLPB32CB32CU256CboolCADRCbytesCbytesCbytesCbytesCbytesCbytesRPLBRBRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/cvt_version.json to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/cvt_version.json
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-rootHashOnlyChangesViaStateChanging-getRootHashLPB32CADRRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-rootHashOnlyChangesViaStateChanging-getRootHashLPB32CADRRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/Report-viewsAccessible-rule_not_vacuous-example1.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/Report-viewsAccessible-rule_not_vacuous-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/ctpp_sanityAllFunctions-getNonceLPB32CADRCuint192RP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.txt to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/ctpp_sanityAllFunctions-getNonceLPB32CADRCuint192RP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.txt
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/Report-sanityAllFunctions-validateLPLPB32CB32CbytesCbytesCbytesRPRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP-example1.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/Report-sanityAllFunctions-validateLPLPB32CB32CbytesCbytesCbytesRPRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-boundedCallDepth-registerNodeLPB32CB32LBRBCbytesRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-boundedCallDepth-registerNodeLPB32CB32LBRBCbytesRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/Report-sanityAllFunctions-getNonceLPB32CADRCuint192RP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP-example1.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/Report-sanityAllFunctions-getNonceLPB32CADRCuint192RP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-boundedCallDepth-getRootHashLPB32CADRRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-boundedCallDepth-getRootHashLPB32CADRRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/Report-sanityAllFunctions-getRegisteredNodeLPB32CADRCB32RP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP-example1.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/Report-sanityAllFunctions-getRegisteredNodeLPB32CADRCB32RP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP-example1.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-nonceCannotReset-getRegisteredNodeLPB32CADRCB32RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-nonceCannotReset-getRegisteredNodeLPB32CADRCB32RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-nonceCannotReset-getNonceLPB32CADRCuint192RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-nonceCannotReset-getNonceLPB32CADRCuint192RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-nonceCannotReset-getRootHashLPB32CADRRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-nonceCannotReset-getRootHashLPB32CADRRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-sanityAllFunctions-validateLPLPB32CB32CbytesCbytesCbytesRPRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-sanityAllFunctions-validateLPLPB32CB32CbytesCbytesCbytesRPRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-viewFunctionsReadOnly-validateLPLPB32CB32CbytesCbytesCbytesRPRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-viewFunctionsReadOnly-validateLPLPB32CB32CbytesCbytesCbytesRPRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-nonceCannotDecrease-getNonceLPB32CADRCuint192RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-nonceCannotDecrease-getNonceLPB32CADRCuint192RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-nonceCannotDecrease-getRootHashLPB32CADRRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-nonceCannotDecrease-getRootHashLPB32CADRRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-registerNodeCannotChangeNonce.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-registerNodeCannotChangeNonce.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-nonceCannotReset-registerNodeLPB32CB32LBRBCbytesRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-nonceCannotReset-registerNodeLPB32CB32LBRBCbytesRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-nonceCannotDecrease-getRegisteredNodeLPB32CADRCB32RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-nonceCannotDecrease-getRegisteredNodeLPB32CADRCB32RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-nonceCannotDecrease-registerNodeLPB32CB32LBRBCbytesRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-nonceCannotDecrease-registerNodeLPB32CB32LBRBCbytesRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-nonceCannotDecrease-validateLPLPB32CB32CbytesCbytesCbytesRPRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-nonceCannotDecrease-validateLPLPB32CB32CbytesCbytesCbytesRPRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-nonceCannotReset-validateLPLPB32CB32CbytesCbytesCbytesRPRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-nonceCannotReset-validateLPLPB32CB32CbytesCbytesCbytesRPRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-nonceCannotDecrease-handleUpdatesLPLPB32CB32CU256CboolCADRCbytesCbytesCbytesCbytesCbytesCbytesRPLBRBRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-nonceCannotDecrease-handleUpdatesLPLPB32CB32CU256CboolCADRCbytesCbytesCbytesCbytesCbytesCbytesRPLBRBRP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-sanityAllFunctions-handleUpdatesLPLPB32CB32CU256CboolCADRCbytesCbytesCbytesCbytesCbytesCbytesRPLBRBRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-sanityAllFunctions-handleUpdatesLPLPB32CB32CU256CboolCADRCbytesCbytesCbytesCbytesCbytesCbytesRPLBRBRP-Satisfy_lastReverted_LPkeystore_cvl_213_5RP.html
+INFO:helper:Uploaded emv-1-certora-16-Dec--03-21/Reports/PresolverRule-nonceCannotReset-handleUpdatesLPLPB32CB32CU256CboolCADRCbytesCbytesCbytesCbytesCbytesCbytesRPLBRBRP.html to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/PresolverRule-nonceCannotReset-handleUpdatesLPLPB32CB32CU256CboolCADRCbytesCbytesCbytesCbytesCbytesCbytesRPLBRBRP.html
+INFO:helper:Uploaded /home/appuser/code/cache/52FF5B7717AB38DDBE6EF4F3AC025CE527C4204F683CCDE2358AF025458AE910 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/52FF5B7717AB38DDBE6EF4F3AC025CE527C4204F683CCDE2358AF025458AE910
+INFO:helper:Uploaded /home/appuser/code/cache/26AF9785024069818A396EE503298566B8FAC194EA3617CBDC273BAC83B31A9F to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/26AF9785024069818A396EE503298566B8FAC194EA3617CBDC273BAC83B31A9F
+INFO:helper:Uploaded /home/appuser/code/cache/89BB7C5CE84A553A005E0D7BED9B320EED0DF9E01294A66541355685D91ACE2A to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/89BB7C5CE84A553A005E0D7BED9B320EED0DF9E01294A66541355685D91ACE2A
+INFO:helper:Uploaded /home/appuser/code/cache/1BFCFF88F10038856EAD4DE5D6A342D36B73090CA6662A058A280E3931C4D54A to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/1BFCFF88F10038856EAD4DE5D6A342D36B73090CA6662A058A280E3931C4D54A
+INFO:helper:Uploaded /home/appuser/code/cache/8C5C19D83C4D9E1EB5D83964A130FD1402C9934FA765ED65616BF78B88A2193C to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/8C5C19D83C4D9E1EB5D83964A130FD1402C9934FA765ED65616BF78B88A2193C
+INFO:helper:Uploaded /home/appuser/code/cache/6D317C9D5791BB863737FC8E7D13141177ECA2CA45AAA14DBB3CCEFBE74E2956 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/6D317C9D5791BB863737FC8E7D13141177ECA2CA45AAA14DBB3CCEFBE74E2956
+INFO:helper:Uploaded /home/appuser/code/cache/FB7DF6E47997739E0B71EA057ABFB61F84B1B3B552D1D12BDE798B8CED72D98C to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/FB7DF6E47997739E0B71EA057ABFB61F84B1B3B552D1D12BDE798B8CED72D98C
+INFO:helper:Uploaded /home/appuser/code/cache/B2A453EA4ED058D2ADEB7B3A13D3B27914C83B77584FF2390A6C4EA2BACB8E41 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/B2A453EA4ED058D2ADEB7B3A13D3B27914C83B77584FF2390A6C4EA2BACB8E41
+INFO:helper:Uploaded /home/appuser/code/cache/CB1A33873B796A196EB096887B2DA8AEAFAAD52BE56E7B4DCAB758899985A097 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/CB1A33873B796A196EB096887B2DA8AEAFAAD52BE56E7B4DCAB758899985A097
+INFO:helper:Uploaded /home/appuser/code/cache/BC672177D2585DAE59C7864823651A34B63C2E67E51A4A3239E6224F379D798B to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/BC672177D2585DAE59C7864823651A34B63C2E67E51A4A3239E6224F379D798B
+INFO:helper:Uploaded /home/appuser/code/cache/79FFE9DB7B80B21D47EADFD13E44CEE6CCDA6CB9A2B2F7B7D9BB5F2A654D945F to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/79FFE9DB7B80B21D47EADFD13E44CEE6CCDA6CB9A2B2F7B7D9BB5F2A654D945F
+INFO:helper:Uploaded /home/appuser/code/cache/019008245288E5DA0C27A09C77E5265EEB660C923E3B8AE06406834F13A31335 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/019008245288E5DA0C27A09C77E5265EEB660C923E3B8AE06406834F13A31335
+INFO:helper:Uploaded /home/appuser/code/cache/AE3788EDE26C5849258410D9C4215FA4E1661CEF7C1E8C49C686D4D56D926C58 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/AE3788EDE26C5849258410D9C4215FA4E1661CEF7C1E8C49C686D4D56D926C58
+INFO:helper:Uploaded /home/appuser/code/cache/7FB3EA25A5D5A2BED33A5815F896FC46FA4840B534F34F013CFCD0E568F4F627 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/7FB3EA25A5D5A2BED33A5815F896FC46FA4840B534F34F013CFCD0E568F4F627
+INFO:helper:Uploaded /home/appuser/code/cache/C1698F939E219B5F205FA0F13421FF37A9B1015AFDEC9CE474DD6F35E9B3CCC0 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/C1698F939E219B5F205FA0F13421FF37A9B1015AFDEC9CE474DD6F35E9B3CCC0
+INFO:helper:Uploaded /home/appuser/code/cache/C97D44633D50D1B99339B4D1CE1DAA687CF30C497C7986E6D9886CE4B11BADA9 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/C97D44633D50D1B99339B4D1CE1DAA687CF30C497C7986E6D9886CE4B11BADA9
+INFO:helper:Uploaded /home/appuser/code/cache/3ACE45AA99CF049B0EA60E44970BC726FC23D22527B9773CDFD8D031A4F428EA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/3ACE45AA99CF049B0EA60E44970BC726FC23D22527B9773CDFD8D031A4F428EA
+INFO:helper:Uploaded /home/appuser/code/cache/5EFBCEF43A7ED510C4EECEDD487313555D4822CAF213C37EB6ABA4DCF3F5BABA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/5EFBCEF43A7ED510C4EECEDD487313555D4822CAF213C37EB6ABA4DCF3F5BABA
+INFO:helper:Uploaded /home/appuser/code/cache/354A4C768A2565013A7977189A55737E58C3D29C9BD870BA29CAE9DFC5546466 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/354A4C768A2565013A7977189A55737E58C3D29C9BD870BA29CAE9DFC5546466
+INFO:helper:Uploaded /home/appuser/code/cache/DDFFB792E316E049BD12C88AB6F7EFC115CE645E1DABC5C18ACAD1F7099A3ABE to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/DDFFB792E316E049BD12C88AB6F7EFC115CE645E1DABC5C18ACAD1F7099A3ABE
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-262tMD6M5PIPSBAFXZKtKQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-262tMD6M5PIPSBAFXZKtKQ
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-vSJB05aKVbAQdk670e-ong to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-vSJB05aKVbAQdk670e-ong
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-262tMD6M5PIPSBAFXZKtKQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-262tMD6M5PIPSBAFXZKtKQ
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-0lKzlyLylWbX0MWU3A3mSw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-0lKzlyLylWbX0MWU3A3mSw
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-SIK8dw29Z-vslgb_ZHR1BQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-SIK8dw29Z-vslgb_ZHR1BQ
+INFO:helper:Uploaded /home/appuser/code/cache/C437C393541062E01F35D1AAF62EE8E95DFE33593D77D7B836A258123DB3A739 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/C437C393541062E01F35D1AAF62EE8E95DFE33593D77D7B836A258123DB3A739
+INFO:helper:Uploaded /home/appuser/code/cache/12F8BD50F88F32A939DC95DB9D6E4BAEA08E4C85A00CBA2C643A4A3B7B88D72A to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/12F8BD50F88F32A939DC95DB9D6E4BAEA08E4C85A00CBA2C643A4A3B7B88D72A
+INFO:helper:Uploaded /home/appuser/code/cache/E8DC57F4D200F4DFE91207D32537BAD11BAFF9D52B8265E0C7F1D4AB33F6592E to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/E8DC57F4D200F4DFE91207D32537BAD11BAFF9D52B8265E0C7F1D4AB33F6592E
+INFO:helper:Uploaded /home/appuser/code/cache/6E3FA73CD98C23F1F12FCFAF2C15998A54FAFE3D3600970AA629863C5160D862 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/6E3FA73CD98C23F1F12FCFAF2C15998A54FAFE3D3600970AA629863C5160D862
+INFO:helper:Uploaded /home/appuser/code/cache/D02A84A767BF65CDF1BEB117FE2D899DB31B0D89B7D9A8C9C0AB4F7E53909E42 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/D02A84A767BF65CDF1BEB117FE2D899DB31B0D89B7D9A8C9C0AB4F7E53909E42
+INFO:helper:Uploaded /home/appuser/code/cache/E35CCDF54509CDE06FA5D5F675216861AC882ACEDCB114944D1A2CC33CB927F6 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/E35CCDF54509CDE06FA5D5F675216861AC882ACEDCB114944D1A2CC33CB927F6
+INFO:helper:Uploaded /home/appuser/code/cache/78CB1FBF3B51D0A21023F02AF922983156B60359035BC74E116E4310B161C3DF to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/78CB1FBF3B51D0A21023F02AF922983156B60359035BC74E116E4310B161C3DF
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-0lKzlyLylWbX0MWU3A3mSw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-0lKzlyLylWbX0MWU3A3mSw
+INFO:helper:Uploaded /home/appuser/code/cache/25DCE24E070B78D02EB9EF16E2964C5F159B72CF1EB8DF1B161EF2F00E23FC19 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/25DCE24E070B78D02EB9EF16E2964C5F159B72CF1EB8DF1B161EF2F00E23FC19
+INFO:helper:Uploaded /home/appuser/code/cache/E53CCFCE6F5EA0AC2C4F2DC408055FD0FEE18DD8890BE2D1931832A7DC14F35F to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/E53CCFCE6F5EA0AC2C4F2DC408055FD0FEE18DD8890BE2D1931832A7DC14F35F
+INFO:helper:Uploaded /home/appuser/code/cache/8A221106EF4C41A7B1A91AE319AA5F8C86B3B89151F57692D6521BCCBCBFFB92 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/8A221106EF4C41A7B1A91AE319AA5F8C86B3B89151F57692D6521BCCBCBFFB92
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-yZW_OIZvKD7JVd1CEb5kfQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-yZW_OIZvKD7JVd1CEb5kfQ
+INFO:helper:Uploaded /home/appuser/code/cache/00427CBCA01FC97B5BF959466A5E03627517D9323440416B8BEA68691015B9D2 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/00427CBCA01FC97B5BF959466A5E03627517D9323440416B8BEA68691015B9D2
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-d3gXco563rpVtO-gH1x-qA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-d3gXco563rpVtO-gH1x-qA
+INFO:helper:Uploaded /home/appuser/code/cache/671ABB4ECF3D90BFD7200B5C38445113E5A5F18C96E91518AE4023EF932F4C9A to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/671ABB4ECF3D90BFD7200B5C38445113E5A5F18C96E91518AE4023EF932F4C9A
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-pZQ8g3reVq0KH3YDrn1-Bg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-pZQ8g3reVq0KH3YDrn1-Bg
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-FlJ4XDsNRVg-YZ_KQ6uQOw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-FlJ4XDsNRVg-YZ_KQ6uQOw
+INFO:helper:Uploaded /home/appuser/code/cache/C6FFABA5E06ABE44DDB5168CCD433A8699AA3D233C223E67D0034B34DCCCFA44 to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/C6FFABA5E06ABE44DDB5168CCD433A8699AA3D233C223E67D0034B34DCCCFA44
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-SIK8dw29Z-vslgb_ZHR1BQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-SIK8dw29Z-vslgb_ZHR1BQ
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-OoFAYUBPxqfOc6cqoOfFRQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-OoFAYUBPxqfOc6cqoOfFRQ
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-yZW_OIZvKD7JVd1CEb5kfQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-yZW_OIZvKD7JVd1CEb5kfQ
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-peOr2S4oN4rrmqG2ILHywA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-peOr2S4oN4rrmqG2ILHywA
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-peOr2S4oN4rrmqG2ILHywA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-peOr2S4oN4rrmqG2ILHywA
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-FlJ4XDsNRVg-YZ_KQ6uQOw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-FlJ4XDsNRVg-YZ_KQ6uQOw
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-d3gXco563rpVtO-gH1x-qA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-d3gXco563rpVtO-gH1x-qA
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-vSJB05aKVbAQdk670e-ong to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-vSJB05aKVbAQdk670e-ong
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-NBqbUoeNBJXk3nsjULeM6g to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-NBqbUoeNBJXk3nsjULeM6g
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-g0-x0OYRid8v1V7hCJ2J-Q to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-g0-x0OYRid8v1V7hCJ2J-Q
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-AfsQXS2yQHMNsf2Y0QJgOw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-AfsQXS2yQHMNsf2Y0QJgOw
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-AfsQXS2yQHMNsf2Y0QJgOw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-AfsQXS2yQHMNsf2Y0QJgOw
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-qElhr9XZ53qOuxbjuEDsEg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-qElhr9XZ53qOuxbjuEDsEg
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-566_dpY1j_xMQKFz_NppIA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-566_dpY1j_xMQKFz_NppIA
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-OoFAYUBPxqfOc6cqoOfFRQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-OoFAYUBPxqfOc6cqoOfFRQ
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-g0-x0OYRid8v1V7hCJ2J-Q to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-g0-x0OYRid8v1V7hCJ2J-Q
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-566_dpY1j_xMQKFz_NppIA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-566_dpY1j_xMQKFz_NppIA
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-NBqbUoeNBJXk3nsjULeM6g to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-NBqbUoeNBJXk3nsjULeM6g
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-yJkPWy35exoIyc2XPkUN8g to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-yJkPWy35exoIyc2XPkUN8g
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-pZQ8g3reVq0KH3YDrn1-Bg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-pZQ8g3reVq0KH3YDrn1-Bg
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-PkLUNRW-t8yeeRfYF27fuw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-PkLUNRW-t8yeeRfYF27fuw
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-eGz2gxf1RBp9Elp9fK53eA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-eGz2gxf1RBp9Elp9fK53eA
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-yJkPWy35exoIyc2XPkUN8g to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-yJkPWy35exoIyc2XPkUN8g
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-PkLUNRW-t8yeeRfYF27fuw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-PkLUNRW-t8yeeRfYF27fuw
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-qElhr9XZ53qOuxbjuEDsEg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-qElhr9XZ53qOuxbjuEDsEg
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-aWrtWapLx1Oy1O6TBwq2Cg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-aWrtWapLx1Oy1O6TBwq2Cg
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-6FDBsZ23sjGijNEM1E_bmg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-6FDBsZ23sjGijNEM1E_bmg
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-eGz2gxf1RBp9Elp9fK53eA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-eGz2gxf1RBp9Elp9fK53eA
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-pYpfR0A9bOFg_NsqJhp4zA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-pYpfR0A9bOFg_NsqJhp4zA
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-gZE2EP3dfjktvmzVNNoLqA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-gZE2EP3dfjktvmzVNNoLqA
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-budT4OD4buiHHIweSNx7BQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-budT4OD4buiHHIweSNx7BQ
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-pYpfR0A9bOFg_NsqJhp4zA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-pYpfR0A9bOFg_NsqJhp4zA
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-evkqfJBVB4fLFf2cOINPNg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-evkqfJBVB4fLFf2cOINPNg
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-evkqfJBVB4fLFf2cOINPNg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-evkqfJBVB4fLFf2cOINPNg
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-sAXpAdWEntNk-EFBv7hH1g to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-sAXpAdWEntNk-EFBv7hH1g
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-7cCvxpksq1PSjNyRnrpD6g to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-7cCvxpksq1PSjNyRnrpD6g
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-6FDBsZ23sjGijNEM1E_bmg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-6FDBsZ23sjGijNEM1E_bmg
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-sAXpAdWEntNk-EFBv7hH1g to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-sAXpAdWEntNk-EFBv7hH1g
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-LaQiJJjyBUrv-GVVdGFW0Q to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-LaQiJJjyBUrv-GVVdGFW0Q
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-LaQiJJjyBUrv-GVVdGFW0Q to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-LaQiJJjyBUrv-GVVdGFW0Q
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-gZE2EP3dfjktvmzVNNoLqA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-gZE2EP3dfjktvmzVNNoLqA
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-21EeSub5CnctEi9d0HCbuw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-21EeSub5CnctEi9d0HCbuw
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-21EeSub5CnctEi9d0HCbuw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-21EeSub5CnctEi9d0HCbuw
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-7cCvxpksq1PSjNyRnrpD6g to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-7cCvxpksq1PSjNyRnrpD6g
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-budT4OD4buiHHIweSNx7BQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-budT4OD4buiHHIweSNx7BQ
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-aWrtWapLx1Oy1O6TBwq2Cg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-aWrtWapLx1Oy1O6TBwq2Cg
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-7Y_JEv9QyltIUayxB1Jz-Q to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-7Y_JEv9QyltIUayxB1Jz-Q
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-7Y_JEv9QyltIUayxB1Jz-Q to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-7Y_JEv9QyltIUayxB1Jz-Q
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-LLUk4IcEwbQX58nwOO7OAA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-LLUk4IcEwbQX58nwOO7OAA
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-LLUk4IcEwbQX58nwOO7OAA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-LLUk4IcEwbQX58nwOO7OAA
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-TKT-Apy23QBGnfo_ILWTHg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-TKT-Apy23QBGnfo_ILWTHg
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-zehhljMX4PTM6UvH5c8zcg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-zehhljMX4PTM6UvH5c8zcg
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-FAKoAJKZs2RFycfjpQlbVw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-FAKoAJKZs2RFycfjpQlbVw
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-zehhljMX4PTM6UvH5c8zcg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-zehhljMX4PTM6UvH5c8zcg
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-hO8DUubaxTjH645eLfA-SA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-hO8DUubaxTjH645eLfA-SA
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-hRxcFIc6UmRwMOdGhauwnQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-hRxcFIc6UmRwMOdGhauwnQ
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-5BxcsRa2FFLBFjU5nyH9CA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-5BxcsRa2FFLBFjU5nyH9CA
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-hRxcFIc6UmRwMOdGhauwnQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-hRxcFIc6UmRwMOdGhauwnQ
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-5BxcsRa2FFLBFjU5nyH9CA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-5BxcsRa2FFLBFjU5nyH9CA
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-FAKoAJKZs2RFycfjpQlbVw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-FAKoAJKZs2RFycfjpQlbVw
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-wWPOQPUYCLE3DLL2atiwkQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-wWPOQPUYCLE3DLL2atiwkQ
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-TKT-Apy23QBGnfo_ILWTHg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-TKT-Apy23QBGnfo_ILWTHg
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-hO8DUubaxTjH645eLfA-SA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-hO8DUubaxTjH645eLfA-SA
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-wWPOQPUYCLE3DLL2atiwkQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-wWPOQPUYCLE3DLL2atiwkQ
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-EjTzuP3D9C4_8oi4ycPg2A to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-EjTzuP3D9C4_8oi4ycPg2A
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-erOj6ObLsapsphazGydzhg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-erOj6ObLsapsphazGydzhg
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-7S3uJQwQ-KWpzbepmUGkqQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-7S3uJQwQ-KWpzbepmUGkqQ
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-erOj6ObLsapsphazGydzhg to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-erOj6ObLsapsphazGydzhg
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-vfLZA2qcs8e0-S3VUl8Ykw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-vfLZA2qcs8e0-S3VUl8Ykw
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-vfLZA2qcs8e0-S3VUl8Ykw to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-vfLZA2qcs8e0-S3VUl8Ykw
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-7S3uJQwQ-KWpzbepmUGkqQ to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-7S3uJQwQ-KWpzbepmUGkqQ
+INFO:helper:Uploaded /home/appuser/code/cache/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-EjTzuP3D9C4_8oi4ycPg2A to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/solver-response-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-EjTzuP3D9C4_8oi4ycPg2A
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-m7MSmasj4Jax7lGRVia1ug to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-m7MSmasj4Jax7lGRVia1ug
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-inKGWGwHeMSYT6u6xanmOA to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-inKGWGwHeMSYT6u6xanmOA
+INFO:helper:Uploaded /home/appuser/code/cache/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-jjCdkygH9M80X-lCHDcu0Q to s3://certora-prod/outputs/10398964/cache/79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1/optimize-TAC-5hwiGmY-OvCIRifazzzWYlyjl-lebSCcQJe6UAoT91U-jjCdkygH9M80X-lCHDcu0Q
+[INFO]: updated '79029a7a341e800440f9e294efe3a6ee2c8db97b5bb26342a2395f148554b47b-optimisticTrue-iter3-None--certora-cli-8.6.1' cache
+INFO:helper:Uploaded ace2ddcb465948e983803143fccb2946.tar.gz to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/ace2ddcb465948e983803143fccb2946.tar.gz
+INFO:helper:Uploaded uploader.log to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/uploader.log
+INFO:helper:Uploaded /home/appuser/timer.log to s3://certora-prod/outputs/10398964/output_ace2ddcb465948e983803143fccb2946/timer.log
+
+Finished verification request
+Expecting value: line 1 column 1 (char 0)

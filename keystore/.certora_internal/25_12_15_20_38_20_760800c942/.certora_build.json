@@ -1,0 +1,2035 @@
+{
+    "UserOpECDSAVerifier_00000000ce4604a0000000000000000000000006": {
+        "contracts": [
+            {
+                "address": "00000000ce4604a0000000000000000000000006",
+                "allMethods": [
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "memory",
+                                "typeDesc": {
+                                    "astId": 148,
+                                    "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                                    "containingContract": null,
+                                    "structMembers": [
+                                        {
+                                            "name": "aggregator",
+                                            "type": {
+                                                "primitiveName": "address",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validAfter",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validUntil",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        }
+                                    ],
+                                    "structName": "ValidationData",
+                                    "type": "UserDefinedStruct"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "_packValidationData",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "data"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint48",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint48",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "_packValidationData",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "sigFailed",
+                            "validUntil",
+                            "validAfter"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "_parseValidationData",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "validationData"
+                        ],
+                        "returns": [
+                            {
+                                "location": "memory",
+                                "typeDesc": {
+                                    "astId": 148,
+                                    "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                                    "containingContract": null,
+                                    "structMembers": [
+                                        {
+                                            "name": "aggregator",
+                                            "type": {
+                                                "primitiveName": "address",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validAfter",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validUntil",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        }
+                                    ],
+                                    "structName": "ValidationData",
+                                    "type": "UserDefinedStruct"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "calldata",
+                                "typeDesc": {
+                                    "type": "PackedBytes"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "calldataKeccak",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "data"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "constructor",
+                        "notpayable": true,
+                        "originalFile": "src/verifier/UserOpECDSAVerifier.sol",
+                        "paramNames": [
+                            "aKeystore"
+                        ],
+                        "returns": [],
+                        "sighash": "0",
+                        "sourceBytes": {
+                            "begin": 468,
+                            "size": 57
+                        },
+                        "stateMutability": "nonpayable",
+                        "visibility": "public",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "finalizeAllocation",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "memPointer",
+                            "allocationSize"
+                        ],
+                        "returns": [],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [],
+                        "isLibrary": false,
+                        "name": "keystore",
+                        "notpayable": true,
+                        "originalFile": "src/lib/OnlyKeystore.sol",
+                        "paramNames": [],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "772a0001",
+                        "sourceBytes": {
+                            "begin": 125,
+                            "size": 33
+                        },
+                        "stateMutability": "view",
+                        "visibility": "external",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "min",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "a",
+                            "b"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "calldata",
+                                "typeDesc": {
+                                    "type": "PackedBytes"
+                                }
+                            },
+                            {
+                                "location": "calldata",
+                                "typeDesc": {
+                                    "type": "PackedBytes"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "validateData",
+                        "notpayable": true,
+                        "originalFile": "src/verifier/UserOpECDSAVerifier.sol",
+                        "paramNames": [
+                            "message",
+                            "data",
+                            "config"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "04b073c5",
+                        "sourceBytes": {
+                            "begin": 1354,
+                            "size": 602
+                        },
+                        "stateMutability": "view",
+                        "visibility": "external",
+                        "vyper_metadata": null
+                    }
+                ],
+                "bytecode": "608060405234801561000f575f5ffd5b5060043610610034575f3560e01c806304b073c514610038578063772a000114610068575b5f5ffd5b610052600480360381019061004d91906104b4565b610086565b60405161005f919061055d565b60405180910390f35b610070610204565b60405161007d91906105b5565b60405180910390f35b5f7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461010c576040517f4333e8ee00000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b5f85858080601f0160208091040260200160405190810160405280939291908181526020018383808284375f81840152601f19601f8201169050808301925050505050505090505f7fffffff6e4604afefe123321beef1b02fffffffffffffffffffffffff000100015260418151111561019c575f868681019061019091906108af565b90508061010001519150505b6101ae6101a888610228565b826102eb565b73ffffffffffffffffffffffffffffffffffffffff168484906101d19190610937565b60601c73ffffffffffffffffffffffffffffffffffffffff16146101f65760016101f8565b5f5b91505095945050505050565b7f000000000000000000000000000000000000000000000000000000000000000081565b5f64f196e5000e7fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000e00005260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000e00015260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000e000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000e600052816020527b19457468657265756d205369676e6564204d6573736167653a0a33325f52603c6004209050919050565b5f64f196e500067fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000600005260027fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000600015260097fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0006000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0006600152604051600115610408578251604081146103a157604181146103c057506103fb565b6040840151601b8160ff1c016020528060011b60011c606052506103d3565b60608401515f1a60205260408401516060525b50835f5260208301516040526020600160805f60015afa5191505f606052806040523d610408575b638baa579f5f526004601cfd5b5092915050565b5f604051905090565b5f5ffd5b5f5ffd5b5f819050919050565b61043281610420565b811461043c575f5ffd5b50565b5f8135905061044d81610429565b92915050565b5f5ffd5b5f5ffd5b5f5ffd5b5f5f83601f84011261047457610473610453565b5b8235905067ffffffffffffffff81111561049157610490610457565b5b6020830191508360018202830111156104ad576104ac61045b565b5b9250929050565b5f5f5f5f5f606086880312156104cd576104cc610418565b5b5f6104da8882890161043f565b955050602086013567ffffffffffffffff8111156104fb576104fa61041c565b5b6105078882890161045f565b9450945050604086013567ffffffffffffffff81111561052a5761052961041c565b5b6105368882890161045f565b92509250509295509295909350565b5f819050919050565b61055781610545565b82525050565b5f6020820190506105705f83018461054e565b92915050565b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f61059f82610576565b9050919050565b6105af81610595565b82525050565b5f6020820190506105c85f8301846105a6565b92915050565b5f5ffd5b5f601f19601f8301169050919050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52604160045260245ffd5b610618826105d2565b810181811067ffffffffffffffff82111715610637576106366105e2565b5b80604052505050565b5f61064961040f565b9050610655828261060f565b919050565b5f5ffd5b61066781610595565b8114610671575f5ffd5b50565b5f813590506106828161065e565b92915050565b61069181610545565b811461069b575f5ffd5b50565b5f813590506106ac81610688565b92915050565b5f5ffd5b5f67ffffffffffffffff8211156106d0576106cf6105e2565b5b6106d9826105d2565b9050602081019050919050565b828183375f83830152505050565b5f610706610701846106b6565b610640565b905082815260208101848484011115610722576107216106b2565b5b61072d8482856106e6565b509392505050565b5f82601f83011261074957610748610453565b5b81356107598482602086016106f4565b91505092915050565b5f6101208284031215610778576107776105ce565b5b610783610120610640565b90505f61079284828501610674565b5f8301525060206107a58482850161069e565b602083015250604082013567ffffffffffffffff8111156107c9576107c861065a565b5b6107d584828501610735565b604083015250606082013567ffffffffffffffff8111156107f9576107f861065a565b5b61080584828501610735565b60608301525060806108198482850161043f565b60808301525060a061082d8482850161069e565b60a08301525060c06108418482850161043f565b60c08301525060e082013567ffffffffffffffff8111156108655761086461065a565b5b61087184828501610735565b60e08301525061010082013567ffffffffffffffff8111156108965761089561065a565b5b6108a284828501610735565b6101008301525092915050565b5f602082840312156108c4576108c3610418565b5b5f82013567ffffffffffffffff8111156108e1576108e061041c565b5b6108ed84828501610762565b91505092915050565b5f82905092915050565b5f7fffffffffffffffffffffffffffffffffffffffff00000000000000000000000082169050919050565b5f82821b905092915050565b5f61094283836108f6565b8261094d8135610900565b9250601482101561098d576109887fffffffffffffffffffffffffffffffffffffffff0000000000000000000000008360140360080261092b565b831692505b50509291505056fea2646970667358221220b0701558b9da31b4fd874e76bae73f49c7c5ecf2431e67a8af0d1237652e7e7c64736f6c634300081f0033",
+                "compilerName": "solc",
+                "compilerParameters": {
+                    "optimizerOn": false,
+                    "optimizerRuns": null,
+                    "type": "SolcParameters",
+                    "viaIR": false
+                },
+                "compilerVersion": "0.8.31",
+                "constructorBytecode": "60a060405234801561000f575f5ffd5b50604051610adf380380610adf833981810160405281019061003191906100cb565b808073ffffffffffffffffffffffffffffffffffffffff1660808173ffffffffffffffffffffffffffffffffffffffff168152505050506100f6565b5f5ffd5b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f61009a82610071565b9050919050565b6100aa81610090565b81146100b4575f5ffd5b50565b5f815190506100c5816100a1565b92915050565b5f602082840312156100e0576100df61006d565b5b5f6100ed848285016100b7565b91505092915050565b6080516109cb6101145f395f81816089015261020601526109cb5ff3fe608060405234801561000f575f5ffd5b5060043610610034575f3560e01c806304b073c514610038578063772a000114610068575b5f5ffd5b610052600480360381019061004d91906104b4565b610086565b60405161005f919061055d565b60405180910390f35b610070610204565b60405161007d91906105b5565b60405180910390f35b5f7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461010c576040517f4333e8ee00000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b5f85858080601f0160208091040260200160405190810160405280939291908181526020018383808284375f81840152601f19601f8201169050808301925050505050505090505f7fffffff6e4604afefe123321beef1b02fffffffffffffffffffffffff000100015260418151111561019c575f868681019061019091906108af565b90508061010001519150505b6101ae6101a888610228565b826102eb565b73ffffffffffffffffffffffffffffffffffffffff168484906101d19190610937565b60601c73ffffffffffffffffffffffffffffffffffffffff16146101f65760016101f8565b5f5b91505095945050505050565b7f000000000000000000000000000000000000000000000000000000000000000081565b5f64f196e5000e7fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000e00005260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000e00015260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000e000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000e600052816020527b19457468657265756d205369676e6564204d6573736167653a0a33325f52603c6004209050919050565b5f64f196e500067fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000600005260027fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000600015260097fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0006000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0006600152604051600115610408578251604081146103a157604181146103c057506103fb565b6040840151601b8160ff1c016020528060011b60011c606052506103d3565b60608401515f1a60205260408401516060525b50835f5260208301516040526020600160805f60015afa5191505f606052806040523d610408575b638baa579f5f526004601cfd5b5092915050565b5f604051905090565b5f5ffd5b5f5ffd5b5f819050919050565b61043281610420565b811461043c575f5ffd5b50565b5f8135905061044d81610429565b92915050565b5f5ffd5b5f5ffd5b5f5ffd5b5f5f83601f84011261047457610473610453565b5b8235905067ffffffffffffffff81111561049157610490610457565b5b6020830191508360018202830111156104ad576104ac61045b565b5b9250929050565b5f5f5f5f5f606086880312156104cd576104cc610418565b5b5f6104da8882890161043f565b955050602086013567ffffffffffffffff8111156104fb576104fa61041c565b5b6105078882890161045f565b9450945050604086013567ffffffffffffffff81111561052a5761052961041c565b5b6105368882890161045f565b92509250509295509295909350565b5f819050919050565b61055781610545565b82525050565b5f6020820190506105705f83018461054e565b92915050565b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f61059f82610576565b9050919050565b6105af81610595565b82525050565b5f6020820190506105c85f8301846105a6565b92915050565b5f5ffd5b5f601f19601f8301169050919050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52604160045260245ffd5b610618826105d2565b810181811067ffffffffffffffff82111715610637576106366105e2565b5b80604052505050565b5f61064961040f565b9050610655828261060f565b919050565b5f5ffd5b61066781610595565b8114610671575f5ffd5b50565b5f813590506106828161065e565b92915050565b61069181610545565b811461069b575f5ffd5b50565b5f813590506106ac81610688565b92915050565b5f5ffd5b5f67ffffffffffffffff8211156106d0576106cf6105e2565b5b6106d9826105d2565b9050602081019050919050565b828183375f83830152505050565b5f610706610701846106b6565b610640565b905082815260208101848484011115610722576107216106b2565b5b61072d8482856106e6565b509392505050565b5f82601f83011261074957610748610453565b5b81356107598482602086016106f4565b91505092915050565b5f6101208284031215610778576107776105ce565b5b610783610120610640565b90505f61079284828501610674565b5f8301525060206107a58482850161069e565b602083015250604082013567ffffffffffffffff8111156107c9576107c861065a565b5b6107d584828501610735565b604083015250606082013567ffffffffffffffff8111156107f9576107f861065a565b5b61080584828501610735565b60608301525060806108198482850161043f565b60808301525060a061082d8482850161069e565b60a08301525060c06108418482850161043f565b60c08301525060e082013567ffffffffffffffff8111156108655761086461065a565b5b61087184828501610735565b60e08301525061010082013567ffffffffffffffff8111156108965761089561065a565b5b6108a284828501610735565b6101008301525092915050565b5f602082840312156108c4576108c3610418565b5b5f82013567ffffffffffffffff8111156108e1576108e061041c565b5b6108ed84828501610762565b91505092915050565b5f82905092915050565b5f7fffffffffffffffffffffffffffffffffffffffff00000000000000000000000082169050919050565b5f82821b905092915050565b5f61094283836108f6565b8261094d8135610900565b9250601482101561098d576109887fffffffffffffffffffffffffffffffffffffffff0000000000000000000000008360140360080261092b565b831692505b50509291505056fea2646970667358221220b0701558b9da31b4fd874e76bae73f49c7c5ecf2431e67a8af0d1237652e7e7c64736f6c634300081f0033",
+                "constructorSrcmap": "406:1654:2:-:0;;;468:57;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;512:9;217::1;206:20;;;;;;;;;;165:68;468:57:2;406:1654;;88:117:6;197:1;194;187:12;334:126;371:7;411:42;404:5;400:54;389:65;;334:126;;;:::o;466:96::-;503:7;532:24;550:5;532:24;:::i;:::-;521:35;;466:96;;;:::o;568:122::-;641:24;659:5;641:24;:::i;:::-;634:5;631:35;621:63;;680:1;677;670:12;621:63;568:122;:::o;696:143::-;753:5;784:6;778:13;769:22;;800:33;827:5;800:33;:::i;:::-;696:143;;;;:::o;845:351::-;915:6;964:2;952:9;943:7;939:23;935:32;932:119;;;970:79;;:::i;:::-;932:119;1090:1;1115:64;1171:7;1162:6;1151:9;1147:22;1115:64;:::i;:::-;1105:74;;1061:128;845:351;;;;:::o;406:1654:2:-;;;;;;;;;;;;;;;;;;",
+                "extensionContracts": [],
+                "file": "src/verifier/UserOpECDSAVerifier.sol",
+                "immutables": [
+                    {
+                        "length": 32,
+                        "offset": 137,
+                        "type": {
+                            "location": "stack",
+                            "typeDesc": {
+                                "primitiveName": "address",
+                                "type": "Primitive"
+                            }
+                        },
+                        "varname": "keystore"
+                    },
+                    {
+                        "length": 32,
+                        "offset": 518,
+                        "type": {
+                            "location": "stack",
+                            "typeDesc": {
+                                "primitiveName": "address",
+                                "type": "Primitive"
+                            }
+                        },
+                        "varname": "keystore"
+                    }
+                ],
+                "internalFuncs": [
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "_parseValidationData",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "validationData"
+                        ],
+                        "returns": [
+                            {
+                                "location": "memory",
+                                "typeDesc": {
+                                    "astId": 148,
+                                    "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                                    "containingContract": null,
+                                    "structMembers": [
+                                        {
+                                            "name": "aggregator",
+                                            "type": {
+                                                "primitiveName": "address",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validAfter",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validUntil",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        }
+                                    ],
+                                    "structName": "ValidationData",
+                                    "type": "UserDefinedStruct"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "memory",
+                                "typeDesc": {
+                                    "astId": 148,
+                                    "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                                    "containingContract": null,
+                                    "structMembers": [
+                                        {
+                                            "name": "aggregator",
+                                            "type": {
+                                                "primitiveName": "address",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validAfter",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "validUntil",
+                                            "type": {
+                                                "primitiveName": "uint48",
+                                                "type": "Primitive"
+                                            }
+                                        }
+                                    ],
+                                    "structName": "ValidationData",
+                                    "type": "UserDefinedStruct"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "_packValidationData",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "data"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "min",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "a",
+                            "b"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint48",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint48",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "_packValidationData",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "sigFailed",
+                            "validUntil",
+                            "validAfter"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "calldata",
+                                "typeDesc": {
+                                    "type": "PackedBytes"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "calldataKeccak",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "data"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "finalizeAllocation",
+                        "notpayable": true,
+                        "originalFile": null,
+                        "paramNames": [
+                            "memPointer",
+                            "allocationSize"
+                        ],
+                        "returns": [],
+                        "sighash": "0",
+                        "sourceBytes": null,
+                        "stateMutability": "pure",
+                        "visibility": "internal",
+                        "vyper_metadata": null
+                    }
+                ],
+                "internalFunctionHarnesses": {},
+                "internalFunctionStarts": [
+                    2304,
+                    516,
+                    134,
+                    1672,
+                    1039,
+                    1551,
+                    1429,
+                    1048,
+                    1052,
+                    1694,
+                    1056,
+                    1446,
+                    552,
+                    1065,
+                    2347,
+                    2223,
+                    1714,
+                    1204,
+                    1845,
+                    1461,
+                    1718,
+                    2359,
+                    1087,
+                    1600,
+                    1349,
+                    1358,
+                    1486,
+                    1490,
+                    1107,
+                    1111,
+                    1626,
+                    1115,
+                    1373,
+                    1630,
+                    1119,
+                    1890,
+                    1506,
+                    1766,
+                    747,
+                    1780,
+                    1652,
+                    2294,
+                    1398
+                ],
+                "internalFunctions": {
+                    "0xf196e50000": {
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|IVerifier",
+                        "declaringContract": "IVerifier",
+                        "method": {
+                            "contractName": "IVerifier",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "_parseValidationData",
+                            "notpayable": true,
+                            "originalFile": "lib/account-abstraction/contracts/core/Helpers.sol",
+                            "paramNames": [
+                                "validationData"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "astId": 147,
+                                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                                        "containingContract": null,
+                                        "structMembers": [
+                                            {
+                                                "name": "aggregator",
+                                                "type": {
+                                                    "primitiveName": "address",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "validAfter",
+                                                "type": {
+                                                    "primitiveName": "uint48",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "validUntil",
+                                                "type": {
+                                                    "primitiveName": "uint48",
+                                                    "type": "Primitive"
+                                                }
+                                            }
+                                        ],
+                                        "structName": "ValidationData",
+                                        "type": "UserDefinedStruct"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 1454,
+                                "size": 416
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50001": {
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|IVerifier",
+                        "declaringContract": "IVerifier",
+                        "method": {
+                            "contractName": "IVerifier",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "astId": 147,
+                                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                                        "containingContract": null,
+                                        "structMembers": [
+                                            {
+                                                "name": "aggregator",
+                                                "type": {
+                                                    "primitiveName": "address",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "validAfter",
+                                                "type": {
+                                                    "primitiveName": "uint48",
+                                                    "type": "Primitive"
+                                                }
+                                            },
+                                            {
+                                                "name": "validUntil",
+                                                "type": {
+                                                    "primitiveName": "uint48",
+                                                    "type": "Primitive"
+                                                }
+                                            }
+                                        ],
+                                        "structName": "ValidationData",
+                                        "type": "UserDefinedStruct"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "_packValidationData",
+                            "notpayable": true,
+                            "originalFile": "lib/account-abstraction/contracts/core/Helpers.sol",
+                            "paramNames": [
+                                "data"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 2019,
+                                "size": 229
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50002": {
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|IVerifier",
+                        "declaringContract": "IVerifier",
+                        "method": {
+                            "contractName": "IVerifier",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "min",
+                            "notpayable": true,
+                            "originalFile": "lib/account-abstraction/contracts/core/Helpers.sol",
+                            "paramNames": [
+                                "a",
+                                "b"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 3621,
+                                "size": 95
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50003": {
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|IVerifier",
+                        "declaringContract": "IVerifier",
+                        "method": {
+                            "contractName": "IVerifier",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint48",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint48",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "_packValidationData",
+                            "notpayable": true,
+                            "originalFile": "lib/account-abstraction/contracts/core/Helpers.sol",
+                            "paramNames": [
+                                "sigFailed",
+                                "validUntil",
+                                "validAfter"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 2611,
+                                "size": 290
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50004": {
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|IVerifier",
+                        "declaringContract": "IVerifier",
+                        "method": {
+                            "contractName": "IVerifier",
+                            "fullArgs": [
+                                {
+                                    "location": "calldata",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "calldataKeccak",
+                            "notpayable": true,
+                            "originalFile": "lib/account-abstraction/contracts/core/Helpers.sol",
+                            "paramNames": [
+                                "data"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 3205,
+                                "size": 281
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50005": {
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|IVerifier",
+                        "declaringContract": "IVerifier",
+                        "method": {
+                            "contractName": "IVerifier",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "finalizeAllocation",
+                            "notpayable": true,
+                            "originalFile": "lib/account-abstraction/contracts/core/Helpers.sol",
+                            "paramNames": [
+                                "memPointer",
+                                "allocationSize"
+                            ],
+                            "returns": [],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 3932,
+                                "size": 507
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50006": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "recover",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "hash",
+                                "signature"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 2950,
+                                "size": 1286
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50007": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "calldata",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "recoverCalldata",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "hash",
+                                "signature"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 4336,
+                                "size": 1373
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50008": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "tryRecover",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "hash",
+                                "signature"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 8339,
+                                "size": 1225
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50009": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "recover",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "hash",
+                                "r",
+                                "vs"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 5859,
+                                "size": 841
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e5000a": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint8",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "recover",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "hash",
+                                "v",
+                                "r",
+                                "s"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 6831,
+                                "size": 835
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e5000b": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "calldata",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "tryRecoverCalldata",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "hash",
+                                "signature"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 9664,
+                                "size": 1284
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e5000c": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "tryRecover",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "hash",
+                                "r",
+                                "vs"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 11098,
+                                "size": 760
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e5000d": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint8",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "tryRecover",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "hash",
+                                "v",
+                                "r",
+                                "s"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 11989,
+                                "size": 726
+                            },
+                            "stateMutability": "view",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e5000e": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "toEthSignedMessageHash",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "hash"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 13276,
+                                "size": 409
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e5000f": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "toEthSignedMessageHash",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "s"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 14016,
+                                "size": 1106
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50010": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "memory",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "canonicalHash",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "signature"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 15945,
+                                "size": 1205
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50011": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "calldata",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "canonicalHashCalldata",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "signature"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 17212,
+                                "size": 1349
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50012": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "canonicalHash",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "r",
+                                "vs"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 18623,
+                                "size": 471
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50013": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint8",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "canonicalHash",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [
+                                "v",
+                                "r",
+                                "s"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bytes32",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 19156,
+                                "size": 519
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    },
+                    "0xf196e50014": {
+                        "canonicalId": "lib/solady/src/utils/ECDSA.sol|ECDSA",
+                        "declaringContract": "ECDSA",
+                        "method": {
+                            "contractName": "ECDSA",
+                            "fullArgs": [],
+                            "isLibrary": true,
+                            "name": "emptySignature",
+                            "notpayable": true,
+                            "originalFile": "lib/solady/src/utils/ECDSA.sol",
+                            "paramNames": [],
+                            "returns": [
+                                {
+                                    "location": "calldata",
+                                    "typeDesc": {
+                                        "type": "PackedBytes"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "sourceBytes": {
+                                "begin": 20010,
+                                "size": 188
+                            },
+                            "stateMutability": "pure",
+                            "visibility": "internal",
+                            "vyper_metadata": null
+                        }
+                    }
+                },
+                "is_static_address": false,
+                "lang": "Solidity",
+                "localAssignments": {
+                    "1": {
+                        "lhs": "signature",
+                        "sourceLoc": {
+                            "begin": "1560",
+                            "len": "29",
+                            "source": "2"
+                        }
+                    }
+                },
+                "methods": [
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "constructor",
+                        "notpayable": true,
+                        "originalFile": "src/verifier/UserOpECDSAVerifier.sol",
+                        "paramNames": [
+                            "aKeystore"
+                        ],
+                        "returns": [],
+                        "sighash": "0",
+                        "sourceBytes": {
+                            "begin": 468,
+                            "size": 57
+                        },
+                        "stateMutability": "nonpayable",
+                        "visibility": "public",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [],
+                        "isLibrary": false,
+                        "name": "keystore",
+                        "notpayable": true,
+                        "originalFile": "src/lib/OnlyKeystore.sol",
+                        "paramNames": [],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "772a0001",
+                        "sourceBytes": {
+                            "begin": 125,
+                            "size": 33
+                        },
+                        "stateMutability": "view",
+                        "visibility": "external",
+                        "vyper_metadata": null
+                    },
+                    {
+                        "contractName": "UserOpECDSAVerifier",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "calldata",
+                                "typeDesc": {
+                                    "type": "PackedBytes"
+                                }
+                            },
+                            {
+                                "location": "calldata",
+                                "typeDesc": {
+                                    "type": "PackedBytes"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "validateData",
+                        "notpayable": true,
+                        "originalFile": "src/verifier/UserOpECDSAVerifier.sol",
+                        "paramNames": [
+                            "message",
+                            "data",
+                            "config"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "04b073c5",
+                        "sourceBytes": {
+                            "begin": 1354,
+                            "size": 602
+                        },
+                        "stateMutability": "view",
+                        "visibility": "external",
+                        "vyper_metadata": null
+                    }
+                ],
+                "name": "UserOpECDSAVerifier",
+                "original_file": "src/verifier/UserOpECDSAVerifier.sol",
+                "solidityTypes": [
+                    {
+                        "astId": 349,
+                        "canonicalId": "lib/account-abstraction/contracts/interfaces/PackedUserOperation.sol|PackedUserOperation",
+                        "containingContract": null,
+                        "structMembers": [
+                            {
+                                "name": "sender",
+                                "type": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "nonce",
+                                "type": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "initCode",
+                                "type": {
+                                    "type": "PackedBytes"
+                                }
+                            },
+                            {
+                                "name": "callData",
+                                "type": {
+                                    "type": "PackedBytes"
+                                }
+                            },
+                            {
+                                "name": "accountGasLimits",
+                                "type": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "preVerificationGas",
+                                "type": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "gasFees",
+                                "type": {
+                                    "primitiveName": "bytes32",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "paymasterAndData",
+                                "type": {
+                                    "type": "PackedBytes"
+                                }
+                            },
+                            {
+                                "name": "signature",
+                                "type": {
+                                    "type": "PackedBytes"
+                                }
+                            }
+                        ],
+                        "structName": "PackedUserOperation",
+                        "type": "UserDefinedStruct"
+                    },
+                    {
+                        "astId": 148,
+                        "canonicalId": "lib/account-abstraction/contracts/core/Helpers.sol|ValidationData",
+                        "containingContract": null,
+                        "structMembers": [
+                            {
+                                "name": "aggregator",
+                                "type": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "validAfter",
+                                "type": {
+                                    "primitiveName": "uint48",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "validUntil",
+                                "type": {
+                                    "primitiveName": "uint48",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "structName": "ValidationData",
+                        "type": "UserDefinedStruct"
+                    }
+                ],
+                "sourceBytes": {
+                    "begin": 406,
+                    "size": 1552
+                },
+                "srcmap": "406:1654:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1354:704;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;125:33:1;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;1354:704:2;1522:22;295:8:1;281:22;;:10;:22;;;273:50;;;;;;;;;;;;;;;;;1560:22:2::1;1585:4;;1560:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1689:1;1622:66;1615:76;1724:2;1705:9;:16;:21;1701:169;;;1742:33;1789:4;;1778:39;;;;;;;:::i;:::-;1742:75;;1843:6;:16;;;1831:28;;1728:142;1701:169;1915:63;1929:37;1958:7;1929:28;:37::i;:::-;1968:9;1915:13;:63::i;:::-;1887:91;;1903:6;;1895:15;;;;;:::i;:::-;1887:24;;:91;;;:164;;301:1:3;1887:164:2;;;461:1:3;1887:164:2;1880:171;;;1354:704:::0;;;;;;;:::o;125:33:1:-;;;:::o;16148:764:5:-;16217:14;16336:13;16268:66;16261:89;16426:1;16358:66;16351:77;16504:1;16436:66;16429:77;16582:4;16514:66;16507:80;16677:4;16671;16664:18;16751:50;16745:4;16738:64;16854:4;16848;16838:21;16828:31;;16148:764;;;:::o;2950:1646::-;3028:14;3147:13;3079:66;3072:89;3237:1;3169:66;3162:77;3315:1;3247:66;3240:77;3393:9;3325:66;3318:85;3501:4;3495:11;3509:1;3480:1100;;;3659:9;3653:16;3691:2;3686:210;;;;3918:2;3913:176;;;;4116:8;;;3686:210;3747:4;3736:9;3732:20;3726:27;3805:2;3800;3795:3;3791:12;3787:21;3781:4;3774:35;3865:2;3862:1;3858:10;3855:1;3851:18;3845:4;3838:32;3694:202;3686:210;;3913:176;3985:4;3974:9;3970:20;3964:27;3961:1;3956:36;3950:4;3943:50;4056:4;4045:9;4041:20;4035:27;4029:4;4022:41;3646:480;;4156:4;4150;4143:18;4212:4;4201:9;4197:20;4191:27;4185:4;4178:41;4299:4;4293;4287;4281;4278:1;4271:5;4260:44;4254:51;4244:61;;4335:1;4329:4;4322:15;4393:1;4387:4;4380:15;4540:16;4559:5;4537:29;3480:1100;3542:10;3536:4;3529:24;3608:4;3602;3595:18;3480:1100;3484:24;2950:1646;;;;:::o;7:75:6:-;40:6;73:2;67:9;57:19;;7:75;:::o;88:117::-;197:1;194;187:12;211:117;320:1;317;310:12;334:77;371:7;400:5;389:16;;334:77;;;:::o;417:122::-;490:24;508:5;490:24;:::i;:::-;483:5;480:35;470:63;;529:1;526;519:12;470:63;417:122;:::o;545:139::-;591:5;629:6;616:20;607:29;;645:33;672:5;645:33;:::i;:::-;545:139;;;;:::o;690:117::-;799:1;796;789:12;813:117;922:1;919;912:12;936:117;1045:1;1042;1035:12;1072:552;1129:8;1139:6;1189:3;1182:4;1174:6;1170:17;1166:27;1156:122;;1197:79;;:::i;:::-;1156:122;1310:6;1297:20;1287:30;;1340:18;1332:6;1329:30;1326:117;;;1362:79;;:::i;:::-;1326:117;1476:4;1468:6;1464:17;1452:29;;1530:3;1522:4;1514:6;1510:17;1500:8;1496:32;1493:41;1490:128;;;1537:79;;:::i;:::-;1490:128;1072:552;;;;;:::o;1630:1015::-;1729:6;1737;1745;1753;1761;1810:2;1798:9;1789:7;1785:23;1781:32;1778:119;;;1816:79;;:::i;:::-;1778:119;1936:1;1961:53;2006:7;1997:6;1986:9;1982:22;1961:53;:::i;:::-;1951:63;;1907:117;2091:2;2080:9;2076:18;2063:32;2122:18;2114:6;2111:30;2108:117;;;2144:79;;:::i;:::-;2108:117;2257:64;2313:7;2304:6;2293:9;2289:22;2257:64;:::i;:::-;2239:82;;;;2034:297;2398:2;2387:9;2383:18;2370:32;2429:18;2421:6;2418:30;2415:117;;;2451:79;;:::i;:::-;2415:117;2564:64;2620:7;2611:6;2600:9;2596:22;2564:64;:::i;:::-;2546:82;;;;2341:297;1630:1015;;;;;;;;:::o;2651:77::-;2688:7;2717:5;2706:16;;2651:77;;;:::o;2734:118::-;2821:24;2839:5;2821:24;:::i;:::-;2816:3;2809:37;2734:118;;:::o;2858:222::-;2951:4;2989:2;2978:9;2974:18;2966:26;;3002:71;3070:1;3059:9;3055:17;3046:6;3002:71;:::i;:::-;2858:222;;;;:::o;3086:126::-;3123:7;3163:42;3156:5;3152:54;3141:65;;3086:126;;;:::o;3218:96::-;3255:7;3284:24;3302:5;3284:24;:::i;:::-;3273:35;;3218:96;;;:::o;3320:118::-;3407:24;3425:5;3407:24;:::i;:::-;3402:3;3395:37;3320:118;;:::o;3444:222::-;3537:4;3575:2;3564:9;3560:18;3552:26;;3588:71;3656:1;3645:9;3641:17;3632:6;3588:71;:::i;:::-;3444:222;;;;:::o;3672:117::-;3781:1;3778;3771:12;3795:102;3836:6;3887:2;3883:7;3878:2;3871:5;3867:14;3863:28;3853:38;;3795:102;;;:::o;3903:180::-;3951:77;3948:1;3941:88;4048:4;4045:1;4038:15;4072:4;4069:1;4062:15;4089:281;4172:27;4194:4;4172:27;:::i;:::-;4164:6;4160:40;4302:6;4290:10;4287:22;4266:18;4254:10;4251:34;4248:62;4245:88;;;4313:18;;:::i;:::-;4245:88;4353:10;4349:2;4342:22;4132:238;4089:281;;:::o;4376:129::-;4410:6;4437:20;;:::i;:::-;4427:30;;4466:33;4494:4;4486:6;4466:33;:::i;:::-;4376:129;;;:::o;4511:117::-;4620:1;4617;4610:12;4634:122;4707:24;4725:5;4707:24;:::i;:::-;4700:5;4697:35;4687:63;;4746:1;4743;4736:12;4687:63;4634:122;:::o;4762:139::-;4808:5;4846:6;4833:20;4824:29;;4862:33;4889:5;4862:33;:::i;:::-;4762:139;;;;:::o;4907:122::-;4980:24;4998:5;4980:24;:::i;:::-;4973:5;4970:35;4960:63;;5019:1;5016;5009:12;4960:63;4907:122;:::o;5035:139::-;5081:5;5119:6;5106:20;5097:29;;5135:33;5162:5;5135:33;:::i;:::-;5035:139;;;;:::o;5180:117::-;5289:1;5286;5279:12;5303:307;5364:4;5454:18;5446:6;5443:30;5440:56;;;5476:18;;:::i;:::-;5440:56;5514:29;5536:6;5514:29;:::i;:::-;5506:37;;5598:4;5592;5588:15;5580:23;;5303:307;;;:::o;5616:148::-;5714:6;5709:3;5704;5691:30;5755:1;5746:6;5741:3;5737:16;5730:27;5616:148;;;:::o;5770:423::-;5847:5;5872:65;5888:48;5929:6;5888:48;:::i;:::-;5872:65;:::i;:::-;5863:74;;5960:6;5953:5;5946:21;5998:4;5991:5;5987:16;6036:3;6027:6;6022:3;6018:16;6015:25;6012:112;;;6043:79;;:::i;:::-;6012:112;6133:54;6180:6;6175:3;6170;6133:54;:::i;:::-;5853:340;5770:423;;;;;:::o;6212:338::-;6267:5;6316:3;6309:4;6301:6;6297:17;6293:27;6283:122;;6324:79;;:::i;:::-;6283:122;6441:6;6428:20;6466:78;6540:3;6532:6;6525:4;6517:6;6513:17;6466:78;:::i;:::-;6457:87;;6273:277;6212:338;;;;:::o;6590:2456::-;6675:5;6719:6;6707:9;6702:3;6698:19;6694:32;6691:119;;;6729:79;;:::i;:::-;6691:119;6828:23;6844:6;6828:23;:::i;:::-;6819:32;;6912:1;6952:49;6997:3;6988:6;6977:9;6973:22;6952:49;:::i;:::-;6945:4;6938:5;6934:16;6927:75;6861:152;7073:2;7114:49;7159:3;7150:6;7139:9;7135:22;7114:49;:::i;:::-;7107:4;7100:5;7096:16;7089:75;7023:152;7266:2;7255:9;7251:18;7238:32;7297:18;7289:6;7286:30;7283:117;;;7319:79;;:::i;:::-;7283:117;7439:58;7493:3;7484:6;7473:9;7469:22;7439:58;:::i;:::-;7432:4;7425:5;7421:16;7414:84;7185:324;7600:2;7589:9;7585:18;7572:32;7631:18;7623:6;7620:30;7617:117;;;7653:79;;:::i;:::-;7617:117;7773:58;7827:3;7818:6;7807:9;7803:22;7773:58;:::i;:::-;7766:4;7759:5;7755:16;7748:84;7519:324;7914:3;7956:49;8001:3;7992:6;7981:9;7977:22;7956:49;:::i;:::-;7949:4;7942:5;7938:16;7931:75;7853:164;8090:3;8132:49;8177:3;8168:6;8157:9;8153:22;8132:49;:::i;:::-;8125:4;8118:5;8114:16;8107:75;8027:166;8255:3;8297:49;8342:3;8333:6;8322:9;8318:22;8297:49;:::i;:::-;8290:4;8283:5;8279:16;8272:75;8203:155;8457:3;8446:9;8442:19;8429:33;8489:18;8481:6;8478:30;8475:117;;;8511:79;;:::i;:::-;8475:117;8631:58;8685:3;8676:6;8665:9;8661:22;8631:58;:::i;:::-;8624:4;8617:5;8613:16;8606:84;8368:333;8793:3;8782:9;8778:19;8765:33;8825:18;8817:6;8814:30;8811:117;;;8847:79;;:::i;:::-;8811:117;8969:58;9023:3;9014:6;9003:9;8999:22;8969:58;:::i;:::-;8960:6;8953:5;8949:18;8942:86;8711:328;6590:2456;;;;:::o;9052:561::-;9147:6;9196:2;9184:9;9175:7;9171:23;9167:32;9164:119;;;9202:79;;:::i;:::-;9164:119;9350:1;9339:9;9335:17;9322:31;9380:18;9372:6;9369:30;9366:117;;;9402:79;;:::i;:::-;9366:117;9507:89;9588:7;9579:6;9568:9;9564:22;9507:89;:::i;:::-;9497:99;;9293:313;9052:561;;;;:::o;9619:96::-;9677:6;9705:3;9695:13;;9619:96;;;;:::o;9813:150::-;9850:7;9890:66;9883:5;9879:78;9868:89;;9813:150;;;:::o;9969:107::-;10013:8;10063:5;10057:4;10053:16;10032:37;;9969:107;;;;:::o;10082:552::-;10173:5;10204:45;10245:3;10238:5;10204:45;:::i;:::-;10274:5;10298:41;10329:8;10316:22;10298:41;:::i;:::-;10289:50;;10363:2;10355:6;10352:14;10349:278;;;10434:169;10519:66;10489:6;10485:2;10481:15;10478:1;10474:23;10434:169;:::i;:::-;10411:5;10390:227;10381:236;;10349:278;10179:455;;10082:552;;;;:::o",
+                "storageLayout": {
+                    "storage": [],
+                    "types": null
+                },
+                "transientStorageLayout": {
+                    "storage": [],
+                    "types": null
+                },
+                "varmap": ""
+            }
+        ],
+        "legacyStructLinking": {},
+        "library_addresses": [],
+        "origSourceDir": ".pre_autofinders.0",
+        "primary_contract": "UserOpECDSAVerifier",
+        "primary_contract_address": "00000000ce4604a0000000000000000000000006",
+        "prototypeFor": [],
+        "sdc_name": "UserOpECDSAVerifier.sol_0",
+        "sourceDir": ".post_autofinders.0",
+        "srclist": {
+            "0": "src/interface/IVerifier.sol",
+            "1": "src/lib/OnlyKeystore.sol",
+            "2": "src/verifier/UserOpECDSAVerifier.sol",
+            "3": "lib/account-abstraction/contracts/core/Helpers.sol",
+            "4": "lib/account-abstraction/contracts/interfaces/PackedUserOperation.sol",
+            "5": "lib/solady/src/utils/ECDSA.sol"
+        },
+        "state": {},
+        "structLinkingInfo": {}
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (keystore.cvl:159:14): Syntax error: unexpected token near `{`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+Saving last configuration file to .certora_internal/25_12_15_19_48_00_371480e49b/run.conf
+There is no TAC file. Going to script CertoraProver/certoraBuild.py to main_with_args()
+main build cache key computed based on {'files': ['src/core/Keystore.sol'], 'package_version_for_build_cache': 'certora-cli 8.6.1', 'packages': ['@openzeppelin/contracts=lib/openzeppelin-contracts/contracts', 'account-abstraction=lib/account-abstraction/contracts', 'forge-std=lib/forge-std/src', 'solady=lib/solady/src'], 'packages_path': 'node_modules', 'solc': 'solc', 'solc_allow_path': '.', 'test_condition': 'True'}
+Creating dir /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_19_48_00_371480e49b/.certora_config
+In /home/dok/web3/stackup/keystore/cvl/keystore.cvl, found the imports: []
+copying spec file /home/dok/web3/stackup/keystore/cvl/keystore.cvl to /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_19_48_00_371480e49b/.certora_sources/.0_keystore.cvl.spec
+writing /home/dok/web3/stackup/keystore/.certora_internal/25_12_15_19_48_00_371480e49b/.certora_verify.json
+Failed to run Certora Prover typechecker locally.
+Please check the errors below for problems in the specifications (.spec files) or the prover_args defined in the .conf file.
+[main] ERROR ALWAYS - Found errors in cvl/keystore.cvl:
+[main] ERROR ALWAYS - Error in spec file (keystore.cvl:11:28): Syntax error: unexpected token near `(`
+[main] ERROR ALWAYS - Error in spec file (keystore.cvl:12:23): Syntax error: unexpected token near `(`
+[main] ERROR ALWAYS - Error in spec file (keystore.cvl:66:53): Syntax error: unexpected token near `(`
+build failed

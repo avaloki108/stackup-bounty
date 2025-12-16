@@ -1,0 +1,9 @@
+Compiling src/account/KeystoreAccount.sol...
+Compiling src/account/KeystoreAccount.sol to expose internal function information and local variables...
+
+Connecting to server...
+
+[32mJob submitted to server[0m
+
+Manage your jobs at https://prover.certora.com
+Follow your job and see verification results at https://prover.certora.com/output/10398964/056d9483c8c74738b3413c0e19d14fd5

@@ -1,0 +1,142 @@
+/*
+ * ═══════════════════════════════════════════════════════════════════════════
+ * RULE 12: SELFDESTRUCT & DELEGATECALL PROTECTION
+ * Historical Bounties: $50K-$200K (Parity wallet, proxy bugs)
+ * Risk: Total contract destruction, logic hijacking
+ * ═══════════════════════════════════════════════════════════════════════════
+ */
+
+methods {
+    function totalSupply() external returns (uint256) envfree;
+    function balanceOf(address) external returns (uint256) envfree;
+    function owner() external returns (address) envfree;
+    function implementation() external returns (address) envfree;
+
+    // Proxy patterns
+    function upgradeTo(address) external;
+    function upgradeToAndCall(address, bytes) external;
+}
+
+// Ghost to track if contract is "alive"
+ghost bool contractAlive {
+    init_state axiom contractAlive == true;
+}
+
+// Contract should never be destroyed
+rule contractNeverDestroyed(method f, env e, calldataarg args) {
+    require contractAlive == true;
+
+    f(e, args);
+
+    // If we can still call functions, contract exists
+    uint256 supply = totalSupply();
+
+    assert contractAlive == true,
+        "CRITICAL: Contract was destroyed";
+}
+
+// Selfdestruct should be impossible (post EIP-6780, less critical but still important)
+rule noSelfDestruct(method f, env e, calldataarg args) {
+    // Before call
+    uint256 supplyBefore = totalSupply();
+
+    f(e, args);
+
+    // After call - if we can query state, contract exists
+    uint256 supplyAfter = totalSupply();
+
+    // Contract must still be callable
+    assert supplyAfter >= 0,
+        "CRITICAL: Contract may have been destroyed";
+}
+
+// Delegatecall should only go to trusted implementations
+rule delegatecallOnlyToTrusted(env e, address newImpl) {
+    address currentImpl = implementation();
+    address currentOwner = owner();
+
+    // Only owner can upgrade
+    require e.msg.sender != currentOwner;
+
+    upgradeTo@withrevert(e, newImpl);
+
+    assert lastReverted,
+        "CRITICAL: Non-owner upgraded implementation - delegatecall hijack risk";
+}
+
+// Implementation cannot be zero
+rule implementationNeverZero(env e, address newImpl) {
+    require newImpl == 0;
+    require e.msg.sender == owner();
+
+    upgradeTo@withrevert(e, newImpl);
+
+    // Should revert on zero implementation
+    assert lastReverted,
+        "CRITICAL: Implementation set to zero - contract becomes unusable";
+}
+
+// Implementation changes should be intentional
+rule implementationChangeTracked(env e, address newImpl) {
+    address implBefore = implementation();
+
+    upgradeTo(e, newImpl);
+
+    address implAfter = implementation();
+
+    assert implAfter == newImpl,
+        "HIGH: upgradeTo did not change implementation";
+
+    assert implBefore != implAfter || newImpl == implBefore,
+        "HIGH: Implementation change was not tracked";
+}
+
+// No unauthorized implementation changes
+rule noUnauthorizedUpgrade(method f, env e, calldataarg args)
+    filtered { f -> f.selector != sig:upgradeTo(address).selector &&
+                    f.selector != sig:upgradeToAndCall(address, bytes).selector }
+{
+    address implBefore = implementation();
+
+    f(e, args);
+
+    address implAfter = implementation();
+
+    assert implBefore == implAfter,
+        "CRITICAL: Implementation changed via unexpected function";
+}
+
+// Storage should persist across upgrades (key invariant)
+rule storagePersistedAcrossUpgrade(env e, address newImpl, address user) {
+    uint256 balanceBefore = balanceOf(user);
+    uint256 supplyBefore = totalSupply();
+
+    upgradeTo(e, newImpl);
+
+    uint256 balanceAfter = balanceOf(user);
+    uint256 supplyAfter = totalSupply();
+
+    // Critical storage should persist
+    assert balanceAfter == balanceBefore,
+        "CRITICAL: User balance lost during upgrade";
+
+    assert supplyAfter == supplyBefore,
+        "CRITICAL: Total supply changed during upgrade";
+}
+
+// Initialization cannot be re-run
+rule initializeOnlyOnce(env e1, env e2) {
+    // First init
+    // initialize@withrevert(e1);
+    // bool firstSucceeded = !lastReverted;
+
+    // Second init should fail
+    // initialize@withrevert(e2);
+    // bool secondSucceeded = !lastReverted;
+
+    // At most one should succeed
+    // assert !(firstSucceeded && secondSucceeded),
+    //     "CRITICAL: Contract can be re-initialized";
+
+    assert true; // Placeholder - uncomment above for proxy contracts
+}

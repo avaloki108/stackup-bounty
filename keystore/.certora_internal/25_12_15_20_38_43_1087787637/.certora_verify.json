@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "UserOpMultiSigVerifier",
+    "specfile": "cvl/multisig_verifier.cvl",
+    "specfileOrigRelpath": "cvl/multisig_verifier.cvl",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}

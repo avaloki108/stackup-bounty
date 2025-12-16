@@ -1,0 +1,119 @@
+[
+    {
+        "card_title": "general",
+        "content_type": "COMPLEX",
+        "content": [
+            {
+                "inner_title": "CLI Version",
+                "content_type": "FLAG",
+                "content": "8.6.1",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "branch",
+                "content_type": "FLAG",
+                "content": "main",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "origin",
+                "content_type": "FLAG",
+                "content": "https://github.com/avaloki108/keystore.git",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "revision",
+                "content_type": "FLAG",
+                "content": "806fc6a051c2199a144150f2d5ef8a9034d3cca6",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    },
+    {
+        "card_title": "files",
+        "content_type": "SIMPLE",
+        "content": [
+            {
+                "inner_title": "files",
+                "content_type": "SIMPLE",
+                "content": [
+                    "test/account/KeystoreAccount.t.sol:KeystoreAccountFactoryTest",
+                    "test/account/KeystoreAccount.t.sol:KeystoreAccountHarness",
+                    "test/core/Keystore.t.sol:KeystoreTest",
+                    "test/invariant/KeystoreInvariant.t.sol:KeystoreHandler",
+                    "test/invariant/KeystoreInvariant.t.sol:KeystoreInvariant",
+                    "test/snapshots/Keystore32NodeUCMT.t.sol:Keystore32NodeUCMT",
+                    "test/verifier/UserOpECDSAVerifier.t.sol:UserOpECDSAVerifierTest",
+                    "test/verifier/UserOpMultiSigVerifier.t.sol:UserOpMultiSigVerifierTest",
+                    "test/verifier/UserOpWebAuthnCosignVerifier.t.sol:UserOpWebAuthnCosignVerifierTest",
+                    "test/verifier/UserOpWebAuthnVerifier.t.sol:UserOpWebAuthnVerifierTest"
+                ],
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#files",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    },
+    {
+        "card_title": "options",
+        "content_type": "COMPLEX",
+        "content": [
+            {
+                "inner_title": "verify",
+                "content_type": "FLAG",
+                "content": "KeystoreHandler:/home/dok/web3/stackup/keystore/.certora_internal/tmp0mo6h54h.spec",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#verify",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "auto_dispatcher",
+                "content_type": "FLAG",
+                "content": "true",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#auto-dispatcher",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "foundry",
+                "content_type": "FLAG",
+                "content": "true",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#foundry",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "foundry_tests_mode",
+                "content_type": "FLAG",
+                "content": "true",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#foundry-tests-mode",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "msg",
+                "content_type": "FLAG",
+                "content": "Keystore invariant proofs",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#msg",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "wait_for_results",
+                "content_type": "FLAG",
+                "content": "all",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#wait-for-results",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,1460 @@
+Failed to build .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/src/core/Keystore.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/.post_autofinders.0/src/core/Keystore.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_48_38_971604711f/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/.post_autofinders.0/src/core/Keystore.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/src/core/Keystore.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_49_31_830537f90e/.certora_sources/src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/.post_autofinders.0/src/core/Keystore.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/src/core/Keystore.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_50_18_170641a6d9/.certora_sources/src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/.post_autofinders.0/src/core/Keystore.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/.post_autofinders.0/src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/.pre_autofinders.0/src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/src/core/Keystore.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> .certora_internal/25_12_15_19_51_10_850276c70b/.certora_sources/src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build test/invariant/KeystoreInvariant.t.sol! Error:
+Error: Source "forge-std/Test.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/invariant/KeystoreInvariant.t.sol:4:1:
+  |
+4 | import {Test} from "forge-std/Test.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "forge-std/StdInvariant.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/invariant/KeystoreInvariant.t.sol:5:1:
+  |
+5 | import {StdInvariant} from "forge-std/StdInvariant.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/invariant/KeystoreInvariant.t.sol:6:1:
+  |
+6 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build script/DeployUserOpECDSAVerifier.s.sol! Error:
+Error: Source "forge-std/Script.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> script/DeployUserOpECDSAVerifier.s.sol:4:1:
+  |
+4 | import {Script, console} from "forge-std/Script.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpECDSAVerifier.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpECDSAVerifier.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/ECDSA.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpECDSAVerifier.sol:6:1:
+  |
+6 | import {ECDSA} from "solady/utils/ECDSA.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build script/DeployUserOpWebAuthnCosignVerifier.s.sol! Error:
+Error: Source "forge-std/Script.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> script/DeployUserOpWebAuthnCosignVerifier.s.sol:4:1:
+  |
+4 | import {Script, console} from "forge-std/Script.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/ECDSA.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:6:1:
+  |
+6 | import {ECDSA} from "solady/utils/ECDSA.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:7:1:
+  |
+7 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/WebAuthn.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:8:1:
+  |
+8 | import {WebAuthn} from "solady/utils/WebAuthn.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build src/account/KeystoreAccount.sol! Error:
+Error: Source "account-abstraction/accounts/callback/TokenCallbackHandler.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:4:1:
+  |
+4 | import {TokenCallbackHandler} from "account-abstraction/accounts/callback/TokenCallbackHandler.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/BaseAccount.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:5:1:
+  |
+5 | import {BaseAccount} from "account-abstraction/core/BaseAccount.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:6:1:
+  |
+6 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/IEntryPoint.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:7:1:
+  |
+7 | import {IEntryPoint} from "account-abstraction/interfaces/IEntryPoint.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:8:1:
+  |
+8 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/accounts/ERC1271.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:9:1:
+  |
+9 | import {ERC1271} from "solady/accounts/ERC1271.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/Initializable.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+  --> src/account/KeystoreAccount.sol:10:1:
+   |
+10 | import {Initializable} from "solady/utils/Initializable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/lib/KeystoreUserOperation.sol:4:1:
+  |
+4 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build script/DeployUserOpMultiSigVerifier.s.sol! Error:
+Error: Source "forge-std/Script.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> script/DeployUserOpMultiSigVerifier.s.sol:4:1:
+  |
+4 | import {Script, console} from "forge-std/Script.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpMultiSigVerifier.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpMultiSigVerifier.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/ECDSA.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpMultiSigVerifier.sol:6:1:
+  |
+6 | import {ECDSA} from "solady/utils/ECDSA.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build script/DeployKeystore.s.sol! Error:
+Error: Source "forge-std/Script.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> script/DeployKeystore.s.sol:4:1:
+  |
+4 | import {Script, console} from "forge-std/Script.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build src/core/Keystore.sol! Error:
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build src/account/KeystoreAccountFactory.sol! Error:
+Error: Source "account-abstraction/interfaces/IEntryPoint.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccountFactory.sol:4:1:
+  |
+4 | import {IEntryPoint} from "account-abstraction/interfaces/IEntryPoint.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/ISenderCreator.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccountFactory.sol:5:1:
+  |
+5 | import {ISenderCreator} from "account-abstraction/interfaces/ISenderCreator.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibClone.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccountFactory.sol:6:1:
+  |
+6 | import {LibClone} from "solady/utils/LibClone.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/accounts/callback/TokenCallbackHandler.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:4:1:
+  |
+4 | import {TokenCallbackHandler} from "account-abstraction/accounts/callback/TokenCallbackHandler.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/BaseAccount.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:5:1:
+  |
+5 | import {BaseAccount} from "account-abstraction/core/BaseAccount.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:6:1:
+  |
+6 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/IEntryPoint.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:7:1:
+  |
+7 | import {IEntryPoint} from "account-abstraction/interfaces/IEntryPoint.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:8:1:
+  |
+8 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/accounts/ERC1271.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:9:1:
+  |
+9 | import {ERC1271} from "solady/accounts/ERC1271.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/Initializable.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+  --> src/account/KeystoreAccount.sol:10:1:
+   |
+10 | import {Initializable} from "solady/utils/Initializable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/lib/KeystoreUserOperation.sol:4:1:
+  |
+4 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build script/DeployUserOpWebAuthnVerifier.s.sol! Error:
+Error: Source "forge-std/Script.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> script/DeployUserOpWebAuthnVerifier.s.sol:4:1:
+  |
+4 | import {Script, console} from "forge-std/Script.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnVerifier.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnVerifier.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/WebAuthn.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnVerifier.sol:6:1:
+  |
+6 | import {WebAuthn} from "solady/utils/WebAuthn.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build src/lib/KeystoreUserOperation.sol! Error:
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/lib/KeystoreUserOperation.sol:4:1:
+  |
+4 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build src/verifier/UserOpWebAuthnVerifier.sol! Error:
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnVerifier.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnVerifier.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/WebAuthn.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnVerifier.sol:6:1:
+  |
+6 | import {WebAuthn} from "solady/utils/WebAuthn.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build src/verifier/UserOpECDSAVerifier.sol! Error:
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpECDSAVerifier.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpECDSAVerifier.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/ECDSA.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpECDSAVerifier.sol:6:1:
+  |
+6 | import {ECDSA} from "solady/utils/ECDSA.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build script/DeployKeystoreAccountFactory.s.sol! Error:
+Error: Source "account-abstraction/interfaces/IEntryPoint.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> script/DeployKeystoreAccountFactory.s.sol:4:1:
+  |
+4 | import {IEntryPoint} from "account-abstraction/interfaces/IEntryPoint.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "forge-std/Script.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> script/DeployKeystoreAccountFactory.s.sol:5:1:
+  |
+5 | import {Script, console} from "forge-std/Script.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/IEntryPoint.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccountFactory.sol:4:1:
+  |
+4 | import {IEntryPoint} from "account-abstraction/interfaces/IEntryPoint.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/ISenderCreator.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccountFactory.sol:5:1:
+  |
+5 | import {ISenderCreator} from "account-abstraction/interfaces/ISenderCreator.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibClone.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccountFactory.sol:6:1:
+  |
+6 | import {LibClone} from "solady/utils/LibClone.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/accounts/callback/TokenCallbackHandler.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:4:1:
+  |
+4 | import {TokenCallbackHandler} from "account-abstraction/accounts/callback/TokenCallbackHandler.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/BaseAccount.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:5:1:
+  |
+5 | import {BaseAccount} from "account-abstraction/core/BaseAccount.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:6:1:
+  |
+6 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/IEntryPoint.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:7:1:
+  |
+7 | import {IEntryPoint} from "account-abstraction/interfaces/IEntryPoint.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:8:1:
+  |
+8 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/accounts/ERC1271.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:9:1:
+  |
+9 | import {ERC1271} from "solady/accounts/ERC1271.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/Initializable.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+  --> src/account/KeystoreAccount.sol:10:1:
+   |
+10 | import {Initializable} from "solady/utils/Initializable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/lib/KeystoreUserOperation.sol:4:1:
+  |
+4 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build src/verifier/UserOpWebAuthnCosignVerifier.sol! Error:
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/ECDSA.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:6:1:
+  |
+6 | import {ECDSA} from "solady/utils/ECDSA.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:7:1:
+  |
+7 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/WebAuthn.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:8:1:
+  |
+8 | import {WebAuthn} from "solady/utils/WebAuthn.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build src/verifier/UserOpMultiSigVerifier.sol! Error:
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpMultiSigVerifier.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpMultiSigVerifier.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/ECDSA.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpMultiSigVerifier.sol:6:1:
+  |
+6 | import {ECDSA} from "solady/utils/ECDSA.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build test/mock/ERC7739PersonalSignVerifierMock.sol! Error:
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/mock/ERC7739PersonalSignVerifierMock.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build test/verifier/UserOpECDSAVerifier.t.sol! Error:
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpECDSAVerifier.t.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpECDSAVerifier.t.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "forge-std/Test.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpECDSAVerifier.t.sol:6:1:
+  |
+6 | import {Test} from "forge-std/Test.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/ECDSA.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpECDSAVerifier.t.sol:7:1:
+  |
+7 | import {ECDSA} from "solady/utils/ECDSA.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpECDSAVerifier.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpECDSAVerifier.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/ECDSA.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpECDSAVerifier.sol:6:1:
+  |
+6 | import {ECDSA} from "solady/utils/ECDSA.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build test/core/Keystore.t.sol! Error:
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/core/Keystore.t.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "forge-std/console.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/core/Keystore.t.sol:5:1:
+  |
+5 | import {console} from "forge-std/console.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "forge-std/Test.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/core/Keystore.t.sol:6:1:
+  |
+6 | import {Test} from "forge-std/Test.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "murky/src/Merkle.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/core/Keystore.t.sol:7:1:
+  |
+7 | import {Merkle} from "murky/src/Merkle.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/core/Keystore.t.sol:8:1:
+  |
+8 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build test/snapshots/Keystore32NodeUCMT.t.sol! Error:
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/snapshots/Keystore32NodeUCMT.t.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "forge-std/Test.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/snapshots/Keystore32NodeUCMT.t.sol:5:1:
+  |
+5 | import {Test} from "forge-std/Test.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/snapshots/Keystore32NodeUCMT.t.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build test/mock/ERC7739TypedDataSignVerifierMock.sol! Error:
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/mock/ERC7739TypedDataSignVerifierMock.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibString.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/mock/ERC7739TypedDataSignVerifierMock.sol:5:1:
+  |
+5 | import {LibString} from "solady/utils/LibString.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build test/verifier/UserOpMultiSigVerifier.t.sol! Error:
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpMultiSigVerifier.t.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpMultiSigVerifier.t.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "forge-std/Test.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpMultiSigVerifier.t.sol:6:1:
+  |
+6 | import {Test} from "forge-std/Test.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/ECDSA.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpMultiSigVerifier.t.sol:7:1:
+  |
+7 | import {ECDSA} from "solady/utils/ECDSA.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibString.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpMultiSigVerifier.t.sol:8:1:
+  |
+8 | import {LibString} from "solady/utils/LibString.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpMultiSigVerifier.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpMultiSigVerifier.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/ECDSA.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpMultiSigVerifier.sol:6:1:
+  |
+6 | import {ECDSA} from "solady/utils/ECDSA.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build test/verifier/UserOpWebAuthnVerifier.t.sol! Error:
+Error: Source "forge-std/console.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpWebAuthnVerifier.t.sol:4:1:
+  |
+4 | import "forge-std/console.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpWebAuthnVerifier.t.sol:6:1:
+  |
+6 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpWebAuthnVerifier.t.sol:7:1:
+  |
+7 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "forge-std/Test.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpWebAuthnVerifier.t.sol:8:1:
+  |
+8 | import {Test} from "forge-std/Test.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/Base64.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpWebAuthnVerifier.t.sol:9:1:
+  |
+9 | import {Base64} from "solady/utils/Base64.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibString.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+  --> test/verifier/UserOpWebAuthnVerifier.t.sol:10:1:
+   |
+10 | import {LibString} from "solady/utils/LibString.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/P256.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+  --> test/verifier/UserOpWebAuthnVerifier.t.sol:11:1:
+   |
+11 | import {P256} from "solady/utils/P256.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/WebAuthn.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+  --> test/verifier/UserOpWebAuthnVerifier.t.sol:12:1:
+   |
+12 | import {WebAuthn} from "solady/utils/WebAuthn.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnVerifier.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnVerifier.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/WebAuthn.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnVerifier.sol:6:1:
+  |
+6 | import {WebAuthn} from "solady/utils/WebAuthn.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build test/account/KeystoreAccountFactory.t.sol! Error:
+Error: Source "forge-std/Test.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/account/KeystoreAccountFactory.t.sol:4:1:
+  |
+4 | import {Test} from "forge-std/Test.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/EntryPoint.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/account/KeystoreAccountFactory.t.sol:6:1:
+  |
+6 | import {EntryPoint} from "account-abstraction/core/EntryPoint.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/IStakeManager.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/account/KeystoreAccountFactory.t.sol:7:1:
+  |
+7 | import {IStakeManager} from "account-abstraction/interfaces/IStakeManager.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/IEntryPoint.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccountFactory.sol:4:1:
+  |
+4 | import {IEntryPoint} from "account-abstraction/interfaces/IEntryPoint.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/ISenderCreator.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccountFactory.sol:5:1:
+  |
+5 | import {ISenderCreator} from "account-abstraction/interfaces/ISenderCreator.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibClone.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccountFactory.sol:6:1:
+  |
+6 | import {LibClone} from "solady/utils/LibClone.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/accounts/callback/TokenCallbackHandler.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:4:1:
+  |
+4 | import {TokenCallbackHandler} from "account-abstraction/accounts/callback/TokenCallbackHandler.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/BaseAccount.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:5:1:
+  |
+5 | import {BaseAccount} from "account-abstraction/core/BaseAccount.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:6:1:
+  |
+6 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/IEntryPoint.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:7:1:
+  |
+7 | import {IEntryPoint} from "account-abstraction/interfaces/IEntryPoint.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:8:1:
+  |
+8 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/accounts/ERC1271.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:9:1:
+  |
+9 | import {ERC1271} from "solady/accounts/ERC1271.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/Initializable.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+  --> src/account/KeystoreAccount.sol:10:1:
+   |
+10 | import {Initializable} from "solady/utils/Initializable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/lib/KeystoreUserOperation.sol:4:1:
+  |
+4 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build test/verifier/UserOpWebAuthnCosignVerifier.t.sol! Error:
+Error: Source "forge-std/console.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpWebAuthnCosignVerifier.t.sol:4:1:
+  |
+4 | import "forge-std/console.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpWebAuthnCosignVerifier.t.sol:6:1:
+  |
+6 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpWebAuthnCosignVerifier.t.sol:7:1:
+  |
+7 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "forge-std/Test.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpWebAuthnCosignVerifier.t.sol:8:1:
+  |
+8 | import {Test} from "forge-std/Test.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/Base64.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/verifier/UserOpWebAuthnCosignVerifier.t.sol:9:1:
+  |
+9 | import {Base64} from "solady/utils/Base64.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/ECDSA.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+  --> test/verifier/UserOpWebAuthnCosignVerifier.t.sol:10:1:
+   |
+10 | import {ECDSA} from "solady/utils/ECDSA.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibString.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+  --> test/verifier/UserOpWebAuthnCosignVerifier.t.sol:11:1:
+   |
+11 | import {LibString} from "solady/utils/LibString.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/P256.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+  --> test/verifier/UserOpWebAuthnCosignVerifier.t.sol:12:1:
+   |
+12 | import {P256} from "solady/utils/P256.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/WebAuthn.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+  --> test/verifier/UserOpWebAuthnCosignVerifier.t.sol:13:1:
+   |
+13 | import {WebAuthn} from "solady/utils/WebAuthn.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:5:1:
+  |
+5 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/ECDSA.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:6:1:
+  |
+6 | import {ECDSA} from "solady/utils/ECDSA.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:7:1:
+  |
+7 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/WebAuthn.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/verifier/UserOpWebAuthnCosignVerifier.sol:8:1:
+  |
+8 | import {WebAuthn} from "solady/utils/WebAuthn.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Failed to build test/account/KeystoreAccount.t.sol! Error:
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/account/KeystoreAccount.t.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/EntryPoint.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/account/KeystoreAccount.t.sol:5:1:
+  |
+5 | import {EntryPoint} from "account-abstraction/core/EntryPoint.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/IAccount.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/account/KeystoreAccount.t.sol:6:1:
+  |
+6 | import {IAccount} from "account-abstraction/interfaces/IAccount.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/IEntryPoint.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/account/KeystoreAccount.t.sol:7:1:
+  |
+7 | import {IEntryPoint} from "account-abstraction/interfaces/IEntryPoint.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/IStakeManager.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/account/KeystoreAccount.t.sol:8:1:
+  |
+8 | import {IStakeManager} from "account-abstraction/interfaces/IStakeManager.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/account/KeystoreAccount.t.sol:9:1:
+  |
+9 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "forge-std/Test.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+  --> test/account/KeystoreAccount.t.sol:10:1:
+   |
+10 | import {Test} from "forge-std/Test.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/accounts/callback/TokenCallbackHandler.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:4:1:
+  |
+4 | import {TokenCallbackHandler} from "account-abstraction/accounts/callback/TokenCallbackHandler.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/BaseAccount.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:5:1:
+  |
+5 | import {BaseAccount} from "account-abstraction/core/BaseAccount.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:6:1:
+  |
+6 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/IEntryPoint.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:7:1:
+  |
+7 | import {IEntryPoint} from "account-abstraction/interfaces/IEntryPoint.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:8:1:
+  |
+8 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/accounts/ERC1271.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccount.sol:9:1:
+  |
+9 | import {ERC1271} from "solady/accounts/ERC1271.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/Initializable.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+  --> src/account/KeystoreAccount.sol:10:1:
+   |
+10 | import {Initializable} from "solady/utils/Initializable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/IEntryPoint.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccountFactory.sol:4:1:
+  |
+4 | import {IEntryPoint} from "account-abstraction/interfaces/IEntryPoint.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/ISenderCreator.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccountFactory.sol:5:1:
+  |
+5 | import {ISenderCreator} from "account-abstraction/interfaces/ISenderCreator.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibClone.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/account/KeystoreAccountFactory.sol:6:1:
+  |
+6 | import {LibClone} from "solady/utils/LibClone.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:4:1:
+  |
+4 | import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:5:1:
+  |
+5 | import {SIG_VALIDATION_FAILED} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibBytes.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:6:1:
+  |
+6 | import {LibBytes} from "solady/utils/LibBytes.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/MerkleProofLib.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/core/Keystore.sol:7:1:
+  |
+7 | import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/mock/ERC7739PersonalSignVerifierMock.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/core/Helpers.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/mock/ERC7739TypedDataSignVerifierMock.sol:4:1:
+  |
+4 | import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from "account-abstraction/core/Helpers.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "solady/utils/LibString.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> test/mock/ERC7739TypedDataSignVerifierMock.sol:5:1:
+  |
+5 | import {LibString} from "solady/utils/LibString.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "account-abstraction/interfaces/PackedUserOperation.sol" not found: File not found. Searched the following locations: "/home/dok/web3/stackup/keystore", "/home/dok/web3/stackup/keystore/node_modules".
+ --> src/lib/KeystoreUserOperation.sol:4:1:
+  |
+4 | import {PackedUserOperation} from "account-abstraction/interfaces/PackedUserOperation.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+

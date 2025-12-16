@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "KeystoreHandler",
+    "specfile": ".certora_internal/tmp0mo6h54h.spec",
+    "specfileOrigRelpath": ".certora_internal/tmp0mo6h54h.spec",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}

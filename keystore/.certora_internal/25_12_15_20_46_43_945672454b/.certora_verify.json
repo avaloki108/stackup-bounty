@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "UserOpWebAuthnVerifier",
+    "specfile": "cvl/webauthn_verifier.cvl",
+    "specfileOrigRelpath": "cvl/webauthn_verifier.cvl",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}
